@@ -1,5 +1,5 @@
 baseURL: https://www.blackstewie.com
-title: BlackStewie.com
+title: BlackStewie
 theme: hugo-coder
 languageCode: en
 defaultContentLanguage: en
@@ -24,7 +24,7 @@ params:
   license: "<a rel=license href=https://mit-license.org>MIT</a>"
   description: Michael Schaecher's personal website
   keywords: blog,developer,personal
-  info: The nerdy tech tech stuff that we've all forgotten.
+  info: The nerdy tech stuff that I've forgotten.
   avatarURL: images/avatar.svg
   #gravatar: john.doe@example.com
 
