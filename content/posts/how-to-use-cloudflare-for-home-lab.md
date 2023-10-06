@@ -1,6 +1,6 @@
 ---
-title: {{ replace .File.ContentBaseName "-" " " | title }}
-date: {{ .Date }}
+title: How to Use Cloudflare for Home Lab
+date: 2023-10-06T17:22:07Z
 description: ""
 slug: ""
 authors:
