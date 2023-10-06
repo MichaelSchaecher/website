@@ -2,6 +2,7 @@
   position: fixed;
   height: 6rem;
   width: 100%;
+  background-color: #212122;
 
   a,
   span {
@@ -21,7 +22,8 @@
 
   .navigation-title {
     letter-spacing: 0.1rem;
-    text-transform: uppercase;
+    //text-transform: uppercase;
+    font-family: "Black Ops One";
   }
 
   .navigation-list {
