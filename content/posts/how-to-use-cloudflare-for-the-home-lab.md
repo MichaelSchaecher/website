@@ -14,7 +14,7 @@ categories:
   - Docker
   - VPN
 externalLink: ""
-featuredImage:
+featuredImage: /images/how-to-use-cloudflare-for-home-lab/CF_logo_stacked_singlecolor_wht.png
 series:
 draft: true
 ---
