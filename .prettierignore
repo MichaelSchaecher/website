@@ -4,3 +4,4 @@ resources/**
 *.toml
 *.md
 _markdown.scss
+themes/**

@@ -6,5 +6,6 @@ draft: true
 
 <div class="image-construct">
   <img src="/images/under-construction.svg" alt="Blogging"></img>
-  <p class="construct">I'm working on it, don't rush me!</p>
 </div>
+
+[Categories](/categories) [Tags](/tags) [Authors](/authors)
