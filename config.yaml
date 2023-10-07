@@ -25,15 +25,16 @@ params:
   description: Michael Schaecher's personal website
   keywords: blog,developer,personal
   info: The nerdy tech stuff that I've forgotten.
-  avatarURL: images/avatar.svg
-  #gravatar: john.doe@example.com
 
   faviconSVG: icons/favicon.ico
   favicon_32: icons/favicon-32x32.png
   favicon_16: icons/favicon-16x16.png
 
   # Set an image to be used as part of the listing of blogs and posts.
-  postlistIMG: /images/posts/backdrop.png
+  images:
+    avatarURL: images/avatar.svg
+    #gravatar: john.doe@example.com
+    postlistIMG: /images/posts/backdrop.png
 
   # Use custom image for 404 page. Useful
   missingPage: images/404.svg
@@ -68,7 +69,7 @@ params:
   #  serverURL: analytics.example.com # Default value is cdn.usefathom.com, overwrite this if you are self-hosting
 
   # If you want to use plausible(https://plausible.io) for analytics, add this section
-  #plausibleAnalytics
+  #plausibleAnalytics:
   #  domain: example.com
   #  serverURL: analytics.example.com # Default value is plausible.io, overwrite this if you are self-hosting or using a custom domain
   #  outboundLinksTracking: true
