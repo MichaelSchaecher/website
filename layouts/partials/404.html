@@ -1,0 +1,18 @@
+<section class="container centered">
+  <div class="error">
+    <!-- This is a custom variable for applying a  -->
+    {{ if .Site.Params.missingPage }}
+      {{ with .Site.Params.missingPage }}
+        <div class="error-img">
+          <img src="{{ . | relURL }}" alt="404" class="missing-page" />
+        </div>
+      {{ end }}
+    {{ else }}
+      <h1>404</h1>
+    {{ end }}
+    <h2>{{ i18n "page_not_found" }}</h2>
+    <p>
+      {{ i18n "page_does_not_exist" }}<br />{{ i18n "head_back" .Site.BaseURL | safeHTML }}
+    </p>
+  </div>
+</section>

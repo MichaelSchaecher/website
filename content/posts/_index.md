@@ -5,4 +5,4 @@ draft: false
 featuredImage: /images/posts/backdrop.png
 ---
 
-![image-full](/images/posts/backdrop.png)
+<div class="image-full"><img src="/images/posts/backdrop.png" alt="Blogging"></img></div>
