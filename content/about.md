@@ -1,5 +1,5 @@
 ---
-title: About
+title: "About Me"
 date: 2023-09-30T13:36:31-06:00
 description: ""
 slug: ""
@@ -8,9 +8,12 @@ tags: []
 categories: []
 externalLink: ""
 series: []
-aliases: [info]
+aliases:
+  - info
 draft: false
 ---
+
+![image-full](/images/about-me.png)
 
 As a passionate hobbyist, I immerse myself in the intricate world of home networking and Linux-based systems. By day, I pursue a different professional path, but my true expertise lies in the realm of network and systems administration. I firmly believe that in an increasingly connected world, every home should be equipped with a robust network infrastructure tailored for the future. I excel at configuring routers, implementing firewalls, and optimizing network protocols to create seamless and secure connections within the home environment.
 
