@@ -6,6 +6,7 @@
       {{ .Site.Params.since }} -
     {{ end }}
     {{ now.Year }}
+    by
     {{ with .Site.Params.author }}{{ . }}{{ end }}
     ·
     {{ if (and .Site.Params.license) }}
@@ -14,12 +15,8 @@
       ·
     {{ end }}
     {{ i18n "powered_by" }}
-    <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a>
-    {{ if .Site.Params.gitThemeRepo }}
-      {{ print " & " }}
-      <a href="{{ .Site.Params.gitThemeRepo }}" target="_blank" rel="noopener"
-        >{{ i18n "theme" }}</a
-      >
-    {{ end }}
+    {{ i18n "engine" .Site.BaseURL | safeHTML }}
+    <i class="fa fa-plus" aria-hidden="true"></i>
+    {{ i18n "theme" .Site.BaseURL | safeHTML }}
   </section>
 </footer>

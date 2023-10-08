@@ -28,7 +28,7 @@ page_does_not_exist:
   other: I am not the page you are looking for.
 
 head_back:
-  other: Go back to the light side of the <a href={{ . }}>force</a>.
+  other: Go back to the light side of the <a href={{ . }}>force</a>
 
 licensed_under:
   other: Licensed under
@@ -70,4 +70,7 @@ next_post:
   other: Next
 
 theme:
-  other: Coder
+  other: <a href=https://github.com/luizdepra/hugo-coder>Coder</a>
+
+engine:
+  other: <a href=https://gohugo.io>Hugo</a>
