@@ -17,6 +17,7 @@ externalLink: ""
 featuredImage: /images/how-to-use-cloudflare-for-home-lab/CF_logo_stacked_singlecolor_wht.png
 series:
 draft: true
+weight: 20
 ---
 
 ----
@@ -36,7 +37,7 @@ After running through the setup and email verification you be asked to log into 
 
 ![first-domain](/images/setting-up-raspberry-pi-as-cloudflare-tunnel-server/first-domain.png)
 
-[Back](#signing-up-with-cloudflare)
+[Back](#top)
 
 ### Adding a Domain
 

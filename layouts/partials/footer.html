@@ -1,6 +1,7 @@
 <footer class="footer">
   <section class="container">
-    Copyright ©
+    {{ print "Copyright " }}
+    <i class="fa fa-copyright" aria-hidden="true"> </i>
     {{ if (and .Site.Params.since (lt .Site.Params.since now.Year)) }}
       {{ .Site.Params.since }} -
     {{ end }}
@@ -13,12 +14,12 @@
       ·
     {{ end }}
     {{ i18n "powered_by" }}
-    <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> &
-    <a
-      href="https://github.com/luizdepra/hugo-coder/"
-      target="_blank"
-      rel="noopener"
-      >Coder</a
-    >.
+    <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a>
+    {{ if .Site.Params.gitThemeRepo }}
+      {{ print " & " }}
+      <a href="{{ .Site.Params.gitThemeRepo }}" target="_blank" rel="noopener"
+        >{{ i18n "theme" }}</a
+      >
+    {{ end }}
   </section>
 </footer>

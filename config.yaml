@@ -22,6 +22,10 @@ markup:
 params:
   author: Michael Schaecher
   license: "<a rel=license href=https://mit-license.org>MIT</a>"
+
+  # Set the repo of the theme you're using.
+  gitThemeRepo: https://github.com/luizdepra/hugo-coder
+
   description: Michael Schaecher's personal website
   keywords: blog,developer,personal
   info: The nerdy tech stuff that I've forgotten.

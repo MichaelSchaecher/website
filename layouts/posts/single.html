@@ -47,7 +47,22 @@
         {{ end }}
         {{ with .GetTerms "tags" }}{{ partial "taxonomy/tags.html" . }}{{ end }}
       </div>
-
+      <!-- Get the the previous post. -->
+      <div class="prev-next">
+        {{ $paginator := .Paginate (where .Site.RegularPages "Type" "post") }}
+        {{ with .PrevInSection }}
+          <a class="prev" href="{{ .Permalink | safeURL }}">
+            <i class="fa fa-arrow-left" aria-hidden="true"></i>
+            {{ i18n "previous_post" }}
+          </a>
+        {{ end }}
+        {{ with .NextInSection }}
+          <a class="next" href="{{ .Permalink | safeURL }}">
+            {{ i18n "next_post" }}
+            <i class="fa fa-arrow-right" aria-hidden="true"></i>
+          </a>
+        {{ end }}
+      </div>
       <footer>
         {{ partial "posts/series.html" . }}
         {{ partial "posts/disqus.html" . }}
