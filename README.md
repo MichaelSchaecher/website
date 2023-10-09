@@ -77,7 +77,7 @@ The following steps are for formatting.
 
 Close the settings windows, don't worry about saving it, VS Code will do it for you.
 
-click on the Terminal menu and select New Terminal. This will open a new terminal window. You can also use the keyboard shortcut `Ctrl + Shift + `.
+click on the Terminal menu and select New Terminal. This will open a new terminal window. You can also use the keyboard shortcut `Ctrl + Shift +`.
 
 With the terminal window open, type the following command to install git first
 
