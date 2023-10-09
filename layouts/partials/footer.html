@@ -16,7 +16,7 @@
     {{ end }}
     {{ i18n "powered_by" }}
     {{ i18n "engine" .Site.BaseURL | safeHTML }}
-    <i class="fa fa-plus" aria-hidden="true"></i>
+    {{ print " + " }}
     {{ i18n "theme" .Site.BaseURL | safeHTML }}
   </section>
 </footer>

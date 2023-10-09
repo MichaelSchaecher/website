@@ -1,21 +1,21 @@
 categories:
-  one: category
-  other: categories
+  one: Category
+  other: Categories
 
 tags:
-  one: tag
-  other: tags
+  one: Tag
+  other: Tags
 
 series:
-  one: series
-  other: series
+  one: Series
+  other: Series
 
 authors:
-  one: author
-  other: authors
+  one: Author
+  other: Authors
 
 posts:
-  other: posts
+  other: Posts
 
 reading_time:
   one: One-minute read
