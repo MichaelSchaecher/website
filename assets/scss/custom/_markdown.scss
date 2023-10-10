@@ -20,3 +20,26 @@
     text-align: center;
   }
 }
+
+// Move the image to the right and place the caption below it and centered.
+// Both the image and caption are in a div with the class "first-nasa-computer".
+// Text wrapping around the image is top and bottom.
+
+.first-nasa-computer {
+  display: inline-block;
+  margin-top: 1%;
+
+  img {
+    float: right;
+    margin: 0 0 0 90%;
+    width: 50%;
+    height: 50%;
+    align-content: center;
+  }
+
+  .caption {
+    margin: 12px 4%;
+    text-align: right;
+    font-size: 12px;
+  }
+}

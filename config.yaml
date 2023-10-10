@@ -175,6 +175,3 @@ menu:
     - name: About
       weight: 3
       url: /about/
-    - name: Documentations
-      weight: 4
-      url: /documentations/

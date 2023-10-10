@@ -13,20 +13,39 @@ categories:
   - Movies
 externalLink: ""
 series:
+  - Realism in Movies
 draft: true
 weight: 20
 ---
 
+[comment]: <> (An introduction about how movies and tv series have gotten more real, all but technology. Why do computers still make beeps and bops?)
+
 ## Introduction
 
-Hollywood has a long history of making computers look cool. From the 1960s to the 1990s, computers were portrayed as these magical machines that could do anything. They were often shown as being able to hack into any system, or even control the world. But in reality, computers are just machines that do what they are told. They don't have any special powers, and they can't do anything on their own.
+I like movies and a good tv/streaming series as much as the next person. One of my go-to is Sci-Fi. I love the genre and the possibilities it brings. But there is one thing that always bothers me: the computers. They are always making noise. Beeps and bops and clicks and clacks. And it's not just Sci-Fi; it's most movies and series save Mr. Robot.
 
-So why do Hollywood computers make noise?
+Why is that? Why do computers make noise in movies?
 
-## In the Beginning
+## The History of Computers in Movies
 
-In the early days of computing, computers were very noisy. The first computers were made of vacuum tubes, which were very loud and hot. They were also very large and expensive. The first computer was the ENIAC, which was built in 1946. It weighed 30 tons and took up an entire room. It cost $500,000, which is about $5 million in today's money.
+Computers have been in movies for a long time. The first movie to feature a computer was [Metropolis](https://en.wikipedia.org/wiki/Metropolis_(1927_film)) in 1927. The computer was a robot, but it was a computer nonetheless. That was 94 years ago, but computers did not become a staple in movies and tv until the 1960s. This was the time of NASA and the race to the moon and also Lost in Space and Star Trek. Think about it, those shows were about space travel and exploration the very idea behind NASA. But unlike the computers that were used in NASA (which were real), the computers in the shows were not. They were props and were made to look futuristic and to the producers, that meant making a lot of noise. Not like the noise that I real would make at the time with using punch cards, tape drives and large cooling systems.
 
-Because of this, computers were often kept in separate rooms, and the people who worked on them were called "computer operators". They would sit in front of the computer and type in commands. The computer would then do what they told it to do. This was a very slow process, and it took a long time to get anything done. That did not change when the transistor was invented in 1947. Transistors were smaller and cheaper than vacuum tubes, but they were still very noisy and hot. They were also very unreliable, and they would often break down. This meant that computers were still very expensive and unreliable.
+[comment]: <> (This is where I would like to place a caption under the image and float it to the right.)
 
-Then NASA came along and changed everything. The world saw that a computer was used for launching stellites into space. This was a huge deal, and it made computers seem like they were worth investing in. That is why the first shows and movies featured computers in space. Think of 'Lost in Space' and 'Star Trek'. These shows made it seem like computers were the future and capable of anything.
+<div class="first-nasa-computer">
+  <img clasee="nasa-computer" src="https://upload.wikimedia.org/wikipedia/commons/f/fb/IBM_7094_console2.agr.JPG" alt="The first computer used by NASA. It was used to calculate the trajectory of the Apollo 11 mission."></img>
+  <p class="caption">Used by NASA, to calculate the trajectory of the Apollo missions.</p>
+</div>
+
+This however, was not dramatic enough for the producers. They wanted something that would make the audience feel like they were in the future. So they added noise. Lots of noise. And that is where the trope of computers making noise in movies and tv shows started.
+
+Now the question is, why do computers in media still make noise? We have come a long way since the 1960s and computers are smaller and more powerful, but most of all they do not beep nor bop.
+
+[back](#top)
+
+## Always the New Thing
+
+Every since the Apple II came out computers were seen as the latest fad that was soon going to fade away. Even after more the 40 years, computers are still seen as the new thing by the majority viewers and producers and that is do to their age.
+
+![apple-ii](https://upload.wikimedia.org/wikipedia/commons/9/98/Apple_II_typical_configuration_1977.png)
+*The Apple II was the first mass produced computer. It was released in 1977.*
