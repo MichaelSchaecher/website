@@ -1,4 +1,4 @@
-baseURL: https://blackstewie.com
+baseURL: "/"
 title: BlackStewie
 theme: hugo-coder
 languageCode: en
