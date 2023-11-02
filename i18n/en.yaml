@@ -18,8 +18,8 @@ posts:
   other: Posts
 
 reading_time:
-  one: One-minute read
-  other: "{{ .Count }}-minute read"
+  one: "Reading: 1 Min"
+  other: "Reading: {{ .Count }} Min"
 
 page_not_found:
   other: Page Not Found
@@ -74,3 +74,9 @@ theme:
 
 engine:
   other: <a href=https://gohugo.io>Hugo</a>
+
+description:
+  other: Ideas about technology, software development and life.
+
+under_construction:
+  other: This page is currently under construction.

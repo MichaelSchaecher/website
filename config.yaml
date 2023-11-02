@@ -21,21 +21,21 @@ markup:
 
 params:
   author: Michael Schaecher
+  description: Ideas about technology, software development and life.
+  keywords: blog, developer, personal
+
   license: "<a rel=license href=https://mit-license.org>MIT</a>"
-
-  description: Michael Schaecher's personal website
-  keywords: blog,developer,personal
-  info: The nerdy tech stuff that I've forgotten.
-
-  faviconSVG: icons/favicon.ico
-  favicon_32: icons/favicon-32x32.png
-  favicon_16: icons/favicon-16x16.png
 
   # Set an image to be used as part of the listing of blogs and posts.
   images:
     avatarURL: images/avatar.svg
     #gravatar: john.doe@example.com
     postlistIMG: /images/posts/backdrop.png
+    underConstructionIMG: /images/under-construction.svg
+    aboutIMG: /images/about-me.png
+    faviconSVG: icons/favicon.ico
+    favicon_32: icons/favicon-32x32.png
+    favicon_16: icons/favicon-16x16.png
 
   # Use custom image for 404 page. Useful
   missingPage: images/404.svg

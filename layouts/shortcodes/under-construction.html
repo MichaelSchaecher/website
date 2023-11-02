@@ -1,0 +1,10 @@
+<!-- Using defined image if the page is currently under-construction -->
+{{ with .Site.Params.images.underConstructionIMG }}
+  <div class="underConstructionIMG">
+    <img
+      src="{{ . | relURL }}"
+      alt="Under Construction"
+      class="under-construction"
+    />
+  </div>
+{{ end }}

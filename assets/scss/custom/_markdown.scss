@@ -6,18 +6,20 @@
   align-content: center;
 }
 
-.image-construct {
+.underConstructionIMG {
+
   img {
-  display: block;
   margin: 5% auto 5% auto;
   width: auto;
-  height: 360px;
-  align-content: center
+  display: block;
+  align-content: center;
+  height: auto;
   }
 
   .construct {
     font-size: 24px;
     text-align: center;
+    color: red
   }
 }
 
