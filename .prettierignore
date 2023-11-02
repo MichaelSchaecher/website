@@ -1,0 +1,7 @@
+public/**
+resources/**
+*.yaml
+*.toml
+*.md
+_markdown.scss
+themes/**

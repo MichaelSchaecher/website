@@ -1,5 +1,5 @@
-baseURL: https://www.blackstewie.com
-title: BlackStewie.com
+baseURL: "/"
+title: BlackStewie
 theme: hugo-coder
 languageCode: en
 defaultContentLanguage: en
@@ -21,23 +21,28 @@ markup:
 
 params:
   author: Michael Schaecher
+  description: Ideas about technology, software development and life.
+  keywords: blog, developer, personal
+
   license: "<a rel=license href=https://mit-license.org>MIT</a>"
-  description: Michael Schaecher's personal website
-  keywords: blog,developer,personal
-  info: The nerdy tech tech stuff that we've all forgotten.
-  avatarURL: images/avatar.svg
-  #gravatar: john.doe@example.com
 
-  faviconSVG: icons/favicon.ico
-  favicon_32: icons/favicon-32x32.png
-  favicon_16: icons/favicon-16x16.png
+  # Set an image to be used as part of the listing of blogs and posts.
+  images:
+    avatarURL: images/avatar.svg
+    #gravatar: john.doe@example.com
+    postlistIMG: /images/posts/backdrop.png
+    underConstructionIMG: /images/under-construction.svg
+    aboutIMG: /images/about-me.png
+    faviconSVG: icons/favicon.ico
+    favicon_32: icons/favicon-32x32.png
+    favicon_16: icons/favicon-16x16.png
 
-  404page: images/404.svg
+  # Use custom image for 404 page. Useful
+  missingPage: images/404.svg
 
   dateFormat: January 2, 2006
   since: 2023
-  # Git Commit in Footer, uncomment the line below to enable it
-  #commit: https://github.com/luizdepra/hugo-coder/tree/
+
   # Right To Left, shift content direction for languagues such as Arabic
   rtl: false
   # Specify light/dark colorscheme
@@ -45,19 +50,19 @@ params:
   # auto (use preference set by browser)
   # dark (dark background, light foreground)
   # light (light background, dark foreground) (default)
-  colorScheme: auto
+  colorScheme: dark
   # Hide the toggle button, along with the associated vertical divider
-  hideColorSchemeToggle: false
+  hideColorSchemeToggle: true
   # Series see also post count
   maxSeeAlsoItems: 5
   # Custom CSS, file path is relative to Hugo's asset folder (default: {your project root}/assets)
   customSCSS:
 
   # Custom JS
-  customJS: []
+  customJS:
 
   # Custom remote JS files
-  customRemoteJS: []
+  customRemoteJS:
 
   # If you want to use fathom(https://usefathom.com) for analytics, add this section
   #fathomAnalytics:
@@ -65,7 +70,7 @@ params:
   #  serverURL: analytics.example.com # Default value is cdn.usefathom.com, overwrite this if you are self-hosting
 
   # If you want to use plausible(https://plausible.io) for analytics, add this section
-  #plausibleAnalytics
+  #plausibleAnalytics:
   #  domain: example.com
   #  serverURL: analytics.example.com # Default value is plausible.io, overwrite this if you are self-hosting or using a custom domain
   #  outboundLinksTracking: true
@@ -170,6 +175,3 @@ menu:
     - name: About
       weight: 3
       url: /about/
-    - name: Documentations
-      weight: 4
-      url: /document/

@@ -1,0 +1,22 @@
+<footer class="footer">
+  <section class="container">
+    {{ print "Copyright " }}
+    <i class="fa fa-copyright" aria-hidden="true"> </i>
+    {{ if (and .Site.Params.since (lt .Site.Params.since now.Year)) }}
+      {{ .Site.Params.since }} -
+    {{ end }}
+    {{ now.Year }}
+    by
+    {{ with .Site.Params.author }}{{ . }}{{ end }}
+    ·
+    {{ if (and .Site.Params.license) }}
+      {{ i18n "licensed_under" }}
+      {{ .Site.Params.license | safeHTML }}
+      ·
+    {{ end }}
+    {{ i18n "powered_by" }}
+    {{ i18n "engine" .Site.BaseURL | safeHTML }}
+    {{ print " + " }}
+    {{ i18n "theme" .Site.BaseURL | safeHTML }}
+  </section>
+</footer>

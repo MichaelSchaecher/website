@@ -1,0 +1,38 @@
+<section class="container list">
+  <header>
+    <h1 class="title">
+      -
+      <a class="title-link" href="{{ .Permalink | safeURL }}">
+        {{- if eq .Kind "term" -}}
+          {{- i18n .Data.Plural 1 | title -}}
+          {{ print " -" }}
+          <br />
+        {{- end -}}
+        <h2>{{- i18n (lower .Title) | default .Title | title -}}</h2>
+      </a>
+    </h1>
+    {{ with .Site.Params.images.postlistIMG }}
+      <div class="image-full">
+        <img src="{{ . | relURL }}" alt="Blogging" class="postlistIMG" />
+      </div>
+    {{ end }}
+  </header>
+  {{ .Content }}
+
+
+  <ul>
+    {{ range .Paginator.Pages }}
+      <li>
+        <span class="date"
+          >{{ .Date | time.Format (.Site.Params.dateFormat | default "January 2, 2006" ) }}</span
+        >
+        <a
+          class="title"
+          href="{{ .Params.externalLink | default .RelPermalink }}"
+          >{{ .Title }}</a
+        >
+      </li>
+    {{ end }}
+  </ul>
+  {{ partial "pagination.html" . }}
+</section>

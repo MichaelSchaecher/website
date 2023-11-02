@@ -1,5 +1,5 @@
 ---
-title: About
+title: "About Me"
 date: 2023-09-30T13:36:31-06:00
 description: ""
 slug: ""
@@ -8,21 +8,33 @@ tags: []
 categories: []
 externalLink: ""
 series: []
-aliases: [info]
-draft: true
+aliases:
+  - info
+  - about
+  - about-me
+  - need-to-know
+draft: false
 ---
 
-As a passionate hobbyist, I immerse myself in the intricate world of home networking and Linux-based systems. By day, I pursue a different professional path, but my true expertise lies in the realm of network and systems administration. I firmly believe that in an increasingly connected world, every home should be equipped with a robust network infrastructure tailored for the future. I excel at configuring routers, implementing firewalls, and optimizing network protocols to create seamless and secure connections within the home environment.
+{{< about >}}
 
-Additionally, with knowledge on integrating custom domains via [Cloudflare](https://cloudflare.com) and [Namecheap](https://www.namecheap.com), ensuring a personalized online experience tailored for home use.
+My name is Michael Schaecher and I am a want-to-be software developer and have ben for a little over 10-years. I mostly work as a hobbyist, but I have done some professional security services in the early 2010's; but that was not fun so now I just do it for fun.
 
-My unique blend of Linux networking, domain management with cloud-based solutions, allows me to craft robust and reliable network setups for the average everyday home.
+## My Interests
 
-- Virtual Server home intergation.
-- Home content DNS filtering.
-- Basic automation by keeping things simple and out-of-the-way.
+Like most people I have a lot of interests, like watching movies, playing video games, reading a good book (everyone needs to read books from Cassandra Clare, she's amazing) and of course programming. At times I have been know to draw, but it has been a while since I have done that.
 
-## CONTACT INFO
+Went it comes to not wasting time I try to learn something new, but mostly just procrastinate until I get to bored or I go for a walk.
 
-- [E-Mail](https://mschaecher78@gmail.com)
-- [Github](https://github.com/MichaelSchaecher/)
+## What I Have Done
+
+My work on personal projects has been a bit of a roller coaster and started after I rooted my first Android phone damn near broke it.
+Leaving with the only option at the time was to pay someone to fix. After that I decided to learn how to do it myself and that is where it all started.
+
+> this was me [10 years ago](https://github.com/Earthnfire78) working on my first project of the ROM for the phone I almost broke.
+
+## What I Am Doing
+
+Currently I am working on a tech blogging [site](blackstewie.com) were I plan to post about things that I have learned over the years. Plus some ranting about how we are doomed if people dumb about technology keep making decisions about it. So if you reading this, then you found me 😄.
+
+> Why BlackStewie? Well I am a fan of Family Guy and I like the character Stewie and for some reason the people I work with think that my name is Stewie. So I just went with it. Plus Stewie is kind of dark and I like dark things.

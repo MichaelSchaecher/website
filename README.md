@@ -5,7 +5,7 @@
 
 ## About
 
-This is a simple personal website made with [Hugo](https://gohugo.io/) and [hugo-coder](https://github.com/luizdepra/hugo-coder) theme. Hosted on [Cloudflare Pages](https://pages.cloudflare.com/).
+This is a simple pesonal website made with [Hugo](https://gohugo.io/) and [hugo-coder](https://github.com/luizdepra/hugo-coder) theme. Hosted on [Cloudflare Pages](https://pages.cloudflare.com/).
 
 As I have discovered that as I get older I tend to forget things, I decided to create this website to keep track of my projects and ideas. I also use it to write about things I have learned and to share my thoughts. I hope you find something useful here.
 
@@ -77,7 +77,11 @@ The following steps are for formatting.
 
 Close the settings windows, don't worry about saving it, VS Code will do it for you.
 
+<<<<<<< HEAD
 click on the Terminal menu and select New Terminal. This will open a new terminal window. You can also use the keyboard shortcut `Ctrl + Shift +`.
+=======
+click on the Terminal menu and select New Terminal. This will open a new terminal window. You can also use the keyboard shortcut `Ctrl + Shift + `.
+>>>>>>> dev
 
 With the terminal window open, type the following command to install git first
 
@@ -92,7 +96,11 @@ Then install snap, although it should be installed by default.
 sudo apt install --yes snapd
 ```
 
+<<<<<<< HEAD
 Then install Hugo. Thankfully Hugo extended is the default version.
+=======
+Then install Hugo. Thankfuly Hugo extended is the default version.
+>>>>>>> dev
 
 ```bash
 sudo snap install hugo
