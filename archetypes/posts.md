@@ -4,7 +4,7 @@ date: {{ .Date }}
 description: ""
 slug: ""
 authors:
-  - John Doe
+  - Michael Schaecher
 tags:
   - new
 categories:
@@ -12,4 +12,5 @@ categories:
 externalLink: ""
 series:
 draft: true
+weight: 20
 ---
