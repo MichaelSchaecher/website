@@ -16,11 +16,13 @@ draft: false
 weight: 20
 ---
 
-Though Ubuntu has some haters it is one of the bast distributions for desktop users wanting or need to switch to Linux from Windows or Mac. It is easy to install and has a lot of software available. But there is one thing that is not so good: The default Btrfs subvolume layout. It is not bad but it is not optimal. In this post I will show you how to fix it.
+## Introduction
 
-To be fare Ubuntu is not wrong about btrfs when it comes to speed: It is fast, but not the best for media files that are compressed already. That however comes down changing the compression option to lzo or ztsd:3, which is not the default.
+Though Ubuntu has some haters it is one of the bast distributions for desktop users wanting or need to switch to Linux from Windows or Mac. It is easy to install and has a lot of software available. But there is one thing that is not so good: The default Btrfs subvolume layout. It is not bad but it is not optimal. In this post I will show you how to fix that
 
-Though the steps are for Ubuntu and the Ubiquity installer, the steps can be used for any distribution that is Ubuntu based even if it is not using Ubiquity.
+To be fare Ubuntu is not wrong about btrfs when it comes to speed: It is fast, but not the best for media files that are compressed already. That however comes down changing the compression option to lzo or ztsd:3, which is not the default for most distributions that use btrfs.
+
+Though the step is for Ubuntu and the Ubiquity installer, the steps can be used for any distribution that is Ubuntu based even if it is not using Ubiquity as the default installer.
 
 ## Installing Ubuntu
 
@@ -98,24 +100,24 @@ There are different ways to fix the subvolume layout; the best way is to figure 
 
 ### Ubuntu's Default Layout
 
-| Subvolume | Rooot Path | Description | Use |
-| :--- | :---: | :--- | :--- |
-| @ | / | The root of the filesystem | Yes |
-| @home | /home | The home directory | Yes |
+> | Subvolume | Rooot Path | Description | Use |
+> | :--- | :---: | :--- | :--- |
+> | @ | / | The root of the filesystem | Yes |
+> | @home | /home | The home directory | Yes |
 
 Please note that the above configuration is required for [Timeshift](https://github.com/linuxmint/timeshift) to work, any other configuration well well not function.
 
 ### My Layout
 
-| Subvolume | Rooot Path | Description | Use |
-| :--- | :---: | :--- | :--- |
-| @ | / | The root of the filesystem | Yes |
-| @home | /home | The home directory | Yes |
-| @snapshots | /.snapshots | The snapshots directory | Yes |
-| @log | /var/log | The log directory | Yes |
-| @tmp | /tmp | The temporary directory | Yes |
-| @apt | /var/cache/apt | The apt cache directory | Yes |\
-| @src | /usr/local/src | The source directory for admin user | Yes |
+> | Subvolume | Rooot Path | Description | Use |
+> | :--- | :---: | :--- | :--- |
+> | @ | / | The root of the filesystem | Yes |
+> | @home | /home | The home directory | Yes |
+> | @snapshots | /.snapshots | The snapshots directory | Yes |
+> | @log | /var/log | The log directory | Yes |
+> | @tmp | /tmp | The temporary directory | Yes |
+> | @apt | /var/cache/apt | The apt cache directory | Yes |\
+> | @src | /usr/local/src | The source directory for admin user | Yes |
 
 The above layout is better with running manually or with sapper, however it is better to just run manually with an dpkg/apt hook and btrfs-grub. There may be a post on that in the future, but for now I am going to leave it at that.
 
