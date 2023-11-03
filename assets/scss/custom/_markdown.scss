@@ -27,7 +27,7 @@
 // Both the image and caption are in a div with the class "first-nasa-computer".
 // Text wrapping around the image is top and bottom.
 
-.first-nasa-computer {
+.float-right {
   display: inline-block;
   margin-top: 1%;
 
@@ -45,3 +45,26 @@
     font-size: 12px;
   }
 }
+
+// Move the image to the left and place the caption below it and aligned with the left
+// side of the image. Both the image and caption are in a div with the class "float-left".
+
+.float-left {
+  display: inline-block;
+  margin-top: 1%;
+
+  img {
+    float: left;
+    margin: 0 90% 0 0;
+    width: 50%;
+    height: 50%;
+    align-content: center;
+  }
+
+  .caption {
+    margin: 12px 4%;
+    text-align: left;
+    font-size: 12px;
+  }
+}
+

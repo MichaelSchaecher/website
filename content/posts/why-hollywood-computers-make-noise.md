@@ -32,8 +32,8 @@ Computers have been in movies for a long time. The first movie to feature a comp
 
 [comment]: <> (This is where I would like to place a caption under the image and float it to the right.)
 
-<div class="first-nasa-computer">
-  <img clasee="nasa-computer" src="https://upload.wikimedia.org/wikipedia/commons/f/fb/IBM_7094_console2.agr.JPG" alt="The first computer used by NASA. It was used to calculate the trajectory of the Apollo 11 mission."></img>
+<div class="float-right">
+  <img class="nasa-computer" src="https://upload.wikimedia.org/wikipedia/commons/f/fb/IBM_7094_console2.agr.JPG" alt="The first computer used by NASA. It was used to calculate the trajectory of the Apollo 11 mission."></img>
   <p class="caption">Used by NASA, to calculate the trajectory of the Apollo missions.</p>
 </div>
 
