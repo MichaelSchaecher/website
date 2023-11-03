@@ -3,8 +3,7 @@ title: Fix Ubuntu's BTRFS Subvolume Layout
 date: 2023-11-03T11:50:36Z
 description: ""
 slug: ""
-authors:
-  - Michael Schaecher
+authors: ["Michael Schaecher"]
 tags:
   - btrfs
   - Installer
