@@ -1,7 +1,11 @@
-<p align=center><font size=24px>
-    <a href="https://blackstewie.com">Website</a>
-</font></p>
-<p align=center><font size=10px>It is still a work in progress.</font></p>
+<div>
+  <p align="center"><font size="9">
+    <a href="https://blackstewie.com">BackStewie</a>
+  </font></p>
+  <p align="center"><font size="5">
+    A place for my projects, ideas, thoughts and complaints.
+  </font></p>
+</div>
 
 ## About
 
