@@ -105,15 +105,15 @@ There are different ways to fix the subvolume layout; the best way is to figure 
 
 ### My Layout
 
-| Subvolume | Rooot Path | Description |
+| Subvolume | Mount Point | Benefits |
 | :--- | :--- | :--- |
-| @ | / | The root of the filesystem |
-| @home | /home | The home directory |
-| @snapshots | /.snapshots | The snapshots directory |
-| @log | /var/log | The log directory |
-| @tmp | /tmp | The temporary directory |
-| @apt | /var/cache/apt | The apt cache directory |
-| @src | /usr/local/src | The source directory for admin user |
+| @ | / | Keeps the root directory clean |
+| @home | /home | Sandboxing user data |
+| @snapshots | /.snapshots | Easy to restore from a snapshot |
+| @log | /var/log | Keeps snapshots from storing log files |
+| @tmp | /tmp | Keeps snapshots from storing temporary files |
+| @apt | /var/cache/apt | Keeps snapshots from storing apt cache files |
+| @src | /usr/local/src | Keeps snapshots from storing source code |
 
 The above layout is better rather running manually or with sapper, however it is better to just run with an dpkg/apt hook that deletes the oldest snapshot when a new one is created and btrfs-grub so that you can boot into the snapshots if something should go wrong
 

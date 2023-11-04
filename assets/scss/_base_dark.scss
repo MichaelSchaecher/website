@@ -49,14 +49,14 @@
 
   th,
   td {
-    padding: 1.6rem;
+    padding: 0 0.5em 0 0.5em;
   }
 
   table {
     border-collapse: collapse;
     border: 2px solid $alt-fg-color-dark;
     width: 90%;
-    font-size: medium;
+    font-size: auto;
     margin: 0 5% 0 5%;
   }
 
