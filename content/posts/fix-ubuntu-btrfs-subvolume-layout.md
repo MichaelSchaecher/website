@@ -292,7 +292,7 @@ If your system had more then 16 GB of RAM and you followed the steps about not s
 
 Some people may tell that if you have a lot of RAM then you do not need a swap. This is not true, you should always have a swap or ZRAM partition. The reason for this is some application may require a swap partition to run. If you do not have one then the application well not run or function correctly.
 
-You see this on Windows PC with .Net applications and the requirement of a page file even if the system is runing as much RAM as I have in my system.
+You see this on Windows PC with .Net applications and the requirement of a page file even if the system is running as much RAM as I have in my system.
 
 To set it up you well need to run the following commands:
 
@@ -316,7 +316,7 @@ sudo sed -i 's/#ALGO=lz4/ALGO=lzo/g' /etc/default/zramswap.conf
 sudo sed -i 's/#PRIORITY=100/PRIORITY=100/g' /etc/default/zramswap.conf
 ```
 
-Restart the ZRAM service `sudo systemctl restart zramswap.service` and varify that the new swap partition is there and that size is correct by running `free -h`.
+Restart the ZRAM service `sudo systemctl restart zramswap.service` and verify that the new swap partition is there and that size is correct by running `free -h`.
 
 ## Conclusion
 
