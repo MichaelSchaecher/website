@@ -121,7 +121,7 @@ The layout for Ubuntu based distributions should look like the following:
 
 ### Changing the Layout
 
-This is easy, but there are some steps involved. First you well need to run the `umount -a` command to unmount all the subvolumes and the binded directories. You may get a warning about some mounted directories being busy, this normal.
+This is easy, but there are some steps involved. First you well need to run the `umount -a` command to unmount all the subvolumes and the bond directories. You may get a warning about some mounted directories being busy, this normal.
 
 Mount the root subvolume without mounting the other subvolume and without options. This is so that you can change the subvolume layout without any issues. Make sure to replace `<device>` with the device that the root subvolume is on: `/dev/sd*<partition number> or /dev/nvme<pci-e>n<device>p<partition number>`.
 
@@ -272,7 +272,7 @@ Unmount `umount /mnt` and reboot the system. Remember to remove the live USB or 
 
 [back](#fixing-the-subvolume-layout)
 
-## Verifying the sudvolume layout
+## Verifying the subvolume layout
 
 Once the system boots into the may want to verify that the subvolume layout is correct. To do this you well need to open the terminal and run the following command:
 
