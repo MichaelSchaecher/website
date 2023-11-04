@@ -105,17 +105,19 @@ There are different ways to fix the subvolume layout; the best way is to figure 
 
 ### My Layout
 
-| Subvolume | Rooot Path | Description | Use |
-| :--- | :--- | :--- | :---: |
-| @ | / | The root of the filesystem | Yes |
-| @home | /home | The home directory | Yes |
-| @snapshots | /.snapshots | The snapshots directory | Yes |
-| @log | /var/log | The log directory | Yes |
-| @tmp | /tmp | The temporary directory | Yes |
-| @apt | /var/cache/apt | The apt cache directory | Yes |\
-| @src | /usr/local/src | The source directory for admin user | Yes |
+Because Ubuntu does not have a good subvolume layout, some directories and files that change after a reboot are stored in the root subvolume. Then there is the waste of space from storing snapshots with cache and log files.
 
-The above layout is better rather running manually or with sapper, however it is better to just run with an dpkg/apt hook that deletes the oldest snapshot when a new one is created and btrfs-grub so that you can boot into the snapshots if something should go wrong
+The layout for Ubuntu based distributions should look like the following:
+
+| Subvolume | Mount Point | Benefits |
+| :--- | :--- | :--- |
+| @ | / | Goes without saying |
+| @home | /home | User data |
+| @snapshots | /.snapshots | Keeps snapshots hidden |
+| @log | /var/log | System log data |
+| @tmp | /tmp | No need to keep |
+| @apt | /var/cache/apt | No snapshots with @ |
+| @src | /usr/local/src | Keeps code safe |
 
 ### Changing the Layout
 
