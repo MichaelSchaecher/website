@@ -3,7 +3,8 @@ title: Fix Ubuntu's BTRFS Subvolume Layout
 date: 2023-11-03T11:50:36Z
 description: ""
 slug: ""
-authors: ["Michael Schaecher"]
+authors:
+  - Michael Schaecher
 tags:
   - btrfs
   - Installer
@@ -18,11 +19,15 @@ weight: 20
 
 ## Introduction
 
-Though Ubuntu has some haters it is one of the bast distributions for desktop users wanting or need to switch to Linux from Windows or Mac. It is easy to install and has a lot of software available. But there is one thing that is not so good: The default Btrfs subvolume layout. It is not bad but it is not optimal. In this post I will show you how to fix that
+BTRFS is a filesystem that shares some of the same features as ZFS and one of the is very useful for both standard desktop and enterprise servers. It is a copy-on-write filesystem that allows for snapshots and subvolumes. It is also a journaling filesystem that allows for data integrity and recovery. Because of this Linux distributions like Fedora and OpenSUSE use it as the default filesystem over ext4.
 
-To be fare Ubuntu is not wrong about btrfs when it comes to speed: It is fast, but not the best for media files that are compressed already. That however comes down changing the compression option to lzo or ztsd:3, which is not the default for most distributions that use btrfs.
+The downside to BTRFS is the RAM requirements for the filesystem.
 
-Though the step is for Ubuntu and the Ubiquity installer, the steps can be used for any distribution that is Ubuntu based even if it is not using Ubiquity as the default installer.
+It is recommended that you have at least 1GB of RAM for every 1TB of storage. This is not a hard requirement but it is recommended. If you do not have enough RAM then you may run into issues with the filesystem; such as a slow, unresponsive system when running snapshots or a system that is slow to respond to commands.
+
+Because of this it has lead to [Canonical](https://canonical.com/) to not use BTRFS as the default filesystem for Ubuntu and instead use ext4. However, they do offer BTRFS as an option for the filesystem with a poor subvolume layout. Only the root and home subvolumes are created. It is not bad but it is not optimal.
+
+In this post I will show you how to fix that. I will also show you how to set up a either a swap partition or ZRAM for swap if you have more then 16 GB of RAM.
 
 ## Installing Ubuntu
 
@@ -66,23 +71,23 @@ With the drive selected you well want to click on the **New Partition Table** bu
 
 ### Partition Layout
 
-Boot Partition:
-1. Set the size to 512 MiB
-2. Set the type to **EFI System Partition**
-3. Save the partition
+- Boot Partition:
+  1. Set the size to 512 MiB
+  2. Set the type to **EFI System Partition**
+  3. Save the partition
 
-Root Partition if RAM is greater then 16GB:
-1. Set the size to to the rest of the drive.
-2. Set the type to **Btrfs**
-3. Set the mount point to **/**
-4. Save the partition
+- Swap Partition if RAM is less then 16GB:
+  1. Set the size to 16384 MiB (16GB)
+  2. Set the type to **swap**
+  3. Save the partition
 
-For systems with less then 16GB of RAM:
-1. Set the size to 16384 MiB (16GB)
-2. Set the type to **swap**
-3. Save the partition
+- No swap partition if RAM is greater then 16GB, instead use ZRAM for swap.
 
-Follow the same steps as above for the root partition.
+- Root Partition if RAM is less then 16GB:
+  1. Set the size to to the rest of the drive.
+  2. Set the type to **Btrfs**
+  3. Set the mount point to **/**
+  4. Save the partition
 
 ### Finishing the Installation
 
@@ -98,28 +103,19 @@ There are different ways to fix the subvolume layout; the best way is to figure 
 
 <!-- A table for root directory layout with a star making the ones for best -->
 
-### Ubuntu's Default Layout
-
-> | Subvolume | Rooot Path | Description | Use |
-> | :--- | :---: | :--- | :--- |
-> | @ | / | The root of the filesystem | Yes |
-> | @home | /home | The home directory | Yes |
-
-Please note that the above configuration is required for [Timeshift](https://github.com/linuxmint/timeshift) to work, any other configuration well well not function.
-
 ### My Layout
 
-> | Subvolume | Rooot Path | Description | Use |
-> | :--- | :---: | :--- | :--- |
-> | @ | / | The root of the filesystem | Yes |
-> | @home | /home | The home directory | Yes |
-> | @snapshots | /.snapshots | The snapshots directory | Yes |
-> | @log | /var/log | The log directory | Yes |
-> | @tmp | /tmp | The temporary directory | Yes |
-> | @apt | /var/cache/apt | The apt cache directory | Yes |\
-> | @src | /usr/local/src | The source directory for admin user | Yes |
+| Subvolume | Rooot Path | Description | Use |
+| :--- | :--- | :--- | :---: |
+| @ | / | The root of the filesystem | Yes |
+| @home | /home | The home directory | Yes |
+| @snapshots | /.snapshots | The snapshots directory | Yes |
+| @log | /var/log | The log directory | Yes |
+| @tmp | /tmp | The temporary directory | Yes |
+| @apt | /var/cache/apt | The apt cache directory | Yes |\
+| @src | /usr/local/src | The source directory for admin user | Yes |
 
-The above layout is better with running manually or with sapper, however it is better to just run manually with an dpkg/apt hook and btrfs-grub. There may be a post on that in the future, but for now I am going to leave it at that.
+The above layout is better rather running manually or with sapper, however it is better to just run with an dpkg/apt hook that deletes the oldest snapshot when a new one is created and btrfs-grub so that you can boot into the snapshots if something should go wrong
 
 ### Changing the Layout
 
