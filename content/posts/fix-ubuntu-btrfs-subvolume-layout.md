@@ -7,12 +7,13 @@ authors:
   - Michael Schaecher
 tags:
   - btrfs
-  - Installer
+  - subvolume
 categories:
   - Filesystem
   - Ubuntu
 externalLink: ""
 series:
+  - Ubuntu N Btrfs
 draft: false
 weight: 20
 ---
