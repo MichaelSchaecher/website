@@ -35,6 +35,6 @@ Leaving with the only option at the time was to pay someone to fix. After that I
 
 ## What I Am Doing
 
-Currently I am working on a tech blogging [site](blackstewie.com) were I plan to post about things that I have learned over the years. Plus some ranting about how we are doomed if people dumb about technology keep making decisions about it. So if you reading this, then you found me 😄.
+Currently I am working on a tech blogging [site](https://blackstewie.com) were I plan to post about things that I have learned over the years. Plus some ranting about how we are doomed if people dumb about technology keep making decisions about it. So if you reading this, then you found me 😄.
 
 > Why BlackStewie? Well I am a fan of Family Guy and I like the character Stewie and for some reason the people I work with think that my name is Stewie. So I just went with it. Plus Stewie is kind of dark and I like dark things.
