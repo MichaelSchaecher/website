@@ -109,22 +109,6 @@ Because Ubuntu does not have a good subvolume layout, some directories and files
 
 The layout for Ubuntu based distributions should look like the following:
 
-<!-- An ordered out line for how I layout subvolumes and why I do it this way. -->
-> - Root of the installed system.
->   - Mount point: / (root) to @
-> - Home folder where user data is stored.
->   - Mount point: /home to @home
-> - Snapshots directory where snapshots are stored.
->   - Mount point: /.snapshots to @snapshots
-> - System logs, this should be a separate subvolume to keep logs from being overwritten.
->   - Mount point: /var/log to @log
-> - The temp is, well, temp and should not be kept.
->   - Mount point: /tmp to @tmp
-> - Apt cache needs to not be kept and wasting space.
->   - Mount point: /var/cache/apt to @apt
-> - Source code for from system applications that cannot be overwritten.
->   - Mount point: /usr/local/src to @src
-
 | Subvolume | Mount Point | Benefits |
 | :--- | :--- | :--- |
 | @ | / | Goes without saying |
