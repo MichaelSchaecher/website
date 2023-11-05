@@ -5,5 +5,5 @@ draft: false
 featuredImage: /images/posts/backdrop.png
 ---
 
-<!-- Call shortcode taxonomy -->
-{{< taxonomy >}}
+<!-- Use shortcode postlistIMG -->
+{{< postlistIMG >}}

@@ -1,11 +1,11 @@
-<div class="tags">
+<div class="series">
     <i class="fa fa-list" aria-hidden="true"></i>
     {{- range $index, $el := . -}}
       {{- if gt $index 0 }}
         <span class="separator">•</span>
       {{- end }}
       <span class="tag">
-        <a class="tag-link" href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
+        <a class="series-link" href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
       </span>
     {{- end -}}
   </div>

@@ -15,7 +15,7 @@ categories:
 externalLink: ""
 series:
   - Ubuntu N Btrfs
-draft: true
+draft: false
 weight: 20
 ---
 
@@ -29,12 +29,7 @@ If you are using Ubuntu 20.04 or newer and did a guided btrfs install please rea
 
 ## Prerequisites
 
-You well need a current or supported version of Debian or Ubuntu (based distro) with btrfs-progs that support space_cache=v2 and compress=zstd:3/lzo. You can check if your system supports these features by running the following command:
-
-```bash
-btrfs --version
-```
-If the output is 5.4 or newer, you are good to go. If not, you will need to upgrade your system or install a newer version of btrfs-progs from source.
+You well need a current or supported version of Debian or Ubuntu (based distro) with btrfs-progs that support space_cache=v2 and compress=zstd:3/lzo. You can check if your system supports these features by running the following command: `btrfs --version`. If the output is 5.4 or newer, you are good to go. If not, you will need to upgrade your system or install a newer version of btrfs-progs from source.
 
 As of this writting Ubuntu 22.04 uses btrfs v5.16.2.
 
@@ -71,5 +66,3 @@ sudo btrfs subvolume snapshot -r /@ /@/.snapshots/$(date +%Y-%m-%d_%H:%M:%S)_roo
 ```
 
 And run `sudo update-grub` to add the snapshot to the grub menu. If you are using a different subvolume layout, you will need to adjust the command accordingly. Remove the `-r` flag if you do not want the snapshot to be read-only, allowing you to make changes to it if needed, but this is not recommended.
-
-

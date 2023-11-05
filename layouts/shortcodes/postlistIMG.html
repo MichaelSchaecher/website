@@ -1,0 +1,6 @@
+<!-- Shortcode for Site.Params.images.postlistIMG in config.yaml for website -->
+{{ with .Site.Params.images.postlistIMG }}
+  <div class="image-full">
+    <img src="{{ . | relURL }}" alt="Blogging" class="postlistIMG" />
+  </div>
+{{ end }}

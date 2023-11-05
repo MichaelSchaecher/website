@@ -4,5 +4,5 @@ date: 2023-10-07T14:20:35Z
 draft: false
 ---
 
-<!-- Call shortcode taxonomy -->
-{{< taxonomy >}}
+<!-- Call shortcode postlistIMG -->
+{{< postlistIMG >}}

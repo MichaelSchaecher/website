@@ -1,10 +1,6 @@
 <!-- This is the shortcode for displaying the image used for the page header -->
 {{ with .Site.Params.images.aboutIMG }}
   <div class="aboutIMG">
-    <img
-      src="{{ . | relURL }}"
-      alt="About"
-      class="about"
-    />
+    <img src="{{ . | relURL }}" alt="About" class="aboutIMG" />
   </div>
 {{ end }}
