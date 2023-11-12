@@ -128,7 +128,7 @@ Mount the root subvolume without mounting the other subvolume and without option
 
 > NVME drives are labeled commonly as nvme0n1 or nvme1n1. The number after "p" is the partition number. If you have a drive that is not NVME then it is most likely labeled as sda or sdb. The number is the partition number.
 
-```bash
+```sh
 mount -o /dev/<device> /mnt
 ```
 

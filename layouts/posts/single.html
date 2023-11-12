@@ -37,7 +37,6 @@
           </div>
         </div>
       </header>
-      {{ with .GetTerms "series" }}{{ partial "taxonomy/series.html" . }}{{ end }}
       {{ .TableOfContents }}
       <div class="post-content">
         {{ .Content }}
@@ -61,7 +60,7 @@
         {{ end }}
       </div>
       <footer>
-        {{ partial "posts/series.html" . }}
+        {{ partial "taxonomy/series.html" . }}
         {{ partial "posts/disqus.html" . }}
         {{ partial "posts/commento.html" . }}
         {{ partial "posts/utterances.html" . }}
