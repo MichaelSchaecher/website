@@ -15,7 +15,7 @@ categories:
 externalLink: ""
 series:
   - Ubuntu N Btrfs
-draft: false
+draft: true
 weight: 20
 ---
 
