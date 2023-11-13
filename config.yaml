@@ -26,6 +26,23 @@ params:
 
   license: "<a rel=license href=https://mit-license.org>MIT</a>"
 
+  # Set the variables for enabling giscus comments
+  giscus:
+    repo: MichaelSchaecher/website
+    repo_id: R_kgDOKa5WjQ
+    category: General
+    categoryID: DIC_kwDOKa5Wjc4Ca5ud
+    mapping: pathname
+    strict: 0
+    reactionsEnabled: 1
+    emitMetadata: 0
+    inputPosition: top
+    theme: purple_dark
+    lang: en
+    #crossorigin="anonymous"
+
+    # Set the variables for enabling utterances comments
+
   # Set an image to be used as part of the listing of blogs and posts.
   images:
     avatarURL: images/avatar.svg
