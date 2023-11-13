@@ -32,7 +32,7 @@ params:
     repo_id: R_kgDOKa5WjQ
     category: General
     categoryID: DIC_kwDOKa5Wjc4Ca5ud
-    mapping: pathname
+    mapping: url
     strict: 0
     reactionsEnabled: 1
     emitMetadata: 0
