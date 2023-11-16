@@ -1,5 +1,5 @@
 ---
-title: Fix Ubuntu's BTRFS Subvolume Layout
+title: Install Ubuntu with BTRFS
 date: 2023-11-03T11:50:36Z
 description: ""
 slug: ""
