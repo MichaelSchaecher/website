@@ -40,15 +40,14 @@
   }
 
   .caption {
-    margin: 12px 4%;
+    margin-right: 0;
     text-align: right;
-    font-size: rem(12);
+    font-size: 1rem;
   }
 }
 
 // Move the image to the left and place the caption below it and aligned with the left
 // side of the image. Both the image and caption are in a div with the class "float-left".
-
 .float-left {
   display: inline-block;
   margin-top: 1%;
@@ -62,9 +61,9 @@
   }
 
   .caption {
-    margin: 12px 4%;
+    margin-right: 0;
     text-align: left;
-    font-size: 12px;
+    font-size: 1rem;
   }
 }
 
