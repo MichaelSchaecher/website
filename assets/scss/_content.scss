@@ -21,6 +21,12 @@
   }
 
   article {
+
+    // Set article inside a box
+    background-color: $bg-color-dark;
+    border-radius: 0.6rem;
+    padding: 0 2rem 2rem 2rem;
+
     a:where(.external-link)::after {
       @include fa-icon;
       content: fa-content($fa-var-external-link);
@@ -37,11 +43,17 @@
     footer {
       margin-top: 4rem;
 
+      .disqus {
+        // Center Disqus not available message
+        text-align: center;
+
+      }
+
       .see-also {
         margin: 3.2rem 0;
 
         h3 {
-          margin: 3.2rem 0;
+          margin: -0.5rem;
         }
       }
     }
@@ -54,6 +66,7 @@
   }
 
   .post {
+
     .post-title {
       margin-bottom: 2em;
       text-align: center;
