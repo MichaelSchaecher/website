@@ -112,13 +112,13 @@
 }
 
 .avatar img {
-  padding-top: 10%;
-  width: 75%;
+  //padding-top: 5%;
+  width: 48rem;
   height: auto;
   //border-radius: 25%;
 
   @media only screen and (max-width: 768px) {
-    width: 10rem;
+    width: 100rem;
   }
 }
 
@@ -205,25 +205,31 @@
 
   .about {
     text-align: center;
+    width: 100%;
 
     h1 {
       margin-top: 2rem;
       margin-bottom: 0.5rem;
     }
 
-    h2 {
-      margin-top: 1rem;
-      margin-bottom: 0.5rem;
-      font-size: 2.4rem;
+    .description {
+      background-color: $bg-color-dark;
+      border-radius: 0.6rem;
 
-      @media only screen and (max-width: 768px) {
-        font-size: 2rem;
+      h2 {
+        margin-top: 6rem;
+        margin-bottom: 0;
+        font-size: 2.4rem;
+
+        @media only screen and (max-width: 768px) {
+            font-size: 2rem;
+        }
       }
     }
 
     ul {
       list-style: none;
-      margin: 3rem 0 1rem 0;
+      margin: 1rem 0 1rem 0;
       padding: 0;
 
       li {

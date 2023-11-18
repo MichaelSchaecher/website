@@ -1,8 +1,12 @@
 .navigation {
+
   position: fixed;
-  height: 6rem;
+  height: 4rem;
+  max-width: 90rem;
   width: 100%;
-  background-color: #212122;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  background-color: $bg-color-dark;
 
   a,
   span {
