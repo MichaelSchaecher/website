@@ -194,6 +194,13 @@ table {
   border: 2px solid $alt-fg-color;
   width: 100%;
   font-size: medium;
+
+  // Keep the table from overflowing the container on small screens
+  @media only screen and (max-width: 768px) {
+    display: block;
+    overflow-x: auto;
+  }
+
 }
 
 table td,
