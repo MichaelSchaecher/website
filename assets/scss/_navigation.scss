@@ -69,7 +69,8 @@
       a,
       span {
         margin-left: 1rem;
-        margin-right: 1rem;
+        // There is no need to add a margin to the right.
+        //margin-right: 1rem;
       }
     }
 
