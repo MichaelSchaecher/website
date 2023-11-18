@@ -6,8 +6,3 @@ draft: false
 
 <!-- Use shortcode postlistIMG -->
 {{< postlistIMG >}}
-
-{{< center >}}
-<!-- Link to post according to year -->
-  <a href="/posts/2023">2023</a>
-{{< /center >}}
