@@ -1,5 +1,5 @@
-<footer class="footer">
-  <section class="container">
+<section class="container">
+  <footer class="footer">
     {{ print "Copyright " }}
     <i class="fa fa-copyright" aria-hidden="true"> </i>
     {{ if (and .Site.Params.since (lt .Site.Params.since now.Year)) }}
@@ -18,5 +18,5 @@
     {{ i18n "engine" .Site.BaseURL | safeHTML }}
     {{ print " + " }}
     {{ i18n "theme" .Site.BaseURL | safeHTML }}
-  </section>
-</footer>
+  </footer>
+</section>

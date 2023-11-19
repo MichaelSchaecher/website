@@ -1,6 +1,6 @@
 .content {
   flex: 1;
-  margin-top: 6rem;
+  margin-top: 1rem;
   display: flex;
   margin-bottom: 3.2rem;
 
@@ -26,6 +26,10 @@
     background-color: $bg-color-dark;
     border-radius: 0.6rem;
     padding: 0 2rem 2rem 2rem;
+
+    // Fix the article so that it doesn't scroll behind or in front of the header.
+    position: relative;
+    z-index: 1;
 
     a:where(.external-link)::after {
       @include fa-icon;
@@ -125,10 +129,10 @@
 }
 
 .avatar img {
-  //padding-top: 5%;
-  width: 48rem;
+  margin-top: 2rem;
+  padding-top: 2rem;
+  width: 42rem;
   height: auto;
-  //border-radius: 25%;
 
   @media only screen and (max-width: 768px) {
     width: 100rem;
@@ -219,6 +223,8 @@
   .about {
     text-align: center;
     width: 100%;
+    background-color: $bg-color-dark;
+    border-radius: 0.5rem;
 
     h1 {
       margin-top: 2rem;
@@ -226,11 +232,10 @@
     }
 
     .description {
-      background-color: $bg-color-dark;
-      border-radius: 0.6rem;
 
+      margin-bottom: 2rem;
       h2 {
-        margin-top: 6rem;
+        margin-top: 8rem;
         margin-bottom: 0;
         font-size: 2.4rem;
 
@@ -310,8 +315,8 @@
 .fa-envelope,
 .fa-rss,
 .fa-medium {
-  font-size: 24px;
-  color: $link-color-dark;
+  font-size: 3rem;
+  color: $alt-bg-color-dark;
 }
 
 .prev-next {

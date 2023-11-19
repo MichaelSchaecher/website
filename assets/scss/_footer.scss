@@ -1,0 +1,15 @@
+.footer {
+  width: 100%;
+  text-align: center;
+  font-size: 1.6rem;
+  line-height: 4rem;
+  margin-bottom: 1rem;
+  background-color: $bg-color-dark;
+  border-radius: 0.5rem;
+  height: 4rem;
+  border-radius: 0.5rem;
+
+  a {
+    color: $link-color;
+  }
+}
