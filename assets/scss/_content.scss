@@ -10,12 +10,13 @@
 
     h1 {
       font-size: 4.2rem;
-      line-height: 4.6rem;
+      // Take the font size and multiply it by 20% to get the line height.
+      line-height: 5rem;
       margin: 0;
 
       @media only screen and (max-width: 768px) {
         font-size: 4rem;
-        line-height: 4.4rem;
+        line-height: 1.6rem;
       }
     }
   }
@@ -27,9 +28,6 @@
     border-radius: 0.6rem;
     padding: 0 2rem 2rem 2rem;
 
-    // Fix the article so that it doesn't scroll behind or in front of the header.
-    position: relative;
-    z-index: 1;
 
     a:where(.external-link)::after {
       @include fa-icon;
@@ -67,6 +65,12 @@
       text-justify: auto;
       hyphens: auto;
     }
+
+    // Need to shrink the padding on smaller screens
+    @media only screen and (max-width: 768px) {
+      padding: 0 1rem 1rem 1rem;
+    }
+
   }
 
   .post {
@@ -316,8 +320,8 @@
 }
 
 .fa-2x,
-.fa-github,
-.fa-gitlab,
+//.fa-github,
+//.fa-gitlab,
 .fa-twitter,
 .fa-linkedin,
 .fa-envelope,

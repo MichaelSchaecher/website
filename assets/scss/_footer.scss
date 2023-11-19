@@ -12,4 +12,10 @@
   a {
     color: $link-color;
   }
+
+  // On small screens not everything fits on one line so we need to break it up
+  @media only screen and (max-width: 768px) {
+    line-height: 2rem;
+    height: auto;
+  }
 }
