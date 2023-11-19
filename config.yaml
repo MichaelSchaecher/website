@@ -45,9 +45,9 @@ params:
 
   # Set an image to be used as part of the listing of blogs and posts.
   images:
-    avatarURL: images/avatar.svg
+    avatarURL: images/landing-image.png
     #gravatar: john.doe@example.com
-    postlistIMG: /images/posts/backdrop.png
+    postlistIMG: /images/posts/posts-lists.png
     underConstructionIMG: /images/under-construction.svg
     aboutIMG: /images/about-me.png
     faviconSVG: icons/favicon.ico

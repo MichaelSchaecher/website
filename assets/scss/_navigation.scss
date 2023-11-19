@@ -1,12 +1,15 @@
 .navigation {
 
+  // Don't let the navigation bar scroll past the top of the page.
+  position: sticky;
+
   height: 4rem;
   max-width: 90rem;
   width: 100%;
   padding-left: 2rem;
   padding-right: 2rem;
   margin-top: 1rem;
-  background-color: $bg-color-dark;
+  background-color: $bg-color;
   border-radius: 0.5rem;
 
   a,

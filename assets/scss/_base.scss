@@ -11,7 +11,9 @@ html {
 
 body {
   color: $fg-color;
-  background-color: $bg-color;
+  // Use background image.
+  background-image: url(/images/background.png);
+  //background-color: $bg-color;
   font-family: $font-family;
   font-size: 1.8em;
   font-weight: 400;
@@ -187,48 +189,6 @@ blockquote {
   padding-right: 6rem;
 }
 
-th,
-td {
-  padding: 1.6rem;
-}
-
-table {
-  border-collapse: collapse;
-  border: 2px solid $alt-fg-color;
-  width: 100%;
-  font-size: medium;
-
-  // Keep the table from overflowing the container on small screens
-  @media only screen and (max-width: 768px) {
-    display: block;
-    overflow-x: auto;
-  }
-
-}
-
-table td,
-table th {
-  border: 2px solid $alt-fg-color;
-}
-
-table tr:first-child th {
-  border-top: 0;
-}
-
-table tr:last-child td {
-  border-bottom: 0;
-}
-
-table tr td:first-child,
-table tr th:first-child {
-  border-left: 0;
-}
-
-table tr td:last-child,
-table tr th:last-child {
-  border-right: 0;
-}
-
 img {
   max-width: 100%;
 }
@@ -261,7 +221,7 @@ figure {
   // https://philipwalton.github.io/solved-by-flexbox/demos/sticky-footer/
   min-height: 100vh;
 
-  @media only screen and (max-width: 768px) {
+  @media (max-width: 48rem) {
     flex-direction: column;
   }
 }

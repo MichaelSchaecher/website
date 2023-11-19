@@ -38,7 +38,7 @@ When you first start Ubuntu from a live ISO or USB you are given an option to Tr
   <img class="ubuntu-live"
     src="https://ubuntucommunity.s3.us-east-2.amazonaws.com/original/3X/e/6/e650ba8eeab98bbe9ab5adbfa7708d18a5a468c6.png"
     alt="Ubuntu Live USB"></img>
-  <p class="caption">Pick your language</p>
+  <p class="caption">Pick your preferred language</p>
 </div>
 
 In most cases you well not have to pick a language, but if you do, pick your language and click on Try Ubuntu. From here you well be asked if you would like to try Ubuntu or install it. The image below shows the **Install Ubuntu** option selected. You want to click on **Try Ubuntu**.

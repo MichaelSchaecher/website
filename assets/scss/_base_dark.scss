@@ -1,6 +1,13 @@
 @mixin base_dark {
   color: $fg-color-dark;
-  background-color: $alt-bg-color-dark;
+  //background-color: $alt-bg-color-dark;
+  background-image: url(/images/background.png);
+
+  // Keep the background image fixed in the viewport
+  background-attachment: fixed;
+
+  // resize the background image to cover the entire container
+  background-size: cover;
 
   a {
     color: $link-color-dark;

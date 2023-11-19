@@ -1,0 +1,101 @@
+@use "custom/function";
+
+// Fonts
+$font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans,
+  Ubuntu, Cantarell, "Helvetica Neue", Helvetica, "游ゴシック", "PingFang SC",
+  STXihei, "华文细黑", "Microsoft YaHei", "微软雅黑", SimSun, "宋体", Heiti,
+  "黑体", sans-serif, "Black Ops One";
+$code-font-family:
+  SFMono-Regular,
+  Consolas,
+  Liberation Mono,
+  Menlo,
+  monospace;
+
+// Colors
+$bg-color: #fafafa !default;
+$fg-color: #212121 !default;
+$alt-bg-color: #e0e0e0 !default;
+$alt-fg-color: #000 !default;
+$darker-alt-bg-color: #ccc !default;
+$link-color: #ae5dff !default;
+
+// Dark colors
+$bg-color-dark: #424242 !default; // #212121
+$fg-color-dark: #fafafa !default;
+$alt-bg-color-dark: #212121 !default; // #424242
+$alt-fg-color-dark: #dadada !default;
+$lighter-alt-bg-color-dark: #4f4f4f !default;
+$link-color-dark: #9d6adf !default;
+$code-bg-color-dark: #593d7e !default; //
+$lighter-code-bg-color-dark: #422e5d !default;
+
+// Notice colors
+$fg-color-notice-note-icon: #5e35b1 !default;
+$bg-color-notice-note-title: #673ab71a !default;
+$bg-color-notice-note-content: #7e57c21a !default;
+$fg-color-notice-tip-icon: #00897b !default;
+$bg-color-notice-tip-title: #0096881a !default;
+$bg-color-notice-tip-content: #26a69a1a !default;
+$fg-color-notice-example-icon: #6d4c41 !default;
+$bg-color-notice-example-title: #7955481a !default;
+$bg-color-notice-example-content: #8d6e631a !default;
+$fg-color-notice-question-icon: #7cb342 !default;
+$bg-color-notice-question-title: #8bc34a1a !default;
+$bg-color-notice-question-content: #9ccc651a !default;
+$fg-color-notice-info-icon: #1e88e5 !default;
+$bg-color-notice-info-title: #2196f31a !default;
+$bg-color-notice-info-content: #42a5f51a !default;
+$fg-color-notice-warning-icon: #ffb300 !default;
+$bg-color-notice-warning-title: #ffc1071a !default;
+$bg-color-notice-warning-content: #ffca281a !default;
+$fg-color-notice-error-icon: #e53935 !default;
+$bg-color-notice-error-title: #f443361a !default;
+$bg-color-notice-error-content: #ef53501a !default;
+
+// Variables for font sizes in rem units starting at 0.5rem and going up to 4.5rem
+// in increments of 1rem.
+$font-size-small: 0.8rem !default;
+$font-size-default: 1.6rem !default;
+$font-size-h4: 2.4rem !default;
+$font-size-h3: 3.2rem !default;
+$font-size-h2: 4.0rem !default;
+$font-size-h1: 4.8rem !default;
+$font-size-title: 5.6rem !default;
+
+// Variables for padding in rem units starting at 0.5rem and going up to 2.5rem
+// in increments of 0.5rem.
+$padding-extra-small: 0.5rem !default;
+$padding-small: 1rem !default;
+$padding-medium: 1.5rem !default;
+$padding-large: 2rem !default;
+$padding-extra-large: 2.5rem !default;
+$padding-very-large: 3rem !default;
+
+// Variables for margin in rem units starting at 0.5rem and going up to 6rem
+// in increments of 1.5rem.
+$margin-extra-small: 0.5rem !default;
+$margin-small: 2rem !default;
+$margin-medium: 3.5rem !default;
+$margin-large: 5rem !default;
+$margin-extra-large: 6.5rem !default;
+
+// Variables for border radius in rem units starting at 0.25rem and going up to 1rem
+// in increments of 0.25rem.
+$border-radius-small: 0.25rem !default;
+$border-radius-medium: 0.5rem !default;
+$border-radius-large: 0.75rem !default;
+$border-radius-extra-large: 1rem !default;
+
+// Variables for border width in rem units starting at 0.0625rem and going up to 0.25rem
+// in increments of 0.0625rem.
+$border-width-small: 0.0625rem !default;
+$border-width-medium: 0.125rem !default;
+$border-width-large: 0.1875rem !default;
+$border-width-extra-large: 0.25rem !default;
+
+// Variables for line height in rem units starting at 1.5rem and going up to 2.5rem
+// in increments of 0.5rem.
+$line-height-small: 1.5rem !default;
+$line-height-medium: 2rem !default;
+$line-height-large: 2.5rem !default;

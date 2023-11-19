@@ -16,8 +16,6 @@ aliases:
 draft: false
 ---
 
-{{< about >}}
-
 My name is Michael Schaecher and I am a want-to-be software developer and have ben for a little over 10-years. I mostly work as a hobbyist, but I have done some professional security services in the early 2010's; but that was not fun so now I just do it for fun.
 
 ## My Interests

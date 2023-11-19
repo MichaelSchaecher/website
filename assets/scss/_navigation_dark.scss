@@ -1,6 +1,13 @@
 @mixin navigation_dark {
   .navigation {
 
+    background-color: $bg-color-dark;
+
+    // Change to darkred on 404 page.
+    &.error {
+      background-color: darkred;
+    }
+
     a,
     span {
       color: $fg-color-dark;
