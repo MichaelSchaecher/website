@@ -1,6 +1,6 @@
 @mixin syntax_dark {
-  /* Background */ .bg { color: #c9d1d9; background-color: $code-bg-color-dark; }
-  /* PreWrapper */ .chroma { color: #c9d1d9; background-color: $code-bg-color-dark; }
+  /* Background */ .bg { color: $fg-color-dark; background-color: $alt-bg-color-dark; }
+  /* PreWrapper */ .chroma { color: $fg-color-dark; background-color: $alt-bg-color-dark; }
   /* Other */ .chroma .x {  }
   /* Error */ .chroma .err { color: #f85149 }
   /* CodeLine */ .chroma .cl {  }

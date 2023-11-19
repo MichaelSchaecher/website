@@ -41,6 +41,7 @@ a {
 
 p {
   margin: 2rem 0 2rem 0;
+  line-height: 3rem;
 }
 
 h1,
@@ -172,16 +173,18 @@ code {
   font-weight: 400;
   border-radius: 0.6rem;
   padding: 0.3rem 0.6rem;
-  background-color: $darker-alt-bg-color;
-  //color: $fg-color;
+  background-color: $alt-bg-color;
+  color: $fg-color;
 }
 
 blockquote {
   border-left: 2px solid $alt-bg-color;
   padding-left: 2rem;
-  line-height: 2.2rem;
+  line-height: 3rem;
   font-weight: 400;
   font-style: italic;
+  padding-left: 3rem;
+  padding-right: 6rem;
 }
 
 th,
