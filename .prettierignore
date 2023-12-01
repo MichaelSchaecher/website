@@ -5,3 +5,7 @@ resources/**
 *.md
 _markdown.scss
 themes/**
+
+# Ignore the follwing files.
+layouts/_default/baseof.html
+layouts/partials/footer.html

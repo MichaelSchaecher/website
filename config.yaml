@@ -24,7 +24,9 @@ params:
   description: Ideas about technology, software development and life.
   keywords: blog, developer, personal
 
-  license: "<a rel=license href=https://mit-license.org>MIT</a>"
+  license:
+    type: MIT
+    url: /license
 
   # Set the variables for enabling giscus comments
   #giscus:
