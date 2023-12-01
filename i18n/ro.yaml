@@ -13,8 +13,8 @@ authors:
 posts:
   other: articole
 reading_time:
-  one: Un minut de lectură
-  other: '{{ .Count }} {{ if lt .Count 20 }}minute{{ else }}de minute{{ end }} de lectură'
+  one: "timp de citire: 1 minut"
+  other: "timp de citire: {{ .Count }} minute"
 page_not_found:
   other: Pagină Pierdută
 page_does_not_exist:

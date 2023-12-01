@@ -13,8 +13,8 @@ authors:
 posts:
   other: פוסטים
 reading_time:
-  one: דקה אחת לקרוא
-  other: דקות לקרוא {{ .Count }}
+  one: "קריאה: דקה"
+  other: "קריאה: {{ .Count }} דקות"
 page_not_found:
   other: דף האינטרנט שביקשת לא נמצא
 page_does_not_exist:

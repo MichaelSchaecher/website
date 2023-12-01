@@ -13,8 +13,8 @@ authors:
 posts:
   other: artikel
 reading_time:
-  one: bacaan satu menit
-  other: bacaan {{ .Count }} menit
+  one: "bacaan: 1 menit"
+  other: "bacaan: {{ .Count }} menit"
 page_not_found:
   other: Halaman tidak ditemukan
 page_does_not_exist:

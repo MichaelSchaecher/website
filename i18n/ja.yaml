@@ -13,8 +13,8 @@ authors:
 posts:
   other: 記事
 reading_time:
-  one: 1分で読めます
-  other: '{{ .Count }}分で読めます'
+  one: "読了時間: 1 分"
+  other: "読了時間: {{ .Count }} 分"
 page_not_found:
   other: ページが見つかりません
 page_does_not_exist:

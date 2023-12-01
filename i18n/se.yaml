@@ -13,8 +13,8 @@ authors:
 posts:
   other: Inlägg
 reading_time:
-  one: Ein minut lästid
-  other: '{{ .Count }} minuter lästid'
+  one: "Lästid: 1 minut"
+  other: "Lästid: {{ .Count }} minuter"
 page_not_found:
   other: Sida hittades inte
 page_does_not_exist:

@@ -13,9 +13,9 @@ authors:
 posts:
   other: статьи
 reading_time:
-  one: Читать одну минуту
-  few: Читать около {{ .Count }} минут
-  many: Читать около {{ .Count }} минут
+  one: "Читать около 1 минуты"
+  few: "Читать около {{ .Count }} минуты"
+  many: "Читать около {{ .Count }} минут"
 page_not_found:
   other: Страница не найдена
 page_does_not_exist:

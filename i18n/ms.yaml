@@ -15,8 +15,8 @@ authors:
 posts:
   other: artikel
 reading_time:
-  one: Bacaan 1 minit
-  other: Bacaan {{ .Count }} minit
+  one: "Bacaan 1 minit"
+  other: "Bacaan {{ .Count }} minit"
 page_not_found:
   other: Halaman Tidak Dijumpai
 page_does_not_exist:

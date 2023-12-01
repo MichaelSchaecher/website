@@ -13,8 +13,8 @@ authors:
 posts:
   other: Beiträge
 reading_time:
-  one: Eine Minute Lesezeit
-  other: '{{ .Count }} Minuten Lesezeit'
+  one: "Lesezeit: 1 Min"
+  other: "Lesezeit: {{ .Count }} Min"
 page_not_found:
   other: Seite nicht gefunden
 page_does_not_exist:

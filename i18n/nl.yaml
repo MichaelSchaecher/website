@@ -13,8 +13,8 @@ authors:
 posts:
   other: berichten
 reading_time:
-  one: Eén minuut leestijd
-  other: '{{ .Count }} minuten leestijd'
+  one: "leestijd: 1 minuut"
+  other: "leestijd: {{ .Count }} minuten"
 page_not_found:
   other: Pagina niet gevonden
 page_does_not_exist:

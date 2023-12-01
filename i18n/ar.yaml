@@ -13,7 +13,8 @@ authors:
 posts:
   other: المنشورات
 reading_time:
-  other: تستغرق {{ .Count }} د
+  one: "القراءة: 1 دقيقة"
+  other: "القراءة: {{ . عد }} دقيقة"
 page_not_found:
   other: الصفحة غير موجودة
 page_does_not_exist:

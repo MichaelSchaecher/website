@@ -13,8 +13,8 @@ authors:
 posts:
   other: Artikkelit
 reading_time:
-  one: Yksi lukuminuutti
-  other: '{{ .Count }} lukuminuuttia'
+  one: "Lukuminuutti: 1"
+  other: "Lukuminuutit: {{ .Count }}"
 page_not_found:
   other: Sivua ei löydetty
 page_does_not_exist:

@@ -13,8 +13,8 @@ authors:
 posts:
   other: 文章
 reading_time:
-  one: 閱讀時間 1 分鐘
-  other: 閱讀時間 {{ .Count }} 分鐘
+  one: "閱讀時間：1 分鐘"
+  other: "閱讀時間：{{ .Count }} 分鐘"
 page_not_found:
   other: 找不到頁面
 page_does_not_exist:

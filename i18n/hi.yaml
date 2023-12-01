@@ -13,8 +13,8 @@ authors:
 posts:
   other: सामग्री
 reading_time:
-  one: पढ़ने में एक मिनट लगेगा
-  other: पढ़ने में {{ .Count }} मिनट लगेंगे
+  one: "पढ़ने में 1 मिनट लगेगा"
+  other: "पढ़ने में {{ .Count }} मिनट लगेंगे"
 page_not_found:
   other: पृष्ठ नहीं मिला
 page_does_not_exist:

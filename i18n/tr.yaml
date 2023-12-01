@@ -14,8 +14,8 @@ posts:
   one: Gönderi
   other: Gönderiler
 reading_time:
-  one: Bir dakikalık okuma
-  other: '{{ .Count }} dakikalık okuma'
+  one: "Okuma süresi: 1 dakika"
+  other: "Okuma süresi: {{ .Count }} dakika"
 page_not_found:
   other: Sayfa Bulunamadı
 page_does_not_exist:

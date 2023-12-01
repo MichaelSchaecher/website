@@ -13,8 +13,8 @@ authors:
 posts:
   other: postime
 reading_time:
-  one: një-minutë lexim
-  other: '{{ .Count }}-minute read'
+  one: "leximi: 1 minutë"
+  other: "leximi: {{ .Count }} minuta"
 page_not_found:
   other: Nuk u gjet faqja
 page_does_not_exist:

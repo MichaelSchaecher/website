@@ -1,19 +1,20 @@
 categories:
-  one: kategorie
-  other: categories
+  one: Kategorie
+  other: Categories
 tags:
-  one: tag
-  other: tags
+  one: Tag
+  other: Tags
 series:
-  one: série
-  other: series
+  one: Série
+  other: Series
 authors:
-  one: author
-  other: authors
+  one: Author
+  other: Authors
 posts:
-  other: posts
+  other: Posts
 reading_time:
-  other: 'Délka čtení: {{ .Count }}'
+  one: "Čtení: 1 min"
+  other: "Čtení: {{ . Počet }} min"
 page_not_found:
   other: Stránka nenalezena
 page_does_not_exist:

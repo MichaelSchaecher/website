@@ -13,8 +13,8 @@ authors:
 posts:
   other: post
 reading_time:
-  one: Lettura di un minuto
-  other: '{{ .Count }} minuti di lettura'
+  one: "Lettura: 1 minuto"
+  other: "Lettura: {{ .Count }} minuti"
 page_not_found:
   other: Pagina non trovata
 page_does_not_exist:

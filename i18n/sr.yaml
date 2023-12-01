@@ -13,8 +13,8 @@ authors:
 posts:
   other: објаве
 reading_time:
-  one: Један минут читања
-  other: '{{ .Count }} минута читања'
+  one: "Читање 1 минут"
+  other: "Читање {{ .Count }} минута"
 page_not_found:
   other: Страница није пронађена
 page_does_not_exist:

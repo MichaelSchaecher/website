@@ -13,8 +13,8 @@ authors:
 posts:
   other: Írások
 reading_time:
-  one: Egyperces
-  other: '{{ .Count }} percnyi olvasnivaló'
+  one: "Olvasási idő: 1 perc"
+  other: "Olvasási idő: {{ .Count }} perc"
 page_not_found:
   other: Az oldal nem található
 page_does_not_exist:
