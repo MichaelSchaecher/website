@@ -14,13 +14,13 @@
     {{ with .Site.Params.author }} by {{ . }} {{ end }}
 
     <!-- If there is a license, display it -->
-    {{ i18n "licensed_under" }}
-
     {{ if .Site.Params.license.url }}
-      <a href="{{ . | safeURL }}" rel="license">{{ with .Site.Params.license.type }}{{ . }} {{ end }}</a>
-    {{ else }}
-      {{ with .Site.Params.license.type }}{{ . }} {{ end }}
-    {{ end }} license ·
+      {{ i18n "licensed_under" }}
+      <a href="{{ .Site.Params.license.url | safeURL }}"
+        rel="license">{{ with .Site.Params.license.type }}{{ . }} {{ end }}
+      </a>
+      license
+    {{ end }} ·
 
     <!-- Display the powered by Hugo and Coder -->
     {{ i18n "powered_by" }}
