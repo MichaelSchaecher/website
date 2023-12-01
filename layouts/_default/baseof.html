@@ -6,16 +6,9 @@
   {{ partial "head.html" . }}
 </head>
 
-{{ $csClass := "colorscheme-light" }}
-{{ if eq .Site.Params.colorScheme "dark" }}
-{{ $csClass = "colorscheme-dark" }}
-{{ else if eq .Site.Params.colorScheme "auto" }}
-{{ $csClass = "colorscheme-auto" }}
-{{ end }}
-
-<body class="preload-transitions {{ $csClass }}{{ if .Site.Params.rtl }} rtl{{ end }}">
+<body>
   {{ partial "float" . }}
-  <main class="wrapper">
+  <main id=wrapper class="wrapper">
     {{ partial "header.html" . }}
 
     <div class="content">
@@ -31,14 +24,6 @@
   <script>
     mermaid.initialize({ startOnLoad: true });
   </script>
-  {{ end }}
-
-  {{ if .Site.IsServer }}
-  {{ $script := resources.Get "js/coder.js" }}
-  <script src="{{ $script.RelPermalink }}"></script>
-  {{ else }}
-  {{ $script := resources.Get "js/coder.js" | minify | fingerprint }}
-  <script src="{{ $script.RelPermalink }}" integrity="{{ $script.Data.Integrity }}"></script>
   {{ end }}
 
   {{ range .Site.Params.customJS }}
