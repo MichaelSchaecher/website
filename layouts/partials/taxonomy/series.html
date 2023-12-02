@@ -1,0 +1,25 @@
+{{ $currentPageUrl := .RelPermalink }}
+<!-- This is the URL of the current page -->
+
+<!-- What to do if the parameter series is defined? -->
+{{ if .Params.series }} {{ range .Params.series }} {{ $name := . | anchorize }}
+{{ $series := index $.Site.Taxonomies.series $name }} {{ if gt (len
+$series.Pages) 1 }}
+<div class="series">
+  <h4 class="see-also">{{ i18n "see_also" }} {{ . }}</h4>
+  <ul>
+    <!-- Limit the number of allowed post in a series. For long series there is no need
+      to show all the posts. -->
+    {{ $maxItems := 2 }} {{ range first (add $maxItems 1) $series.Pages }} {{ if
+    ne .RelPermalink $currentPageUrl }}
+    <li>
+      <a
+        href="{{ .Params.externalLink | default .RelPermalink }}"
+        class="series-title"
+        >{{ .Title }}</a
+      >
+    </li>
+    {{ end }} {{ end }}
+  </ul>
+</div>
+{{ end }} {{ end }} {{ end }}

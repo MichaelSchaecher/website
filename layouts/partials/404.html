@@ -1,7 +1,16 @@
-<section class="container centered">
+<div class="container centered">
   <div class="error">
+    <!-- Display the 404 error image if it exists -->
+    {{ if .Site.Params.error404 }} {{ with .Site.Params.error404 }}
+    <img src="{{ . | safeURL }}" alt="404" />
+    {{ end }} {{ else }}
     <h1>404</h1>
+    {{ end }}
+
     <h2>{{ i18n "page_not_found" }}</h2>
-    <p>{{ i18n "page_does_not_exist" }}<br />{{ i18n "head_back" .Site.BaseURL | safeHTML }}</p>
+    <p>
+      {{ i18n "page_does_not_exist" }}<br />{{ i18n "head_back" .Site.BaseURL |
+      safeHTML }}
+    </p>
   </div>
-</section>
+</div>

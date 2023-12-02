@@ -9,3 +9,8 @@ themes/**
 # Ignore the follwing files.
 layouts/_default/baseof.html
 layouts/partials/footer.html
+layouts/partials/list.html
+layouts/partials/home.html
+
+# Ignore the following directory
+layouts/partials/head
