@@ -22,7 +22,7 @@ page_does_not_exist:
 head_back:
   other: U kunt terugkeren naar de <a href="{{ . }}">thuispagina</a>.
 licensed_under:
-  other: Valt onder
+  other: onder
 powered_by:
   other: Aangedreven door
 see_also:

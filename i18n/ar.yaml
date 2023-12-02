@@ -22,7 +22,7 @@ page_does_not_exist:
 head_back:
   other: بإمكانك العودة إلى <a href="{{ . }}">homepage</a>.
 licensed_under:
-  other: Licensed under
+  other: تحت
 powered_by:
   other: بواسطة
 see_also:

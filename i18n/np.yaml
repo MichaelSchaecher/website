@@ -22,7 +22,7 @@ page_does_not_exist:
 head_back:
   other: मुख्यपृष्ठमा फर्किन सक्नुहुन्छ।<a href="{{ . }}">मुख्यपृष्ठ</a>.
 licensed_under:
-  other: Licensed under
+  other: अन्तर्गत
 powered_by:
   other: द्वारा संचालित
 see_also:

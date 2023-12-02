@@ -22,7 +22,7 @@ page_does_not_exist:
 head_back:
   other: ' אתה יכול לחזור<a href="{{ . }}">לדף הבית</a>.'
 licensed_under:
-  other: Licensed under
+  other: רשיון תחת
 powered_by:
   other: מופעל על ידי
 see_also:

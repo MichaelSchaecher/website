@@ -22,7 +22,7 @@ page_does_not_exist:
 head_back:
   other: Voit palata takaisin <a href="{{ . }}">kotisivulle</a>.
 licensed_under:
-  other: Licensed under
+  other: alla
 powered_by:
   other: Tarjoaa
 see_also:

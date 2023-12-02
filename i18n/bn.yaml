@@ -22,7 +22,7 @@ page_does_not_exist:
 head_back:
   other: আপনি <a href="{{ . }}">নীড়পাতায়</a> ফিরে যেতে পারেন
 licensed_under:
-  other: 'লাইসেন্স:'
+  other: লাইসেন্সকৃত
 powered_by:
   other: 'চালনা:'
 see_also:

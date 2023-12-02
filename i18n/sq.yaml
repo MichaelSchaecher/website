@@ -22,9 +22,9 @@ page_does_not_exist:
 head_back:
   other: Mund të ktheheni prapë tek <a href="{{ . }}">homepage</a>.
 licensed_under:
-  other: Licensed under
+  other: nën
 powered_by:
-  other: 'Mundësuar nga '
+  other: Mundësuar nga
 see_also:
   other: Shiko gjithashtu
 note:

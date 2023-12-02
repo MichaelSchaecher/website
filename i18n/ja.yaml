@@ -22,11 +22,11 @@ page_does_not_exist:
 head_back:
   other: <a href="{{ . }}">トップページ</a>からお探しいただきますようお願い申し上げます。
 licensed_under:
-  other: Licensed under
+  other: ライセンス
 powered_by:
-  other: Powered by
+  other: 'Powered by'
 see_also:
-  other: 関連記事：
+  other: 関連記事
 note:
   other: note
 tip:

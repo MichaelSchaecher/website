@@ -22,7 +22,7 @@ page_does_not_exist:
 head_back:
   other: Можете се вратити на <a href="{{ . }}">почетну страницу</a>.
 licensed_under:
-  other: Лиценсирано под
+  other: под
 powered_by:
   other: Покреће
 see_also:

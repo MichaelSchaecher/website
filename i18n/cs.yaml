@@ -22,7 +22,7 @@ page_does_not_exist:
 head_back:
   other: Můžete se vrátit na <a href="{{ . }}">homepage</a>.
 licensed_under:
-  other: Licensed under
+  other: pod
 powered_by:
   other: Stránka používá
 see_also:

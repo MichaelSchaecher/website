@@ -23,7 +23,7 @@ page_does_not_exist:
 head_back:
   other: Можете вернуться обратно на <a href="{{ . }}">домашнюю страницу</a>.
 licensed_under:
-  other: Лицензирован по
+  other: под
 powered_by:
   other: Работает на
 see_also:

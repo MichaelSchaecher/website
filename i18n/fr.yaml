@@ -22,7 +22,7 @@ page_does_not_exist:
 head_back:
   other: Vous pouvez revenir à <a href="{{ . }}">l'accueil</a>.
 licensed_under:
-  other: Licensed under
+  other: sous
 powered_by:
   other: Propulsé par
 see_also:

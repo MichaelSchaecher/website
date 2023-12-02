@@ -23,7 +23,7 @@ page_does_not_exist:
 head_back:
   other: <a href="{{ . }}">Ana sayfaya</a> dönebilirsiniz.
 licensed_under:
-  other: 'Lisansı alınta:'
+  other: altında
 powered_by:
   other: Site program altyapısı
 see_also:

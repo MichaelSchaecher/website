@@ -24,7 +24,7 @@ page_does_not_exist:
 head_back:
   other: Späť na <a href="{{ . }}">domácu stránku</a>.
 licensed_under:
-  other: Licensed under
+  other: pod
 see_also:
   other: Pozrite tiež
 powered_by:

@@ -22,7 +22,7 @@ page_does_not_exist:
 head_back:
   other: <a href="{{ . }}">홈페이지</a>로 돌아가기
 licensed_under:
-  other: Licensed under
+  other: 라이센스
 powered_by:
   other: Powered by
 see_also:

@@ -22,7 +22,7 @@ page_does_not_exist:
 head_back:
   other: 返回 <a href="{{ . }}">首頁</a>.
 licensed_under:
-  other: Licensed under
+  other: 授權條款
 powered_by:
   other: 技術支援
 see_also:
