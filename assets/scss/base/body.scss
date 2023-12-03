@@ -1,0 +1,81 @@
+// This SCSS file is used for the body tag and some base styles for the site.
+
+// Path: assets/scss/base/body.scss
+// Compare this snippet from themes/hugo-coder/assets/scss/_base.scss:
+
+// Inherit box-sizing from html
+
+// Use ../functions/_index.scss which contains the function rem() to convert pixels to
+// rems. See https://sass-lang.com/documentation/modules/math#
+@use "../utils/index" as *;
+@use "../syntax/index" as *;
+
+*,
+*:after,
+*:before {
+  box-sizing: inherit;
+}
+
+// Set box-sizing to border-box for all elements, but avoid using 62.5% font-size
+// as it causes issues with some browsers.
+html {
+  box-sizing: content-box;
+  font-size: rem(16);
+
+  // Hide the scrollbar.
+  scrollbar-width: none;
+}
+
+// Set the body styles
+body {
+  color: $fg-color;
+  background-color: $bg-color;
+  font-family: $font-family;
+  font-weight: 400;
+  line-height: rem(20);
+
+  // The body should have any padding or margins.
+  margin: 0;
+
+  @include max {
+    font-size: rem(14);
+    line-height: rem(18);
+  }
+}
+
+// Set the iframe color scheme to dark and dark only.
+iframe[src*="disqus"] {
+  color-scheme: light;
+}
+
+// Support for older browsers should not be included in the main CSS file.
+.preload-transitions * {
+  $null-transition: none !important;
+}
+
+// The .wrapper and .container classes are used to center the content on the page.
+.wrapper {
+  // Center the content on the page and set the max-width to 920px.
+  max-width: rem(920);
+  margin: 0 auto;
+
+  // Keep footer at the bottom of the page.
+  display: flex;
+  flex-direction: column;
+
+  // Push the footer to the bottom of the page.
+  min-height: 100vh;
+  background-color: $alt-bg-color;
+
+  .content {
+    // Push the footer and set the top of the content to below the navigation.
+    flex: 1 0 auto;
+    margin-top: rem(80);
+
+    .container {
+      // Margin on the left and right and 0 at the top and bottom.
+      margin-left: rem(24);
+      margin-right: rem(24);
+    }
+  }
+}

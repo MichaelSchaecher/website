@@ -1,82 +1,49 @@
 categories:
   one: Category
   other: Categories
-
 tags:
   one: Tag
   other: Tags
-
 series:
   one: Series
   other: Series
-
 authors:
   one: Author
   other: Authors
-
 posts:
   other: Posts
-
 reading_time:
   one: "Reading: 1 Min"
   other: "Reading: {{ .Count }} Min"
-
 page_not_found:
   other: Page Not Found
-
 page_does_not_exist:
-  other: I am not the page you are looking for.
-
+  other: Sorry, this page does not exist.
 head_back:
-  other: Go back to the light side of the <a href={{ . }}>force</a>
-
+  other: You can head back to the <a href="{{ . }}">homepage</a>.
 licensed_under:
-  other: Licensed under
-
+  other: under
 powered_by:
   other: Powered by
-
 see_also:
-  other: "Series:"
-
+  other: See also in
 note:
   other: note
-
 tip:
   other: tip
-
 example:
   other: example
-
 question:
   other: question
-
 info:
   other: info
-
 warning:
   other: warning
-
 error:
   other: error
-
 link_to_heading:
   other: Link to heading
-
 previous_post:
   other: Previous
-
 next_post:
   other: Next
-
-theme:
-  other: <a href=https://github.com/luizdepra/hugo-coder>Coder</a>
-
-engine:
-  other: <a href=https://gohugo.io>Hugo</a>
-
-description:
-  other: Ideas about technology, software development and life.
-
-under_construction:
-  other: This page is currently under construction.

@@ -1,0 +1,26 @@
+{
+    "cSpell.words": [
+        "childsrc",
+        "connectsrc",
+        "Disqus",
+        "fontsrc",
+        "formaction",
+        "framesrc",
+        "goatcounter",
+        "goldmark",
+        "imgsrc",
+        "Matomo",
+        "Metrika",
+        "microanalytics",
+        "objectsrc",
+        "Pirsch",
+        "prefetchsrc",
+        "scriptsrc",
+        "stylesrc",
+        "zramswap",
+        "ztsd"
+    ],
+    "editor.formatOnSave": true,
+    "editor.formatOnPaste": true,
+    "editor.tabSize": 2
+}

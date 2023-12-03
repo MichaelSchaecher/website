@@ -1,22 +1,36 @@
-<section class="container">
-  <footer class="footer">
-    {{ print "Copyright " }}
-    <i class="fa fa-copyright" aria-hidden="true"> </i>
-    {{ if (and .Site.Params.since (lt .Site.Params.since now.Year)) }}
-      {{ .Site.Params.since }} -
-    {{ end }}
-    {{ now.Year }}
-    by
-    {{ with .Site.Params.author }}{{ . }}{{ end }}
-    ·
-    {{ if (and .Site.Params.license) }}
+<footer class="footer">
+
+  <!--  -->
+  <div id="footer-text">
+    Copyright
+
+    <!-- Use span with java script to update the year -->
+    <span id="-java-year"></span>
+
+    <!-- Just in case java is disabled -->
+    <noscript>{{ now.Year }}</noscript><small>&copy;</small>
+
+    <!-- If there is a author, display it -->
+    {{ with .Site.Params.author }} by {{ . }} {{ end }}
+
+    <!-- If there is a license, display it -->
+    {{ if .Site.Params.license.url }}
       {{ i18n "licensed_under" }}
-      {{ .Site.Params.license | safeHTML }}
-      ·
-    {{ end }}
+      <a href="{{ .Site.Params.license.url | safeURL }}"
+        rel="license">{{ with .Site.Params.license.type }}{{ . }} {{ end }}
+      </a>
+      license
+    {{ end }} ·
+
+    <!-- Display the powered by Hugo and Coder -->
     {{ i18n "powered_by" }}
-    {{ i18n "engine" .Site.BaseURL | safeHTML }}
-    {{ print " + " }}
-    {{ i18n "theme" .Site.BaseURL | safeHTML }}
-  </footer>
-</section>
+    <a href="https://gohugo.io/" rel="nofollow">Hugo</a>
+
+  </div>
+
+  <!--  -->
+  <script>
+    document.getElementById("-java-year").innerHTML = new Date().getFullYear();
+  </script>
+
+</footer>

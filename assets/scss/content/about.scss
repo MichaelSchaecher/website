@@ -1,0 +1,65 @@
+// This SCSS file is used for the body tag and some base styles for the site.
+
+// Path: assets/scss/base/body.scss
+// Compare this snippet from themes/hugo-coder/assets/scss/_base.scss:
+
+// Inherit box-sizing from html
+
+// Use ../functions/_index.scss which contains the function rem() to convert pixels to
+// rems. See https://sass-lang.com/documentation/modules/math#
+@use "../utils/index" as *;
+@use "../syntax/index" as *;
+
+.about {
+  text-align: center;
+
+  h1 {
+    margin-top: rem(32);
+    margin-bottom: rem(8);
+  }
+
+  h2 {
+    margin-top: rem(16);
+    margin-bottom: rem(8);
+    font-size: rem(24);
+
+    @include max {
+      font-size: rem(20);
+    }
+  }
+
+  ul {
+    list-style: none;
+    margin: rem(48) 0;
+    padding: 0;
+
+    li {
+      display: inline-block;
+      position: relative;
+
+      a {
+        color: $fg-color;
+        text-transform: uppercase;
+        margin-left: rem(16);
+        margin-right: rem(16);
+        font-size: rem(24);
+
+        &:hover,
+        &:focus {
+          color: $link-color;
+        }
+
+        @include max {
+          font-size: rem(20);
+        }
+      }
+    }
+  }
+}
+
+// fa-icon for the social media icons
+.fa-var-github {
+  color: #000000;
+  font-size: rem(24);
+  margin-right: rem(16);
+}

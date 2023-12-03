@@ -1,5 +1,7 @@
-{{- if and (not (eq (.Site.DisqusShortname | default "") "")) (eq (.Params.disableComments | default false) false) -}}
-<div id="disqus_thread" class="disqus"></div>
+{{- if and (not (eq (.Site.DisqusShortname | default "") "")) (eq
+  (.Params.disableComments | default false) false)
+-}}
+  <div id="disqus_thread"></div>
 <script>
   window.disqus_config = function () {
     {{with .Params.disqus_identifier }}this.page.identifier = '{{ . }}';{{end}}

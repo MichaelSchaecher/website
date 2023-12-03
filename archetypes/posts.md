@@ -4,7 +4,7 @@ date: {{ .Date }}
 description: ""
 slug: ""
 authors:
-  - Michael Schaecher
+  - John Doe
 tags:
   - new
 categories:
