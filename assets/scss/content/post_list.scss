@@ -1,0 +1,83 @@
+// This SCSS file is used for the body tag and some base styles for the site.
+
+// Path: assets/scss/base/body.scss
+// Compare this snippet from themes/hugo-coder/assets/scss/_base.scss:
+
+// Inherit box-sizing from html
+
+// Use ../functions/_index.scss which contains the function rem() to convert pixels to
+// rems. See https://sass-lang.com/documentation/modules/math#
+@use "../utils/index" as *;
+@use "../syntax/index" as *;
+
+.list {
+  // push the footer to the bottom of the page
+  flex: auto;
+  top: rem(42);
+  position: relative;
+  color: $fg-color;
+
+  ul {
+    margin-top: rem(52);
+    list-style: none;
+    padding: 0;
+    border-radius: rem(8);
+    margin-bottom: rem(20);
+    padding: rem(4) rem(32);
+
+    // Make the list scrollable and set the max-height to 256px.
+    overflow-y: auto;
+    max-height: rem(320);
+
+    // Hide the scrollbar.
+    scrollbar-width: none;
+
+    @include max {
+      margin-top: rem(64);
+    }
+
+    li {
+      margin-bottom: rem(10);
+
+      .date {
+        text-align: left;
+        margin-right: rem(32);
+        font-size: rem(20);
+
+        @include max {
+          display: block;
+          text-align: left;
+          font-size: rem(16);
+        }
+      }
+
+      .title {
+        font-size: rem(18);
+        float: right;
+        color: $fg-color;
+        font-family: $font-family;
+        font-weight: 700;
+
+        &:hover,
+        &:focus {
+          color: $link-color;
+          text-decoration: none;
+        }
+
+        @include max {
+          display: block;
+          text-align: left;
+          font-size: rem(16);
+        }
+      }
+    }
+  }
+
+  ul:not(.pagination) {
+    li {
+      @include max {
+        display: flex;
+      }
+    }
+  }
+}

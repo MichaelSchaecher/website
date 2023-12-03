@@ -1,10 +1,12 @@
 baseURL: "/"
 title: BlackStewie
-theme: hugo-coder
+#theme: hugo-coder
 languageCode: en
 defaultContentLanguage: en
 paginate: 20
+
 enableEmoji: true
+
 # Enable Disqus comments
 disqusShortname: blackstewie-com
 
@@ -47,7 +49,7 @@ params:
 
   # Set an image to be used as part of the listing of blogs and posts.
   images:
-    avatarURL: images/landing-image.png
+    avatarURL: images/logo.svg
     #gravatar: john.doe@example.com
     postlistIMG: /images/posts/posts-lists.png
     underConstructionIMG: /images/under-construction.svg

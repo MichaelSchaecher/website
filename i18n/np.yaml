@@ -42,4 +42,8 @@ warning:
 error:
   other: error
 link_to_heading:
-  other: Link to heading
+  other: शीर्षकमा जानकारीको लागि लिंक
+previous_post:
+  other: पिछलो
+next_post:
+  other: अर्को

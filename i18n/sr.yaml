@@ -43,3 +43,7 @@ error:
   other: грешка
 link_to_heading:
   other: Линк до заглавља
+previous_post:
+  other: Претходна
+next_post:
+  other: Следећа

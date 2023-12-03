@@ -43,3 +43,7 @@ error:
   other: error
 link_to_heading:
   other: Link to heading
+previous_post:
+  other: Previous
+next_post:
+  other: Next

@@ -14,3 +14,4 @@ layouts/partials/home.html
 
 # Ignore the following directory
 layouts/partials/head
+layouts/partials/head.html

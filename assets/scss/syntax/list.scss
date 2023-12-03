@@ -1,0 +1,24 @@
+//@use "fa-variables" as *;
+@use "../utils/index" as *;
+
+// List Icons
+// -------------------------
+
+.#{$fa-css-prefix}-ul {
+  padding-left: 0;
+  margin-left: $fa-li-width;
+  list-style-type: none;
+  > li {
+    position: relative;
+  }
+}
+.#{$fa-css-prefix}-li {
+  position: absolute;
+  left: -$fa-li-width;
+  width: $fa-li-width;
+  top: calc(rem(32) / 16);
+  text-align: center;
+  &.#{$fa-css-prefix}-lg {
+    left: -$fa-li-width + calc(rem(64) / 16);
+  }
+}

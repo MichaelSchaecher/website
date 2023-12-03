@@ -1,0 +1,173 @@
+// This SCSS file is used for the body tag and some base styles for the site.
+
+// Path: assets/scss/base/body.scss
+// Compare this snippet from themes/hugo-coder/assets/scss/_base.scss:
+
+// Inherit box-sizing from html
+
+// Use ../functions/_index.scss which contains the function rem() to convert pixels to
+// rems. See https://sass-lang.com/documentation/modules/math#
+@use "../utils/index" as *;
+@use "../syntax/index" as *;
+
+article {
+  a:where(.external-link)::after {
+    @include fa-icon;
+    content: fa-content($fa-var-external-link);
+    padding-left: rem(8);
+    font-size: rem(12);
+  }
+
+  details {
+    summary {
+      cursor: pointer;
+    }
+  }
+
+  footer {
+    margin: rem(48) 0;
+
+    // Center the comments on the page.
+    text-align: center;
+
+    :see-also {
+      margin: rem(32) 0;
+    }
+
+    h3 {
+      margin: rem(32) 0;
+    }
+
+    // Center the comments in the footer.
+    #post-comments,
+    #disqus_thread {
+      margin: 0 auto;
+    }
+  }
+}
+
+//
+.post {
+  .post-title {
+    margin-bottom: rem(12);
+  }
+
+  .post-meta {
+    // Center the content
+    text-align: center;
+
+    i {
+      text-align: center;
+      width: rem(16);
+      margin-left: 0;
+      margin-right: rem(8);
+    }
+
+    .date {
+      .posted-on {
+        margin-left: 0;
+        margin-right: rem(24);
+      }
+    }
+  }
+}
+
+// ID Table of Contents styles.
+#TableOfContents {
+  ol {
+    li {
+      //color: $accent-color;
+    }
+  }
+  a {
+    color: orangered;
+    font-size: rem(16);
+    font-weight: 400;
+    transition: all 0.2s ease-in-out;
+
+    &:hover,
+    &:active {
+      color: $link-color;
+      text-decoration: none;
+      font-weight: 600;
+    }
+  }
+}
+
+// Tags and categories should be inline-block elements to allow for link animations.
+.tag,
+.category {
+  display: inline-block;
+
+  a {
+    // color: gray;
+    transition: all 0.2s ease-in-out;
+
+    &:hover,
+    &:focus {
+      font-weight: 700;
+      // color: red;
+    }
+  }
+}
+
+.series {
+  padding-bottom: rem(32);
+
+  h4 {
+    // Set the font size to 20px and add some margin to the top and bottom.
+    font-size: rem(20);
+    margin: rem(12) 0;
+  }
+
+  // Hide the list style for the series posts.
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .series-title {
+    line-height: 1.15;
+    margin-left: rem(48);
+    transition: all 0.25s;
+
+    &:hover,
+    &:active {
+      font-weight: 700;
+    }
+  }
+}
+
+// The previous and next post links. These are the links that appear at the bottom of
+// each post to navigate to the previous or next post.
+
+// The links are wrapped in a div with the class prev-next. With the next link it needs
+// to be floated to the right of the page, even if there is no previous link.
+.prev-next {
+  // Set the padding-bottom to 48px to add some space between prev/next links and the
+  // footer where the post comments are displayed.
+  padding-bottom: rem(64);
+
+  .prev {
+    float: right;
+    font-weight: 700;
+  }
+
+  .next {
+    float: left;
+    font-weight: 700;
+  }
+}
+
+figure {
+  margin: 0;
+  padding: 0;
+}
+
+figcaption p {
+  text-align: center;
+  font-style: italic;
+  font-size: rem(16);
+  margin: 0;
+}

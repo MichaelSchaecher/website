@@ -3,11 +3,11 @@
 
 <!-- Use dart-sass to transpiler the scss files -->
 {{ if .Site.IsServer }}
-  {{ $cssOpts := (dict "transpiler" "dartsass" "targetPath" "css/coder.css" "enableSourceMap" true ) }}
-  {{ $styles := resources.Get "scss/coder.scss" | resources.ExecuteAsTemplate "style.coder.css" . | toCSS $cssOpts }}
+  {{ $cssOpts := (dict "transpiler" "dartsass" "targetPath" "css/simple-dark.css" "enableSourceMap" true ) }}
+  {{ $styles := resources.Get "scss/simple-dark.scss" | resources.ExecuteAsTemplate "style.simple-dark.css" . | toCSS $cssOpts }}
   <link rel="stylesheet" href="{{ $styles.RelPermalink }}" media="screen">
 {{ else }}
-  {{ $cssOpts := (dict "transpiler" "dartsass" "targetPath" "css/coder.css" ) }}
-  {{ $styles := resources.Get "scss/coder.scss" | resources.ExecuteAsTemplate "style.coder.css" . | toCSS $cssOpts | minify | fingerprint }}
+  {{ $cssOpts := (dict "transpiler" "dartsass" "targetPath" "css/simple-dark.css" ) }}
+  {{ $styles := resources.Get "scss/simple-dark.scss" | resources.ExecuteAsTemplate "style.simple-dark.css" . | toCSS $cssOpts | fingerprint }}
   <link rel="stylesheet" href="{{ $styles.RelPermalink }}" integrity="{{ $styles.Data.Integrity }}" crossorigin="anonymous" media="screen" />
 {{ end }}

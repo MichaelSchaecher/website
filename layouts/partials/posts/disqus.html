@@ -1,4 +1,5 @@
-{{- if and (not (eq (.Site.DisqusShortname | default "") "")) (eq (.Params.disableComments | default false) false) -}}
+{{- if and (not (eq (.Site.DisqusShortname | default "") "")) (eq
+(.Params.disableComments | default false) false) -}}
 <div id="disqus_thread"></div>
 <script>
   window.disqus_config = function () {
@@ -17,7 +18,7 @@
         (d.head || d.body).appendChild(s);
     })();
     // Disqus theme switching
-    document.addEventListener('themeChanged', function (e) { 
+    document.addEventListener('themeChanged', function (e) {
         if (document.readyState == 'complete') {
           DISQUS.reset({ reload: true, config: disqus_config });
         }

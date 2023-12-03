@@ -44,3 +44,7 @@ error:
   other: ошибка
 link_to_heading:
   other: Ссылка на заголовок
+previous_post:
+  other: Предыдущая
+next_post:
+  other: Следующая

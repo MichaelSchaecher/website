@@ -42,4 +42,8 @@ warning:
 error:
   other: error
 link_to_heading:
-  other: Link to heading
+  other: Enlace al encabezado
+previous_post:
+  other: Anterior
+next_post:
+  other: Siguiente

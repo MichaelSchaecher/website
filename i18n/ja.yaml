@@ -43,3 +43,7 @@ error:
   other: error
 link_to_heading:
   other: 見出しへのリンク
+previous_post:
+  other: 前の記事
+next_post:
+  other: 次の記事
