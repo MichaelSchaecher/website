@@ -46,6 +46,10 @@ body {
   }
 }
 
+iframe[src*="disqus"] {
+  color-scheme: light;
+}
+
 /*
   The wrapper is where all the content of the page should go. It should be centered on the page
   and have a max-width of 920px or 67% of the page: whichever is greater.
