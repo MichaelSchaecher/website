@@ -1,5 +1,5 @@
-@forward "body";
-@forward "typography";
-@forward "code";
-@forward "footer";
-@forward "navigation";
+@import "boilerplate";
+@import "typography";
+@import "navigation";
+@import "footer";
+@import "code";

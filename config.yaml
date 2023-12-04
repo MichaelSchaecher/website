@@ -1,6 +1,6 @@
 baseURL: "/"
 title: BlackStewie
-#theme: hugo-coder
+theme: hugo-coder
 languageCode: en
 defaultContentLanguage: en
 paginate: 20
@@ -26,9 +26,9 @@ params:
   description: Ideas about technology, software development and life.
   keywords: blog, developer, personal
 
-  license:
-    type: MIT
-    url: /license
+  # license:
+  #   type: MIT
+  #   url: /license
 
   # Set the variables for enabling giscus comments
   #giscus:

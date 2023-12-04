@@ -7,8 +7,6 @@
 
 // Use ../functions/_index.scss which contains the function rem() to convert pixels to
 // rems. See https://sass-lang.com/documentation/modules/math#
-@use "../utils/index" as *;
-@use "../syntax/index" as *;
 
 .list {
   // push the footer to the bottom of the page
@@ -33,7 +31,13 @@
     scrollbar-width: none;
 
     @include max {
-      margin-top: rem(64);
+      margin-top: rem(48);
+
+      // Padding left and right should be 2px top and bottom should be 8px.
+      padding: rem(80) rem(2);
+
+      // Set the max-height to 128px.
+      max-height: rem(192);
     }
 
     li {
@@ -47,7 +51,7 @@
         @include max {
           display: block;
           text-align: left;
-          font-size: rem(16);
+          font-size: rem(14);
         }
       }
 
@@ -65,9 +69,9 @@
         }
 
         @include max {
+          font-size: rem(14);
           display: block;
-          text-align: left;
-          font-size: rem(16);
+          float: left;
         }
       }
     }
