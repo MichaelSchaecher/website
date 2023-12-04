@@ -16,6 +16,10 @@ article {
     font-size: rem(12);
   }
 
+  p {
+    font-size: rem(16);
+  }
+
   details {
     summary {
       cursor: pointer;
@@ -145,9 +149,8 @@ article {
 // The links are wrapped in a div with the class prev-next. With the next link it needs
 // to be floated to the right of the page, even if there is no previous link.
 .prev-next {
-  // Set the padding-bottom to 48px to add some space between prev/next links and the
-  // footer where the post comments are displayed.
-  padding-bottom: rem(64);
+  // Add padding to the top and bottom of the links.
+  padding: rem(48) 0;
 
   .prev {
     float: right;

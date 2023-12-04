@@ -3084,6 +3084,9 @@ body {
     body {
       font-size: 0.875rem;
       line-height: 1.125rem; } }
+iframe[src*="disqus"] {
+  color-scheme: light; }
+
 /*
   The wrapper is where all the content of the page should go. It should be centered on the page
   and have a max-width of 920px or 67% of the page: whichever is greater.
@@ -3429,6 +3432,9 @@ article a:where(.external-link)::after {
   padding-left: 0.5rem;
   font-size: 0.75rem; }
 
+article p {
+  font-size: 1rem; }
+
 article details summary {
   cursor: pointer; }
 
@@ -3497,7 +3503,7 @@ article footer {
       font-weight: 700; }
 
 .prev-next {
-  padding-bottom: 4rem; }
+  padding: 3rem 0; }
   .prev-next .prev {
     float: right;
     font-weight: 700; }
@@ -3601,7 +3607,7 @@ table {
   .float-right .caption {
     margin-right: 0;
     text-align: right;
-    font-size: 1.6rem; }
+    font-size: 0.75rem; }
 
 .float-left {
   display: inline-block;
@@ -3615,7 +3621,7 @@ table {
   .float-left .caption {
     margin-right: 0;
     text-align: left;
-    font-size: 1.6rem; }
+    font-size: 0.75rem; }
 
 .list {
   flex: auto;
