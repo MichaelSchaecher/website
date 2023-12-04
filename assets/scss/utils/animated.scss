@@ -1,0 +1,33 @@
+// Spinning Icons
+// --------------------------
+
+.#{$fa-css-prefix}-spin {
+  animation: #{$fa-css-prefix}-spin 2s infinite linear;
+}
+
+.#{$fa-css-prefix}-pulse {
+  animation: #{$fa-css-prefix}-spin 1s infinite steps(8);
+}
+
+@-webkit-keyframes #{$fa-css-prefix}-spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(359deg);
+  }
+}
+
+@keyframes #{$fa-css-prefix}-spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(359deg);
+  }
+}
+
+// Support for older browsers should not be included in the main CSS file.
+.preload-transitions * {
+  $null-transition: none !important;
+}

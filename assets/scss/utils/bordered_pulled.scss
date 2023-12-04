@@ -1,12 +1,11 @@
-@use "../syntax/index" as *;
-
 // Bordered & Pulled
 // -------------------------
 
+// Rewrite so the rem(value) to set px value 1rem = 16px.
 .#{$fa-css-prefix}-border {
-  padding: 0.2em 0.25em 0.15em;
+  padding: rem(3) rem(4) rem(3);
   border: solid 0.08em $fa-border-color;
-  border-radius: 0.1em;
+  border-radius: rem(3);
 }
 
 .#{$fa-css-prefix}-pull-left {
@@ -18,10 +17,10 @@
 
 .#{$fa-css-prefix} {
   &.#{$fa-css-prefix}-pull-left {
-    margin-right: 0.3em;
+    margin-right: rem(5);
   }
   &.#{$fa-css-prefix}-pull-right {
-    margin-left: 0.3em;
+    margin-left: rem(5);
   }
 }
 
@@ -35,9 +34,9 @@
 
 .#{$fa-css-prefix} {
   &.pull-left {
-    margin-right: 0.3em;
+    margin-right: rem(5);
   }
   &.pull-right {
-    margin-left: 0.3em;
+    margin-left: rem(5);
   }
 }

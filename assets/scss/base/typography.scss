@@ -7,15 +7,17 @@
 
 // Use ../functions/_index.scss which contains the function rem() to convert pixels to
 // rems. See https://sass-lang.com/documentation/modules/math#
-@use "../utils/index" as *;
-@use "../syntax/index" as *;
 
 // Default link styles
 a {
   font-weight: 500;
   color: $link-color;
   text-decoration: none;
-  transition: all 0.25s ease-in;
+
+  // List transitions styles for all links.
+  // See https://developer.mozilla.org/en-US/docs/Web/CSS/transition
+
+  transition: display 0.25s ease-in-out;
 
   &:focus,
   &:hover,

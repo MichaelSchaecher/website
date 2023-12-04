@@ -7,10 +7,9 @@
 
 // Use ../functions/_index.scss which contains the function rem() to convert pixels to
 // rems. See https://sass-lang.com/documentation/modules/math#
-@use "../utils/index" as *;
-@use "../syntax/index" as *;
 
 table {
+  display: table;
   border-collapse: collapse;
   border: 2px solid $alt-fg-color;
   width: 100%;
@@ -18,13 +17,14 @@ table {
   white-space: nowrap;
   line-height: 1.15;
 
-  // Keep the table from shrinking on tablets and larger screens.
   @include max {
-    display: table;
-  }
+    width: auto;
 
-  // Make the table scrollable on small screens.
-  @include min {
+    // Center the table on small screens.
+    margin-left: auto;
+    margin-right: auto;
+
+    // Make the table scrollable on small screens
     display: block;
     overflow-x: auto;
   }
@@ -43,8 +43,11 @@ table {
 
     // Keep the table header from overflowing the container on small screens by resetting
     // the top position.
-    @include max {
-      top: 0;
+    @include min {
+      top: rem(52);
+
+      // Reset the position to static.
+      position: static;
     }
   }
 

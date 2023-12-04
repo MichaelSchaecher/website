@@ -1,15 +1,12 @@
-//@use "fa-variables" as *;
-@use "../utils/index" as *;
-
 // Stacked Icons
 // -------------------------
 
 .#{$fa-css-prefix}-stack {
   position: relative;
   display: inline-block;
-  width: rem(32);
-  height: rem(32);
-  line-height: rem(32);
+  width: 2em;
+  height: 2em;
+  line-height: 2em;
   vertical-align: middle;
 }
 .#{$fa-css-prefix}-stack-1x,
@@ -23,7 +20,7 @@
   line-height: inherit;
 }
 .#{$fa-css-prefix}-stack-2x {
-  font-size: rem(32);
+  font-size: 2em;
 }
 .#{$fa-css-prefix}-inverse {
   color: $fa-inverse;

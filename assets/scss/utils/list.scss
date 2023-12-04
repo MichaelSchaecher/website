@@ -1,6 +1,3 @@
-//@use "fa-variables" as *;
-@use "../utils/index" as *;
-
 // List Icons
 // -------------------------
 
@@ -16,9 +13,9 @@
   position: absolute;
   left: -$fa-li-width;
   width: $fa-li-width;
-  top: calc(rem(32) / 16);
+  top: (2em / 14);
   text-align: center;
   &.#{$fa-css-prefix}-lg {
-    left: -$fa-li-width + calc(rem(64) / 16);
+    left: -$fa-li-width + rem(4);
   }
 }
