@@ -10,9 +10,15 @@
 
 .error {
   text-align: center;
+  background-color: $bg-color;
+  height: rem(384);
+
+  // Align the text vertically and horizontally
+  display: flex;
+  flex-direction: column;
 
   h1 {
-    margin-top: rem(32);
+    margin-top: rem(64);
     margin-bottom: rem(8);
     font-size: rem(48);
 
@@ -29,5 +35,10 @@
     @include max {
       font-size: rem(20);
     }
+  }
+
+  // Override the praghraph styles from typography.scss
+  p {
+    text-align: center;
   }
 }

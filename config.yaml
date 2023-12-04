@@ -1,6 +1,6 @@
 baseURL: "/"
 title: BlackStewie
-theme: hugo-coder
+#theme: hugo-coder
 languageCode: en
 defaultContentLanguage: en
 paginate: 20

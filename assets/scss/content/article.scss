@@ -96,6 +96,8 @@ article {
 .tag,
 .category {
   display: inline-block;
+  margin-left: rem(8);
+  margin-right: rem(8);
 
   a {
     // color: gray;
