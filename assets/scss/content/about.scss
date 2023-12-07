@@ -9,15 +9,16 @@
 // rems. See https://sass-lang.com/documentation/modules/math#
 
 .about {
-  text-align: center;
+  // Align both vertically
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 
-  h1 {
-    margin-top: rem(48);
-  }
+  // Align horizontally
+  align-items: center;
+  margin-top: rem(80);
 
   h2 {
-    margin-top: rem(16);
-    margin-bottom: rem(8);
     font-size: rem(24);
 
     @include max {
@@ -27,7 +28,7 @@
 
   ul {
     list-style: none;
-    margin: rem(48) 0;
+    margin: 0;
     padding: 0;
 
     li {
@@ -37,8 +38,8 @@
       a {
         color: $fg-color;
         text-transform: uppercase;
-        margin-left: rem(16);
-        margin-right: rem(16);
+        margin-left: rem(8);
+        margin-right: rem(8);
         font-size: rem(24);
 
         &:hover,
@@ -52,11 +53,4 @@
       }
     }
   }
-}
-
-// fa-icon for the social media icons
-.fa-var-github {
-  color: #000000;
-  font-size: rem(24);
-  margin-right: rem(16);
 }

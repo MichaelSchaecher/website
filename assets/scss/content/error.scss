@@ -9,13 +9,12 @@
 // rems. See https://sass-lang.com/documentation/modules/math#
 
 .error {
-  text-align: center;
-  background-color: $bg-color;
-  height: rem(384);
-
   // Align the text vertically and horizontally
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: rem(80);
 
   h1 {
     margin-top: rem(64);
@@ -29,8 +28,8 @@
 
   h2 {
     margin-top: rem(32);
-    margin-bottom: rem(52);
-    font-size: rem(24);
+    // margin-bottom: rem(52);
+    font-size: rem(27);
 
     @include max {
       font-size: rem(20);

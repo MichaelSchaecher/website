@@ -57,9 +57,8 @@ params:
     faviconSVG: icons/favicon.ico
     favicon_32: icons/favicon-32x32.png
     favicon_16: icons/favicon-16x16.png
-
-  # Use custom image for 404 page. Useful
-  missingPage: images/404.svg
+    # Use custom image for 404 page. Useful
+    missingPage: images/404.svg
 
   dateFormat: January 2, 2006
   since: 2023

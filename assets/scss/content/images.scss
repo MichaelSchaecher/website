@@ -12,7 +12,8 @@
   width: rem(312);
 
   // Add padding to the image
-  padding: rem(24);
+  // padding: rem(24);
+  // margin-top: rem(64);
 
   @include max {
     padding: rem(12);
@@ -20,7 +21,8 @@
   }
 }
 
-.featured-image img {
+.featured-image,
+.error-img img {
   width: 100%;
   height: rem(256);
 
@@ -29,6 +31,16 @@
     height: rem(128);
   }
 }
+
+// .error-img img {
+//   width: 100%;
+//   height: rem(256);
+
+//   @include max {
+//     width: 100%;
+//     height: rem(128);
+//   }
+// }
 
 .postlistIMG {
   img {
