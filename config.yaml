@@ -152,22 +152,22 @@ params:
       icon: fa fa-2x fa-github
       weight: 1
       url: https://github.com/MichaelSchaecher/
-    #- name: Gitlab
-    #  icon: fa fa-2x fa-gitlab
-    #  weight: 2
-    #  url: https://gitlab.com/
+    # - name: Gitlab
+    #   icon: fa fa-2x fa-gitlab
+    #   weight: 2
+    #   url: https://gitlab.com/
     # - name: Twitter
     #   icon: fa fa-2x fa-twitter
     #   weight: 3
     #   url: https://twitter.com/
-    #- name: LinkedIn
-    #  icon: fa fa-2x fa-linkedin
-    #  weight: 4
-    #  url: https://www.linkedin.com/
-    #- name: Medium
-    #  icon: fa fa-2x fa-medium
-    #  weight: 5
-    #  url: https://medium.com/
+    # - name: LinkedIn
+    #   icon: fa fa-2x fa-linkedin
+    #   weight: 4
+    #   url: https://www.linkedin.com/
+    # - name: Medium
+    #   icon: fa fa-2x fa-medium
+    #   weight: 5
+    #   url: https://medium.com/
     # - name: RSS
     #   icon: fa fa-2x fa-rss
     #   weight: 6
@@ -178,6 +178,14 @@ params:
     #   icon: fa fa-2x fa-facebook-official
     #   weight: 7
     #   url: https://www.facebook.com/
+    # - name: StackOverflow
+    #   icon: fa fa-2x fa-stack-overflow
+    #   weight: 8
+    #   url: https://stackoverflow.com/
+    # - name: Instagram
+    #   icon: fa fa-2x fa-instagram
+    #   weight: 9
+    #   url: https://www.instagram.com/
 
 taxonomies:
   category: categories
