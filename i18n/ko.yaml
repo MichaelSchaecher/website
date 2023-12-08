@@ -42,8 +42,3 @@ warning:
 error:
   other: error
 link_to_heading:
-  other: 링크
-previous_post:
-  other: 이전 글
-next_post:
-  other: 다음 글

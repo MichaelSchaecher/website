@@ -42,8 +42,5 @@ warning:
 error:
   other: error
 link_to_heading:
-  other: Link to heading
-previous_post:
-  other: السابق
-next_post:
-  other: التالي
+  other: رابط للعنوان
+
