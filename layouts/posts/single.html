@@ -47,6 +47,8 @@
             {{ i18n "reading_time" .ReadingTime }}
           </span>
         </div>
+
+        {{ partial "taxonomy/series.html" . }}
       </div>
       {{ .TableOfContents }}
     </header>
@@ -61,7 +63,6 @@
       {{ with .GetTerms "tags" }}
         {{ partial "taxonomy/tags.html" . }}
       {{ end }}
-      {{ partial "taxonomy/series.html" . }}
     </div>
 
     <!-- Previous and next post -->

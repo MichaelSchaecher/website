@@ -118,23 +118,9 @@ article {
 .series {
   padding-bottom: rem(32);
 
-  h4 {
-    // Set the font size to 20px and add some margin to the top and bottom.
-    font-size: rem(20);
-    margin: rem(12) 0;
-  }
-
-  // Hide the list style for the series posts.
-  ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-
   .series-title {
     line-height: 1.15;
-    margin-left: rem(48);
-    transition: all 0.25s;
+    transition: all 0.25s ease-in-out;
 
     &:hover,
     &:active {
@@ -142,26 +128,6 @@ article {
     }
   }
 }
-
-// The previous and next post links. These are the links that appear at the bottom of
-// each post to navigate to the previous or next post.
-
-// The links are wrapped in a div with the class prev-next. With the next link it needs
-// to be floated to the right of the page, even if there is no previous link.
-// .prev-next {
-//   // Add padding to the top and bottom of the links.
-//   padding: rem(48) 0;
-
-//   .prev {
-//     float: right;
-//     font-weight: 700;
-//   }
-
-//   .next {
-//     float: left;
-//     font-weight: 700;
-//   }
-// }
 
 figure {
   margin: 0;
