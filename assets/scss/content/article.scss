@@ -148,20 +148,20 @@ article {
 
 // The links are wrapped in a div with the class prev-next. With the next link it needs
 // to be floated to the right of the page, even if there is no previous link.
-.prev-next {
-  // Add padding to the top and bottom of the links.
-  padding: rem(48) 0;
+// .prev-next {
+//   // Add padding to the top and bottom of the links.
+//   padding: rem(48) 0;
 
-  .prev {
-    float: right;
-    font-weight: 700;
-  }
+//   .prev {
+//     float: right;
+//     font-weight: 700;
+//   }
 
-  .next {
-    float: left;
-    font-weight: 700;
-  }
-}
+//   .next {
+//     float: left;
+//     font-weight: 700;
+//   }
+// }
 
 figure {
   margin: 0;

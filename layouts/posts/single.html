@@ -65,28 +65,15 @@
     </div>
 
     <!-- Previous and next post -->
-    <div class="prev-next">
-      {{ $paginator := .Paginate (where .Site.RegularPages "Type" "post") }}
-      {{ with .NextInSection }}
-        <a class="next" href="{{ .Permalink | safeURL }}">
-          <i class="fa fa-arrow-left" aria-hidden="true"></i>
-          {{ i18n "next_post" }}
-        </a>
-      {{ end }}
-      {{ with .PrevInSection }}
-        <a class="prev" href="{{ .Permalink | safeURL }}">
-          {{ i18n "previous_post" }}
-          <i class="fa fa-arrow-right" aria-hidden="true"></i>
-        </a>
-      {{ end }}
-    </div>
+    {{ partial "posts/prev-next.html" . }}
+
 
     <footer>
-      {{ partial "posts/disqus.html" . }}
-      {{ partial "posts/commento.html" . }}
-      {{ partial "posts/utterances.html" . }}
-      {{ partial "posts/giscus.html" . }}
-      {{ partial "posts/telegram.html" . }}
+      {{ partial "posts/comments/disqus.html" . }}
+      {{ partial "posts/comments/commento.html" . }}
+      {{ partial "posts/comments/utterances.html" . }}
+      {{ partial "posts/comments/giscus.html" . }}
+      {{ partial "posts/comments/telegram.html" . }}
     </footer>
   </article>
 
