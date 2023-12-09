@@ -8,15 +8,34 @@
 // Use ../functions/_index.scss which contains the function rem() to convert pixels to
 // rems. See https://sass-lang.com/documentation/modules/math#
 
+@use "../util/index" as *;
+
 .about {
   // Align both vertically
   display: flex;
   flex-direction: column;
   justify-content: center;
 
+  // Prevent the page from scrolling.
+  overflow-x: hidden;
+  overflow-y: hidden;
+
   // Align horizontally
   align-items: center;
-  margin-top: rem(80);
+  margin-top: rem(64);
+
+  .avatar img {
+    width: rem(312);
+
+    // Add padding to the image
+    // padding: rem(24);
+    // margin-top: rem(64);
+
+    @include max {
+      padding: rem(12);
+      width: rem(192);
+    }
+  }
 
   h2 {
     font-size: rem(24);

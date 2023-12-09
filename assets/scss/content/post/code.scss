@@ -48,8 +48,8 @@ code {
 
   // Inline code color should match the default style for code blocks
   // syntax-highlighted with Chroma.
-  background-color: #282c34;
-  color: #abb2bf;
+  background-color: $bg-color;
+  color: yellow;
 }
 
 blockquote {

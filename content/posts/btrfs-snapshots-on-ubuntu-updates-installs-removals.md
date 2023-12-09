@@ -17,6 +17,7 @@ series:
   - Ubuntu N Btrfs
 draft: true
 weight: 20
+featuredImage: ""
 ---
 
 <!-- Do not talk about Timeshift or Snapper on managing snapshots -->

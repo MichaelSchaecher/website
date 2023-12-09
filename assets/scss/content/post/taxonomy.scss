@@ -1,0 +1,27 @@
+// Tags and categories should be inline-block elements to allow for link animations.
+
+.taxonomy-links {
+  display: inline-block;
+  margin-left: rem(8);
+  margin-right: rem(8);
+
+  .categories,
+  .tags {
+    .fa-folder,
+    .fa-tag {
+      padding-right: rem(24);
+      color: $accent-color;
+    }
+  }
+
+  a {
+    color: $alt-fg-color;
+    transition: all 0.2s ease-in-out;
+
+    &:hover,
+    &:focus {
+      font-weight: 700;
+      color: $link-color;
+    }
+  }
+}

@@ -36,9 +36,6 @@ a {
 p {
   margin: rem(20) 0;
 
-  // Default text size: to 16px no matter what.
-  font-size: rem(16);
-
   // Justify the text and set the hyphens to auto.
   text-align: justify;
   justify-self: center;
@@ -95,7 +92,7 @@ h6 {
 
 // Heading 1 styles
 h1 {
-  font-size: rem(32);
+  font-size: rem(40);
   line-height: rem(36);
 
   // Set media query for max-width to 800px or less.
@@ -107,7 +104,7 @@ h1 {
 
 // Heading 2 styles
 h2 {
-  font-size: rem(28);
+  font-size: rem(32);
   line-height: rem(32);
 
   // Set media query for max-width to 800px or less.
@@ -154,9 +151,10 @@ h5 {
 }
 
 // Heading 6 styles
-h6 {
+h6,
+p {
   font-size: rem(16);
-  line-height: rem(20);
+  line-height: 1.15;
 }
 
 // Bold styles

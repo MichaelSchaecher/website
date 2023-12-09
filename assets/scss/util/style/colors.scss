@@ -1,7 +1,7 @@
 // Colors
-$bg-color: rgb(80, 80, 80) !default;
+$bg-color: rgb(65, 65, 65) !default;
 $fg-color: rgb(230, 230, 230) !default;
-$darker-alt-bg-color: rgb(70, 70, 70) !default;
+$darker-alt-bg-color: rgb(80, 80, 80) !default;
 
 // Accent colors (used for links, buttons and decorative elements)
 $accent-color: rgb(205, 20, 130) !default;
@@ -9,9 +9,11 @@ $link-color: rgb(160, 50, 240) !default;
 $alt-link-color: rgb(240, 50, 160) !default;
 $button-bg-color: $link-color !default; // Same as link-color by default
 
+$title-color: rgb(175, 145, 175) !default;
+
 // Alt colors
-$alt-bg-color: rgb(40, 40, 40) !default;
-$alt-fg-color: rgb(115, 115, 115) !default;
+$alt-bg-color: rgb(50, 50, 50) !default;
+$alt-fg-color: rgb(145, 145, 180) !default;
 
 // Notice colors
 $fg-color-notice-note-icon: rgb(95, 55, 180) !default;

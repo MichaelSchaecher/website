@@ -16,9 +16,19 @@ header {
     font-size: rem(42);
     line-height: rem(46);
     margin: 0;
+    color: blue;
 
     // Center the text on the page.
     text-align: center;
+
+    a {
+      // No underline on the title, no cursor or hover effect.
+      text-decoration: none;
+      color: $alt-fg-color;
+
+      // Set the cursor to default.
+      cursor: default;
+    }
 
     // Set media query for max-width to 800px or less.
     @include max {

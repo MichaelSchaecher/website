@@ -56,35 +56,3 @@
     clip: auto;
   }
 }
-
-/*
-  Media mixins for responsive design and media queries.
-
-  For sreen sizes, see https://getbootstrap.com/docs/4.0/layout/overview/#responsive-breakpoints
-
-  4k = 1920
-  hd = 960
-  sd = 480
-
-  Usage: @include 4k { ... }
-         @include hd { ... }
-         @include sd { ... }
-*/
-
-@mixin large($screen: rem(1920)) {
-  @media (min-width: $screen) {
-    @content;
-  }
-}
-
-@mixin max($screen: rem(960)) {
-  @media (max-width: $screen) {
-    @content;
-  }
-}
-
-@mixin min($screen: rem(480)) {
-  @media (max-width: $screen) {
-    @content;
-  }
-}

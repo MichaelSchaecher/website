@@ -10,12 +10,9 @@
       $series.Pages) 1
     }}
       <div class="series">
-        <!-- {{ i18n "series" }}: -->
-        <!-- Add white space -->
-
         <i class="fa fa-book" aria-hidden="true"></i>
         <!-- Link to servies page -->
-        &nbsp;
+        {{ i18n "series" }}: &nbsp;
         <a
           class="series-title"
           href="{{ "series/" | relLangURL }}{{ $name | urlize }}"

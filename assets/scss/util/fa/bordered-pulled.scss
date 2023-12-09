@@ -1,11 +1,10 @@
 // Bordered & Pulled
 // -------------------------
 
-// Rewrite so the rem(value) to set px value 1rem = 16px.
 .#{$fa-css-prefix}-border {
-  padding: rem(3) rem(4) rem(3);
+  padding: 0.2em 0.25em 0.15em;
   border: solid 0.08em $fa-border-color;
-  border-radius: rem(3);
+  border-radius: 0.1em;
 }
 
 .#{$fa-css-prefix}-pull-left {
@@ -17,10 +16,10 @@
 
 .#{$fa-css-prefix} {
   &.#{$fa-css-prefix}-pull-left {
-    margin-right: rem(5);
+    margin-right: 0.3em;
   }
   &.#{$fa-css-prefix}-pull-right {
-    margin-left: rem(5);
+    margin-left: 0.3em;
   }
 }
 
@@ -34,9 +33,9 @@
 
 .#{$fa-css-prefix} {
   &.pull-left {
-    margin-right: rem(5);
+    margin-right: 0.3em;
   }
   &.pull-right {
-    margin-left: rem(5);
+    margin-left: 0.3em;
   }
 }
