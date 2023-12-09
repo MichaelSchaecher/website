@@ -14,13 +14,9 @@
         {{ end }}
 
 
-        <!-- Title -->
+        <!-- Title doesn't need to be a link to its self. -->
         <div class="post-title">
-          <h1 class="title">
-            <a class="title-link" href="{{ .Permalink | safeURL }}">
-              {{ .Title }}
-            </a>
-          </h1>
+          <h1 class="title">{{ .Title }}</h1>
         </div>
 
         <!-- Meta -->
