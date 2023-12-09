@@ -34,6 +34,10 @@
           {{ end }}
         </div>
 
+        <!-- Series -->
+        {{ partial "taxonomy/series.html" . }}
+
+
         <!-- Date and reading time -->
         <div class="date">
           <span class="posted-on">
@@ -47,8 +51,6 @@
             {{ i18n "reading_time" .ReadingTime }}
           </span>
         </div>
-
-        {{ partial "taxonomy/series.html" . }}
       </div>
       {{ .TableOfContents }}
     </header>

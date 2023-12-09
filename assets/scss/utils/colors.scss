@@ -1,31 +1,61 @@
 // Colors
-$bg-color: #212121 !default;
-$fg-color: #dadada !default;
-$alt-bg-color: #424242 !default;
-$alt-fg-color: #dadada !default;
-$darker-alt-bg-color: #4f4f4f !default;
-$link-color: magenta !default;
-$accent-color: #bf6606 !default;
+$bg-color: rgb(80, 80, 80) !default;
+$fg-color: rgb(230, 230, 230) !default;
+$darker-alt-bg-color: rgb(70, 70, 70) !default;
+
+// Accent colors (used for links, buttons and decorative elements)
+$accent-color: rgb(205, 20, 130) !default;
+$link-color: rgb(160, 50, 240) !default;
+$alt-link-color: rgb(240, 50, 160) !default;
+$button-bg-color: $link-color !default; // Same as link-color by default
+
+// Alt colors
+$alt-bg-color: rgb(40, 40, 40) !default;
+$alt-fg-color: rgb(115, 115, 115) !default;
 
 // Notice colors
-$fg-color-notice-note-icon: #5e35b1 !default;
-$bg-color-notice-note-title: #673ab71a !default;
-$bg-color-notice-note-content: #7e57c21a !default;
-$fg-color-notice-tip-icon: #00897b !default;
-$bg-color-notice-tip-title: #0096881a !default;
-$bg-color-notice-tip-content: #26a69a1a !default;
-$fg-color-notice-example-icon: #6d4c41 !default;
-$bg-color-notice-example-title: #7955481a !default;
-$bg-color-notice-example-content: #8d6e631a !default;
-$fg-color-notice-question-icon: #7cb342 !default;
-$bg-color-notice-question-title: #8bc34a1a !default;
-$bg-color-notice-question-content: #9ccc651a !default;
-$fg-color-notice-info-icon: #1e88e5 !default;
-$bg-color-notice-info-title: #2196f31a !default;
-$bg-color-notice-info-content: #42a5f51a !default;
-$fg-color-notice-warning-icon: #ffb300 !default;
-$bg-color-notice-warning-title: #ffc1071a !default;
-$bg-color-notice-warning-content: #ffca281a !default;
-$fg-color-notice-error-icon: #e53935 !default;
-$bg-color-notice-error-title: #f443361a !default;
-$bg-color-notice-error-content: #ef53501a !default;
+$fg-color-notice-note-icon: rgb(95, 55, 180) !default;
+$bg-color-notice-note-title: rgba(105, 60, 180, 0.1) !default;
+$bg-color-notice-note-content: rgba(125, 90, 195, 0.1) !default;
+
+$fg-color-notice-tip-icon: rgb(0, 140, 125) !default;
+$bg-color-notice-tip-title: rgba(0, 150, 135, 0.1) !default;
+$bg-color-notice-tip-content: rgba(40, 165, 155, 0.1) !default;
+
+$fg-color-notice-example-icon: rgb(110, 75, 65) !default;
+$bg-color-notice-example-title: rgba(120, 85, 70, 0.1) !default;
+$bg-color-notice-example-content: rgba(140, 110, 100, 0.1) !default;
+
+$fg-color-notice-question-icon: rgb(125, 180, 65) !default;
+$bg-color-notice-question-title: rgba(140, 195, 75, 0.1) !default;
+$bg-color-notice-question-content: rgba(150, 205, 100, 0.1) !default;
+
+$fg-color-notice-info-icon: rgb(30, 135, 230) !default;
+$bg-color-notice-info-title: rgba(35, 150, 245, 0.1) !default;
+$bg-color-notice-info-content: rgba(65, 165, 245, 0.1) !default;
+
+$fg-color-notice-warning-icon: rgb(255, 180, 0) !default;
+$bg-color-notice-warning-title: rgba(255, 195, 10, 0.1) !default;
+$bg-color-notice-warning-content: rgba(255, 200, 40, 0.1) !default;
+
+$fg-color-notice-error-icon: rgb(230, 55, 55) !default;
+$bg-color-notice-error-title: rgba(245, 65, 55, 0.1) !default;
+$bg-color-notice-error-content: rgba(240, 85, 80, 0.1) !default;
+
+// Social and networking icons colors, use the same colors as the official
+// icons from the social networks. Only the most popular ones are included.
+$social-twitter: rgb(29, 161, 242) !default;
+$social-facebook: rgb(59, 89, 152) !default;
+$social-google-plus: rgb(221, 75, 57) !default;
+$social-linkedin: rgb(0, 119, 181) !default;
+$social-github: rgb(0, 0, 0) !default;
+$social-gitlab: rgb(255, 51, 102) !default;
+$social-instagram: rgb(195, 42, 163) !default;
+$social-pinterest: rgb(189, 8, 28) !default;
+$social-youtube: rgb(205, 32, 31) !default;
+$social-vimeo: rgb(69, 187, 255) !default;
+$social-medium: rgb(2, 184, 117) !default;
+$social-gmail: rgb(219, 68, 55) !default;
+$social-yahoo: rgb(67, 2, 151) !default;
+$social-outlook: rgb(0, 114, 198) !default;
+$social-mastodon: rgb(84, 160, 255) !default;

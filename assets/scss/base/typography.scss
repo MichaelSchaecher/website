@@ -25,6 +25,11 @@ a {
     text-decoration: none;
     transform: scale(1.05);
   }
+
+  // change the color after the link is visited
+  &:visited {
+    color: $alt-link-color;
+  }
 }
 
 // Default paragraph styles

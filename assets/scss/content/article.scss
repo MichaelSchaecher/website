@@ -16,10 +16,6 @@ article {
     font-size: rem(12);
   }
 
-  p {
-    font-size: rem(16);
-  }
-
   details {
     summary {
       cursor: pointer;
@@ -31,10 +27,6 @@ article {
 
     // Center the comments on the page.
     text-align: center;
-
-    :see-also {
-      margin: rem(32) 0;
-    }
 
     h3 {
       margin: rem(32) 0;
@@ -65,9 +57,21 @@ article {
       margin-right: rem(8);
     }
 
+    .authors-name {
+      transition: all 0.25s ease-in-out;
+
+      &:hover,
+      &:active {
+        font-weight: 700;
+      }
+
+      &:visited {
+        color: $alt-link-color;
+      }
+    }
+
     .date {
       .posted-on {
-        margin-left: 0;
         margin-right: rem(24);
       }
     }
@@ -82,7 +86,7 @@ article {
     }
   }
   a {
-    color: orangered;
+    color: $alt-fg-color;
     font-size: rem(16);
     font-weight: 400;
     transition: all 0.2s ease-in-out;
@@ -116,7 +120,7 @@ article {
 }
 
 .series {
-  padding-bottom: rem(32);
+  padding-bottom: rem(16);
 
   .series-title {
     line-height: 1.15;
