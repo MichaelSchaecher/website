@@ -1,6 +1,6 @@
 baseURL: "/"
 title: BlackStewie
-#theme: hugo-coder
+theme: simple-dark
 languageCode: en
 defaultContentLanguage: en
 paginate: 20
@@ -49,28 +49,21 @@ params:
 
   # Set an image to be used as part of the listing of blogs and posts.
   images:
-    avatarURL: images/logo.svg
+    avatar: /images/logo.png
     #gravatar: john.doe@example.com
-    postlistIMG: /images/posts/posts-lists.png
-    underConstructionIMG: /images/under-construction.svg
-    aboutIMG: /images/about-me.png
-    faviconSVG: icons/favicon.ico
-    favicon_32: icons/favicon-32x32.png
-    favicon_16: icons/favicon-16x16.png
+    # favicon: /images/favicon.ico
+    # favicon_32: /images/favicon-32x32.png
+    # favicon_16: /images/favicon-16x16.png
     # Use custom image for 404 page. Useful
-    missingPage: images/404.svg
+    error: images/404.svg
 
   dateFormat: January 2, 2006
   since: 2023
 
   # Right To Left, shift content direction for languages such as Arabic
-  rtl: false
-  # Specify light/dark colorscheme
-  # Supported values:
-  # auto (use preference set by browser)
-  # dark (dark background, light foreground)
-  # light (light background, dark foreground) (default)
-  colorScheme: dark
+  # For now this is not supported.
+  # rtl: false
+
   # Hide the toggle button, along with the associated vertical divider
   hideColorSchemeToggle: true
   # Series see also post count
@@ -99,38 +92,31 @@ params:
   # If you want to use goatcounter(https://goatcounter.com) for analytics, add this section
   #goatCounter:
   #  code: code
-
   # If you want to use Cloudflare Web Analytics(https://cloudflare.com) for analytics, add this section
   #cloudflare:
   #  token: token
-
   # If you want to use Matomo(https://matomo.org) for analytics, add this section
   #matomo:
   #  siteID: ABCDE # Default value is 1, overwrite this if you are cloud-hosting
   #  serverURL: analytics.example.com # For cloud-hosting, use provided URL, e.g. example.matomo.cloud
-
   # If you want to use Google Tag Manager(https://analytics.google.com/) for analytics, add this section
   #googleTagManager:
   #  id: gid
-
   # If you want to use Yandex Metrika(https://metrika.yandex.ru) for analytics, add this section
   #yandexMetrika:
   #  id: gid
-
   # If you want to use Application Insights(https://azure.com/) for analytics, add this section
   #applicationInsights:
   #  connectionString: connectionString
-
   # If you want to use microanalytics.io for analytics, add this section
   #microAnalytics:
   #  id: ABCDE
-  #  dnt: false # respect DNT tracker, true by default
-
+  #  dnt: false
   # If you want to use Pirsch(https://pirsch.io) for analytics, add this section
   #pirsch:
   #  code: ABCDE
-
   # If you want to implement a Content-Security-Policy, add this section
+
   #csp:
   #  childsrc: [self]
   #  fontsrc: [self, https://fonts.gstatic.com, https://cdn.jsdelivr.net/]
