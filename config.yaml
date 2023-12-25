@@ -26,6 +26,9 @@ params:
   description: Ideas about technology, software development and life.
   keywords: blog, developer, personal
 
+  dateFormat: January 2, 2006
+  since: 2023
+
   license:
     type: MIT
     url: /license
@@ -57,17 +60,13 @@ params:
     # Use custom image for 404 page. Useful
     error: images/404.svg
 
-  dateFormat: January 2, 2006
-  since: 2023
-
   # Right To Left, shift content direction for languages such as Arabic
   # For now this is not supported.
   # rtl: false
 
-  # Hide the toggle button, along with the associated vertical divider
-  hideColorSchemeToggle: true
   # Series see also post count
   maxSeeAlsoItems: 5
+
   # Custom CSS, file path is relative to Hugo's asset folder (default: {your project root}/assets)
   customSCSS:
 
@@ -115,8 +114,8 @@ params:
   # If you want to use Pirsch(https://pirsch.io) for analytics, add this section
   #pirsch:
   #  code: ABCDE
-  # If you want to implement a Content-Security-Policy, add this section
 
+  # If you want to implement a Content-Security-Policy, add this section
   #csp:
   #  childsrc: [self]
   #  fontsrc: [self, https://fonts.gstatic.com, https://cdn.jsdelivr.net/]
@@ -135,41 +134,32 @@ params:
   social:
     - name: github
       icon: fa fa-2x fa-github
-      weight: 1
       url: https://github.com/MichaelSchaecher/
-    # - name: Gitlab
-    #   icon: fa fa-2x fa-gitlab
-    #   weight: 2
-    #   url: https://gitlab.com/
+    - name: Gitlab
+      icon: fa fa-2x fa-gitlab
+      url: https://gitlab.com/
     # - name: Twitter
     #   icon: fa fa-2x fa-twitter
-    #   weight: 3
     #   url: https://twitter.com/
     # - name: LinkedIn
     #   icon: fa fa-2x fa-linkedin
-    #   weight: 4
     #   url: https://www.linkedin.com/
     # - name: Medium
     #   icon: fa fa-2x fa-medium
-    #   weight: 5
     #   url: https://medium.com/
-    # - name: RSS
-    #   icon: fa fa-2x fa-rss
-    #   weight: 6
-    #   url: https://myhugosite.com/
-    #   rel: alternate
-    #   type: application/rss+xml
+    - name: RSS
+      icon: fa fa-2x fa-rss
+      url: https://blackstewie.com/index.xml
+      rel: alternate
+      type: application/rss+xml
     # - name: Facebook
     #   icon: fa fa-2x fa-facebook-official
-    #   weight: 7
     #   url: https://www.facebook.com/
     # - name: StackOverflow
     #   icon: fa fa-2x fa-stack-overflow
-    #   weight: 8
     #   url: https://stackoverflow.com/
     # - name: Instagram
     #   icon: fa fa-2x fa-instagram
-    #   weight: 9
     #   url: https://www.instagram.com/
 
 taxonomies:
@@ -177,10 +167,6 @@ taxonomies:
   series: series
   tag: tags
   author: authors
-
-languages:
-  en:
-    languageName: us
 
 menu:
   main:

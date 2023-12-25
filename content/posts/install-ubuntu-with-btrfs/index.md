@@ -297,6 +297,4 @@ Restart the ZRAM service `sudo systemctl restart zramswap.service` and verify th
 
 ## Conclusion
 
-That is it, you are done. You can now use the system as you normally would. If you have any questions or comments please leave them below once I get the comment section up and running. Other wise reach out to me on [Github](https://github.com/MichaelSchaecher).
-
-In the next post I well show you how to set up btrfs-grub with dpkg/apt hooks
+That is it, you are done. You can now use the system as you normally would. If you have any questions or comments please leave them below; other wise reach out to me on [Github](https://github.com/MichaelSchaecher).
