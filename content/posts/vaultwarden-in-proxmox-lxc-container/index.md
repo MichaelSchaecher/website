@@ -271,6 +271,7 @@ Now that we have Vaultwarden setup and running we need to make it precistent so 
 ```console
  podman generate systemd --name vaultwarden > /usr/lib/systemd/system/vaultwarden.service
 ```
+
 I like to use the `/usr/lib/systemd/system/` directory for my systemd service files. You can use the `/etc/systemd/system/` directory if you wish.
 
 Now enable and start the service `systemctl enable --now vaultwarden.service`.
