@@ -1,5 +1,5 @@
 ---
-title: Btrfs Snapshots on Ubuntu the Better Way
+title: The Better Way to Take BTRFS Snapshots on Ubuntu
 date: 2023-12-22T12:03:58-07:00
 description: ""
 slug: ""

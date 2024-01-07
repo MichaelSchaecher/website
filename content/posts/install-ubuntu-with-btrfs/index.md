@@ -16,6 +16,7 @@ series:
   - Ubuntu N Btrfs
 draft: false
 weight: 20
+featuredImage: ""
 ---
 
 ## Introduction
