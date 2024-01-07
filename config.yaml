@@ -135,9 +135,9 @@ params:
     - name: github
       icon: fa fa-2x fa-github
       url: https://github.com/MichaelSchaecher/
-    - name: Gitlab
-      icon: fa fa-2x fa-gitlab
-      url: https://gitlab.com/
+    # - name: Gitlab
+    #   icon: fa fa-2x fa-gitlab
+    #   url: https://gitlab.com/
     # - name: Twitter
     #   icon: fa fa-2x fa-twitter
     #   url: https://twitter.com/
