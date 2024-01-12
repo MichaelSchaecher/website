@@ -8,7 +8,7 @@ externalLink: ""
 
 ## [Website Source](https://github.com/MichaelSchaecher/website)
 
-This website is built using [Hugo](https://gohugo.io/) and the [hugo-coder](https://github.com/luizdepra/hugo-coder). Through a combination of hosting the source code on [GitHub](https://github.com) and using Cloudflare's [Pages](https://pages.cloudflare.com/) service, I am able to host this website for free.
+This website is built using [Hugo](https://gohugo.io/) and the [Simple Dark](https://github.com/MichaelSchaecher/simple-dark). Through a combination of hosting the source code on [GitHub](https://github.com) and using Cloudflare's [Pages](https://pages.cloudflare.com/) service, I am able to host this website for free.
 
 This well be a place for me to share my thoughts and ideas on various topics, as well as a place to share my projects and other things I am working on. I hope to make this website as useful as possible not only for myself, but for others as well. Because the only way to gain more knowledge is to share it with others what we've already learned.
 

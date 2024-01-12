@@ -2,6 +2,7 @@
 title: Vaultwarden in Proxmox LXC Container
 # Set date to Mountain Standard Time. Example: 2023-12-17T20:01:00-07:00
 date: 2024-01-07T04:51:21-07:00
+lastmod: 2024-01-12
 description: ""
 slug: ""
 authors:
@@ -207,7 +208,7 @@ You well notice that you well be using a [Docker](https://www.docker.com/) conta
 
 Now that we have MariaDB setup we can create the Vaultwarden container. We well be using Podman to create and run the container, but first we need to create a directory to store the data that Vaultwarden well use `mkdir /vlt/`. This well create a directory called `vlt` in the root directory of the container.
 
-```console
+```bash
 podman run \
   -d \
   --name vaultwarden \
@@ -215,22 +216,25 @@ podman run \
   -v /vlt/:/data/:Z \
   -e ROCKET_PORT=80 \
   -e DATABASE_URL='mysql://vaultwarden:password@127.0.0.1:3306/vaultwarden' \
-  -e ADMIN_TOKEN='RANDOM_SECRET_STRING' \
+  -e ADMIN_TOKEN="$(echo -n 'admin_token' | argon2 "$(openssl rand -base64 32)" -e -id -k 65540 -t 3 -p 4)" \
   docker://vaultwarden/server:latest
 ```
 
-Replace `password` with the password that you set for the MariaDB database and replace `RANDOM_SECRET_STRING` with an password that you can remember. This well be used to login to the admin panel of Vaultwarden which is used to manage the users, organizations and many other settings.
+Replace `password` with the password that you set for the MariaDB database.
+
+The `ADMIN_TOKEN` is a secret string that is used to access the admin console. If the command fails then you may need to install **argon2** with `apt install -y argon2`, then rerun the command. Don't worry about the `argon2` command it is just a password hashing utility for the `ADMIN_TOKEN` that you picked. Just remember to replace `admin_token` with a secret string that you can remember.
 
 #### What do all the options mean?
 
-| Option        | Value                                                                  | Description                                                                 |
-| :-----------: | :--------------------------------------------------------------------- | :-------------------------------- |
-| -d            |                                                                        | Run the container in the background                   |
-| --name        | vaultwarden                                                            | Name of the container             |
-| --network     | host                                                                   | Use the host's network                      |
-| -v            | /vlt/:/data/:Z                                                         | Mount the `/vlt/` directory to the `/data/` directory in the container and allow [Vaultwarden](https://hub.docker.com/r/vaultwarden/server) to read and write to it. |
-| -e            | ROCKET_PORT=80                                                         | Set the port that Vaultwarden well listen on                           |
-| -e            | DATABASE_URL='mysql://vaultwarden:password@localhost:3306/vaultwarden' | Set the database url |
+| Option    | Value          | Description                                                                                 |
+| :-------: | :------------- | :------------------------------------------------------------------------------------------ |
+| -d        |                | Run the container in the background                                                         |
+| --name    |                | Name of the container                                                                       |
+| --network | host           | Use the host's network                                                                      |
+| -v        | /vlt/:/data/:Z | Directory to mount to the container, and allow Vaultwarden to read and write to it          |
+| -e        | ROCKET_PORT    | The port Vaultwarden well be listen on: this should be port 80 or 443 if locally ssl signed |
+| -e        | DATABASE_URL   | Set the database url                                                                        |
+| -e        | ADMIN_TOKEN    | Secret string for Vaultwarden admin console                                                 |
 
 If you were setting the up on a VM or a physical machine with other services running on it then you would want to use a different port and not use the host's network, but a bridged network instead. However, since we are using a LXC container and nothing else is running on the container then we can use the host's network with no issues. I also recommend using port `80` because it is the default port for http which easier to forward with a reverse proxy like [Traefik](https://traefik.io/) or [enginx](https://www.nginx.com/).
 
@@ -264,9 +268,9 @@ Importing passwords is easy, figure out what how to export your passwords from a
 
 Just know that vaultwarden supports importing passwords from other password managers and web browsers in multiple formats. You can find the list of supported formats [here](https://bitwarden.com/help/export-your-data/).
 
-## Making Vaultwarden Precistent
+## Making Vaultwarden Persistent
 
-Now that we have Vaultwarden setup and running we need to make it precistent so that it starts when the LXC container restarts or the host rebooted Vaultwarden well start automatically. To do this we need to create a systemd service file using **padman**.
+Now that we have Vaultwarden setup and running we need to make it persistent so that it starts when the LXC container restarts or the host rebooted Vaultwarden well start automatically. To do this we need to create a systemd service file using **podman**.
 
 ```console
  podman generate systemd --name vaultwarden > /usr/lib/systemd/system/vaultwarden.service
