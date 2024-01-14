@@ -29,29 +29,14 @@
   // Hide the scrollbar.
   scrollbar-width: none;
 
-  @include max {
-    margin-top: rem(48);
-
-    // Padding left and right should be 2px top and bottom should be 8px.
-    padding: rem(80) rem(2);
-
-    // Set the max-height to 128px.
-    max-height: rem(192);
-  }
-
   li {
     margin-bottom: rem(10);
 
     .date {
       text-align: left;
       margin-right: rem(32);
-      font-size: rem(20);
-
-      @include max {
-        display: block;
-        text-align: left;
-        font-size: rem(14);
-      }
+      font-size: rem(18);
+      font-weight: 600;
     }
 
     .title {
@@ -59,7 +44,7 @@
       float: right;
       color: $fg-color;
       font-family: $font-family;
-      font-weight: 700;
+      font-weight: 600;
       transition: all 0.25s ease-in-out;
       cursor: pointer;
 
@@ -69,12 +54,17 @@
         text-decoration: none;
         transform: scale(1.1);
       }
+    }
+  }
 
-      @include max {
-        font-size: rem(14);
-        display: block;
-        float: left;
-      }
+  // On small screens, the list needs to be centered.
+  @include max {
+    margin: rem(48) auto;
+
+    // Set the max-height to 128px.
+    max-height: rem(192);
+    li {
+      margin-bottom: rem(10);
     }
   }
 }
@@ -132,11 +122,15 @@
 
 ul:not(.pagination, .taxonomy) {
   li {
+    .date {
+      text-align: center;
+      margin: 0;
+    }
     @include max {
       display: flex;
       flex-direction: column;
       float: none;
-      margin-left: 30%;
+      text-align: center;
     }
   }
 }
