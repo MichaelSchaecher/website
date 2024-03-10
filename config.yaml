@@ -58,7 +58,7 @@ params:
     # favicon_32: /images/favicon-32x32.png
     # favicon_16: /images/favicon-16x16.png
     # Use custom image for 404 page. Useful
-    error: images/404.svg
+    error: images/404.png
 
   # Right To Left, shift content direction for languages such as Arabic
   # For now this is not supported.
