@@ -60,6 +60,9 @@ params:
     # Use custom image for 404 page. Useful
     error: images/404.png
 
+  # Font Awesome icons kit code
+  fontawesomeKit: 00501d56b9
+
   # Right To Left, shift content direction for languages such as Arabic
   # For now this is not supported.
   # rtl: false
@@ -144,33 +147,33 @@ params:
 
   social:
     - name: github
-      icon: fa fa-2x fa-github
+      icon: fa-brands fa-github
       url: https://github.com/MichaelSchaecher/
     # - name: Gitlab
-    #   icon: fa fa-2x fa-gitlab
+    #   icon: fa-brands fa-gitlab
     #   url: https://gitlab.com/
     # - name: Twitter
-    #   icon: fa fa-2x fa-twitter
+    #   icon: fa-brands fa-twitter
     #   url: https://twitter.com/
     # - name: LinkedIn
-    #   icon: fa fa-2x fa-linkedin
+    #   icon: fa-brands fa-linkedin
     #   url: https://www.linkedin.com/
     # - name: Medium
-    #   icon: fa fa-2x fa-medium
+    #   icon: fa-brands fa-medium
     #   url: https://medium.com/
     - name: RSS
-      icon: fa fa-2x fa-rss
+      icon: fa-brands fa-rss
       url: https://blackstewie.com/index.xml
       rel: alternate
       type: application/rss+xml
     # - name: Facebook
-    #   icon: fa fa-2x fa-facebook-official
+    #   icon: fa-brands fa-facebook-official
     #   url: https://www.facebook.com/
     # - name: StackOverflow
-    #   icon: fa fa-2x fa-stack-overflow
+    #   icon: fa-brands fa-stack-overflow
     #   url: https://stackoverflow.com/
     # - name: Instagram
-    #   icon: fa fa-2x fa-instagram
+    #   icon: fa-brands fa-instagram
     #   url: https://www.instagram.com/
 
 taxonomies:
