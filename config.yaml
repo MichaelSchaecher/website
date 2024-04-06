@@ -1,6 +1,5 @@
 baseURL: "/"
 title: BlackStewie
-theme: simple-dark
 languageCode: en
 defaultContentLanguage: en
 paginate: 20
