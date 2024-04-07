@@ -1,5 +1,5 @@
 ---
-title: Btrfs Snapshots on Ubuntu the Better Way
+title: The Better Way to Take BTRFS Snapshots on Ubuntu
 date: 2023-12-22T12:03:58-07:00
 description: ""
 slug: ""
@@ -31,7 +31,7 @@ If you are using Ubuntu 20.04 or newer and did a guided btrfs install please rea
 
 You well need a current or supported version of Debian or Ubuntu (based distro) with btrfs-progs that support space_cache=v2 and compress=zstd:3/lzo. You can check if your system supports these features by running the following command: `btrfs --version`. If the output is 5.4 or newer, you are good to go. If not, you will need to upgrade your system or install a newer version of btrfs-progs from source.
 
-As of this writting Ubuntu 22.04 uses btrfs v5.16.2.
+As of this writing Ubuntu 22.04 uses btrfs v5.16.2.
 
 ### System Requirements
 
@@ -66,4 +66,3 @@ sudo btrfs subvolume snapshot -r /@ /@/.snapshots/$(date +%Y-%m-%d_%H:%M:%S)_roo
 ```
 
 And run `sudo update-grub` to add the snapshot to the grub menu. If you are using a different subvolume layout, you will need to adjust the command accordingly. Remove the `-r` flag if you do not want the snapshot to be read-only, allowing you to make changes to it if needed, but this is not recommended.
-
