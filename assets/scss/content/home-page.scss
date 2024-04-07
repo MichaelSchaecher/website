@@ -36,7 +36,7 @@
   border: none;
   padding: rem(4);
   margin: rem(8);
-  text-align: justify;
+  text-align: center;
   text-wrap: wrap;
 
   &::before, &::after { content: '"'; }
