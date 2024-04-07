@@ -1,9 +1,9 @@
 // Colors
-$bg-color: rgb(25, 25, 25) !default;
+$bg-color: rgb(30, 30, 30) !default;
 $fg-color: rgb(210, 210, 210) !default;
 
 // Alt colors
-$alt-bg-color: rgb(50, 50, 50) !default;
+$alt-bg-color: rgb(40, 40, 40) !default;
 $alt-fg-color: rgb(105, 105, 105) !default;
 
 $alt-darker-color: rgb(75, 75, 75) !default;
@@ -55,6 +55,7 @@ $bg-color-notice-error-content: rgba(240, 85, 80, 0.1) !default;
 $social-color: rgb(95, 95, 95) !default;
 
 // Set color for general fa-icons based on usage.
+$fa-book-open: black !default;
 $fa-calendar: red !default;
 $fa-clock: orange !default;
 $fa-tag: yellow !default;

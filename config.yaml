@@ -64,7 +64,8 @@ params:
   # rtl: false
 
   # Hide the toggle button, along with the associated vertical divider
-  hideColorSchemeToggle: true
+  fontAwesomeCDN: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.css
+
   # Series see also post count
   maxSeeAlsoItems: 5
   # Custom CSS, file path is relative to Hugo's asset folder (default: {your project root}/assets)
@@ -133,43 +134,15 @@ params:
 
   social:
     - name: github
-      icon: fa fa-2x fa-github
+      icon: fa-brands fa-github
       weight: 1
       url: https://github.com/MichaelSchaecher/
-    # - name: Gitlab
-    #   icon: fa fa-2x fa-gitlab
-    #   weight: 2
-    #   url: https://gitlab.com/
-    # - name: Twitter
-    #   icon: fa fa-2x fa-twitter
-    #   weight: 3
-    #   url: https://twitter.com/
-    # - name: LinkedIn
-    #   icon: fa fa-2x fa-linkedin
-    #   weight: 4
-    #   url: https://www.linkedin.com/
-    # - name: Medium
-    #   icon: fa fa-2x fa-medium
-    #   weight: 5
-    #   url: https://medium.com/
-    # - name: RSS
-    #   icon: fa fa-2x fa-rss
-    #   weight: 6
-    #   url: https://myhugosite.com/
-    #   rel: alternate
-    #   type: application/rss+xml
-    # - name: Facebook
-    #   icon: fa fa-2x fa-facebook-official
-    #   weight: 7
-    #   url: https://www.facebook.com/
-    # - name: StackOverflow
-    #   icon: fa fa-2x fa-stack-overflow
-    #   weight: 8
-    #   url: https://stackoverflow.com/
-    # - name: Instagram
-    #   icon: fa fa-2x fa-instagram
-    #   weight: 9
-    #   url: https://www.instagram.com/
+    - name: RSS
+      icon: fa-solid fa-rss
+      weight: 2
+      url: https://myhugosite.com/
+      rel: alternate
+      type: application/rss+xml
 
 taxonomies:
   category: categories

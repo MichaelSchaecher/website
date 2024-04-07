@@ -1,3 +1,22 @@
 <h3 class="box-title">Quote of the day</h2>
-<blockquote class="quotes">Loading the next quote, be beware that I may be dumb or fake.</blockquote>
-<i class="fa-solid fa-minus"></i><span class="quote-author">Loading...</span>
+<blockquote class="quotes"></blockquote>
+<div class="authorContainer">
+  <i class="fa-solid fa-minus"></i><span class="quote-author"></span>
+  {{ if .Site.IsServer }}
+    {{ $quotes := resources.Get "js/quotes.js" }}
+    {{ $jenQuotes := resources.Get "js/jenQuotes.js" }}
+    <script src="{{ $quotes.RelPermalink }}"></script>
+    <script src="{{ $jenQuotes.RelPermalink }}"></script>
+  {{ else }}
+    {{ $quotes := resources.Get "js/quotes.js" | minify | fingerprint }}
+    {{ $jenQuotes := resources.Get "js/quotes.js" | minify | fingerprint }}
+    <script
+      src="{{ $quotes.RelPermalink }}"
+      integrity="{{ $quotes.Data.Integrity }}"
+    ></script>
+    <script
+      src="{{ $jenQuotes.RelPermalink }}"
+      integrity="{{ $jenQuotes.Data.Integrity }}"
+    ></script>
+  {{ end }}
+</div>
