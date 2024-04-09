@@ -6,7 +6,9 @@ draft: False
 
 ## MIT License
 
-Copyright <small>&copy;</small> 2023 Michael Schaecher
+Copyright <small>&copy;</small> <span id="copyrightYear"></span><noscript>{{ now.Year }}</noscript> Michael Schaecher
+
+<script>document.getElementById("copyrightYear").innerHTML = new Date().getFullYear();</script>
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

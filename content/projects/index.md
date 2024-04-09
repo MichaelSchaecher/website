@@ -8,7 +8,7 @@ externalLink: ""
 
 ## [Website Source](https://github.com/MichaelSchaecher/website)
 
-This website is built using [Hugo](https://gohugo.io/) and the [hugo-coder](https://github.com/luizdepra/hugo-coder). Through a combination of hosting the source code on [GitHub](https://github.com) and using Cloudflare's [Pages](https://pages.cloudflare.com/) service, I am able to host this website for free.
+This website is built using [Hugo](https://gohugo.io/) and a custom version of [Simple Dark](https://github.com/MichaelSchaecher/simple-dark). Through a combination of hosting the source code on [GitHub](https://github.com) and using Cloudflare's [Pages](https://pages.cloudflare.com/) service, I am able to host this website for free.
 
 This well be a place for me to share my thoughts and ideas on various topics, as well as a place to share my projects and other things I am working on. I hope to make this website as useful as possible not only for myself, but for others as well. Because the only way to gain more knowledge is to share it with others what we've already learned.
 
@@ -17,7 +17,7 @@ This well be a place for me to share my thoughts and ideas on various topics, as
 
 Pi-hole is a useful tool for blocking ads, trackers, malware, etc. on your home network. However, the Internet is not static and neither are the lists that Pi-hole uses. So I created a set of systemd timers and services to keep the lists up to date and to keep the Pi-hole database optimized. There is also a service for updating the Pi-hole software itself, but only use at your own risk bacause it is something that Pi-hole does not endorse.
 
-## [Custom WSL2 Kernel](https://raw.githubusercontent.com/MichaelSchaecher/MichaelSchaecher/main/patchs/wsl-support.patch).
+## [Custom WSL2 Kernel](https://github.com/MichaelSchaecher/wsl-kernel-patch)
 
 For a time I would compile the latest stable Linux Kernel release from [kernel.org](https://www.kernel.org/), adding my own patches to use wsl2 config if `make oldconfig` detected that I was running on WSL2.
 
