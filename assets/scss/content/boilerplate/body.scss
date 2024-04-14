@@ -30,7 +30,14 @@ html {
 
 body { min-height: 100vh; display: flex; flex-direction: column; margin: 0 auto; max-width: rem(1080); }
 
-body .wrapper { flex: 1; background-color: $bg-color; .container { margin: 0 rem(16); }}
+body .wrapper {
+  flex: 1;
+  background-color: $bg-color;
+  border-left: rem(3) solid $alt-darker-color;
+  border-right: rem(3) solid $alt-darker-color;
+
+  .container { margin: 0 rem(16); }
+}
 
 body {
   .wrapper {

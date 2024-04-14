@@ -1,0 +1,65 @@
+{{/* Shortcode for showing projects with the text to the right of the image */}}
+
+
+<!-- layouts/shortcodes/content-with-image.html -->
+{{ $src := .Get "src" }}
+{{ $alt := .Get "alt" }}
+{{ $row := .Get "class" }}
+{{ $href := .Get "href" }}
+
+{{/* Check if $row equals rowLeft or rowRight */}}
+{{ if eq $row "rowLeft" }}
+  <div class="{{ $row }}">
+    <div class="marginLeft">
+      {{ $content := .Inner | markdownify | replaceRE "<p>|</p>" "" }}
+      {{ $contentParts := split $content "<ul>" }}
+      {{ if gt (len $contentParts) 1 }}
+        {{ $beforeList := index $contentParts 0 }}
+        {{ $listPart := index $contentParts 1 }}
+        <h2>{{ $alt }}</h2>
+        <p>{{ $beforeList }}</p>
+        <ul>
+          {{ $listItems := split $listPart "</ul>" }}
+          {{ $list := trim (index $listItems 0) "\n" }}
+          {{ range $item := findRE "<li>(.*?)</li>" $list }}
+            <li>{{ $item | replaceRE "<li>|</li>" "" }}</li>
+          {{ end }}
+        </ul>
+        {{ $afterList := index $contentParts 2 }}
+        <p>{{ $afterList }}</p>
+      {{ end }}
+    </div>
+    <div class="imageLeft">
+      <a href="{{ $href }}" class="href"
+        ><img src="{{ $src }}" alt="{{ $alt }}"
+      /></a>
+    </div>
+  </div>
+{{ else if eq $row "rowRight" }}
+  <div class="{{ $row }}">
+    <div class="marginRight">
+      {{ $content := .Inner | markdownify | replaceRE "<p>|</p>" "" }}
+      {{ $contentParts := split $content "<ul>" }}
+      {{ if gt (len $contentParts) 1 }}
+        {{ $beforeList := index $contentParts 0 }}
+        {{ $listPart := index $contentParts 1 }}
+        <h2>{{ $alt }}</h2>
+        <p>{{ $beforeList }}</p>
+        <ul>
+          {{ $listItems := split $listPart "</ul>" }}
+          {{ $list := trim (index $listItems 0) "\n" }}
+          {{ range $item := findRE "<li>(.*?)</li>" $list }}
+            <li>{{ $item | replaceRE "<li>|</li>" "" }}</li>
+          {{ end }}
+        </ul>
+        {{ $afterList := index $contentParts 2 }}
+        <p>{{ $afterList }}</p>
+      {{ end }}
+    </div>
+    <div class="imageRight">
+      <a href="{{ $href }}" class="href"
+        ><img src="{{ $src }}" alt="{{ $alt }}"
+      /></a>
+    </div>
+  </div>
+{{ end }}

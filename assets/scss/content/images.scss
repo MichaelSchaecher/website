@@ -62,8 +62,8 @@
   margin: rem(16);
 
   img {
-    width: 75%;
-    height: 75%;
+    width: rem(640);
+    height: rem(380);
   }
 
   figcaption {
@@ -89,3 +89,4 @@
     }
   }
 }
+

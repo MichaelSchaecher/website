@@ -39,7 +39,7 @@ a {
 i { width: rem(16); margin: 0; }
 
 // Default paragraph styles
-p { margin: rem(20) 0; text-align: justify; justify-self: center; hyphens: auto; @include min { margin: rem(12) 0; }}
+p { margin: 0 0 rem(20) 0; text-align: justify; justify-self: center; hyphens: auto; @include min { margin: rem(12) 0; }}
 
 u { text-decoration: underline; color: $accent-color; font-weight: 600; }
 

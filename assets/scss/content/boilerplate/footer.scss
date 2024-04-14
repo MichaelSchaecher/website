@@ -14,22 +14,29 @@
 
 // Media query mixin from the utilities is used setting changes due to screen size.
 
-#footer-text {
-  width: 100%;
-  text-align: center;
-  font-size: rem(16);
-  line-height: rem(40);
+.main-footer {
   background-color: $bg-color;
+  line-height: rem(40);
+  width: 100%;
+  border-radius: 0 0 rem(8) rem(8);
+  border-left: rem(3) solid $alt-darker-color;
+  border-right: rem(3) solid $alt-darker-color;
 
-  // Reset the top and bottom margin:
-  margin: 0;
+  #footer-text {
+    text-align: center;
+    font-size: rem(16);
+    line-height: rem(40);
 
-  a {
-    &:hover,
-    &:focus,
-    &:active {
-      color: $link-color;
-      text-decoration: none;
+    // Reset the top and bottom margin:
+    margin: 0;
+
+    a {
+      &:hover,
+      &:focus,
+      &:active {
+        color: $link-color;
+        text-decoration: none;
+      }
     }
   }
 }

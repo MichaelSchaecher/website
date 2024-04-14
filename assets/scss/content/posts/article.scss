@@ -5,8 +5,6 @@
 @use "../utilities/colors" as *;
 
 article {
-  // Padding on top.
-  margin-bottom: rem(24);
   background-color: $bg-color;
 
   border-radius: rem(8);
@@ -19,7 +17,7 @@ article {
 
   // Small screens
   @include max {
-    margin: rem(48) rem(16);
+    margin: rem(48) 0;
   }
 }
 

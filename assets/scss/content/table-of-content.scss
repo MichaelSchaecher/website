@@ -9,18 +9,19 @@
 .toc {
   h2 {
     margin: rem(32) 0 rem(16);
-    text-decoration: none;
+    // text-decoration: none;
   }
 
   nav {
     text-align: left;
     border-bottom: none;
-    font-size: rem(20);
+    font-size: rem(16);
+    letter-spacing: rem(2);
 
     ol {
       // List of possible values for list-style-type: https://developer.mozilla.org/en-US/docs/Web/CSS/list-style-type
       list-style: decimal;
-      line-height: 1.5;
+      line-height: 1.15;
 
       li {
         color: $fg-color;
