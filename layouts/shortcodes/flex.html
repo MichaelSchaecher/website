@@ -1,6 +1,3 @@
-{{/* Shortcode for showing projects with the text to the right of the image */}}
-
-
 <!-- layouts/shortcodes/content-with-image.html -->
 {{ $src := .Get "src" }}
 {{ $alt := .Get "alt" }}
@@ -11,55 +8,65 @@
 {{ if eq $row "rowLeft" }}
   <div class="{{ $row }}">
     <div class="marginLeft">
-      {{ $content := .Inner | markdownify | replaceRE "<p>|</p>" "" }}
+      {{ $content := .Inner }}
       {{ $contentParts := split $content "<ul>" }}
       {{ if gt (len $contentParts) 1 }}
         {{ $beforeList := index $contentParts 0 }}
         {{ $listPart := index $contentParts 1 }}
-        <h2>{{ $alt }}</h2>
-        <p>{{ $beforeList }}</p>
-        <ul>
-          {{ $listItems := split $listPart "</ul>" }}
-          {{ $list := trim (index $listItems 0) "\n" }}
-          {{ range $item := findRE "<li>(.*?)</li>" $list }}
-            <li>{{ $item | replaceRE "<li>|</li>" "" }}</li>
-          {{ end }}
-        </ul>
+        <h2><a href="{{ $href }}" class="href">{{ $alt }}</a></h2>
+        {{ $beforeList | markdownify }}
+        {{ if $listPart }}
+          <ul>
+            {{ $listItems := split $listPart "</ul>" }}
+            {{ $list := trim (index $listItems 0) "\n" }}
+            {{ range $item := findRE "<li>(.*?)</li>" $list }}
+              <li>{{ $item | markdownify }}</li>
+            {{ end }}
+          </ul>
+        {{ end }}
         {{ $afterList := index $contentParts 2 }}
-        <p>{{ $afterList }}</p>
+        <p>{{ $afterList | markdownify }}</p>
+      {{ else }}
+        <h2><a href="{{ $href }}" class="href">{{ $alt }}</a></h2>
+        <p>{{ $content | markdownify }}</p>
       {{ end }}
     </div>
     <div class="imageLeft">
-      <a href="{{ $href }}" class="href"
-        ><img src="{{ $src }}" alt="{{ $alt }}"
-      /></a>
+      <a href="{{ $href }}" class="href">
+        <img src="{{ $src }}" alt="{{ $alt }}" />
+      </a>
     </div>
   </div>
 {{ else if eq $row "rowRight" }}
   <div class="{{ $row }}">
     <div class="marginRight">
-      {{ $content := .Inner | markdownify | replaceRE "<p>|</p>" "" }}
+      {{ $content := .Inner }}
       {{ $contentParts := split $content "<ul>" }}
       {{ if gt (len $contentParts) 1 }}
         {{ $beforeList := index $contentParts 0 }}
         {{ $listPart := index $contentParts 1 }}
-        <h2>{{ $alt }}</h2>
-        <p>{{ $beforeList }}</p>
-        <ul>
-          {{ $listItems := split $listPart "</ul>" }}
-          {{ $list := trim (index $listItems 0) "\n" }}
-          {{ range $item := findRE "<li>(.*?)</li>" $list }}
-            <li>{{ $item | replaceRE "<li>|</li>" "" }}</li>
-          {{ end }}
-        </ul>
+        <h2><a href="{{ $href }}" class="href">{{ $alt }}</a></h2>
+        <p>{{ $beforeList | markdownify }}</p>
+        {{ if $listPart }}
+          <ul>
+            {{ $listItems := split $listPart "</ul>" }}
+            {{ $list := trim (index $listItems 0) "\n" }}
+            {{ range $item := findRE "<li>(.*?)</li>" $list }}
+              <li>{{ $item | markdownify }}</li>
+            {{ end }}
+          </ul>
+        {{ end }}
         {{ $afterList := index $contentParts 2 }}
-        <p>{{ $afterList }}</p>
+        <p>{{ $afterList | markdownify }}</p>
+      {{ else }}
+        <h2><a href="{{ $href }}" class="href">{{ $alt }}</a></h2>
+        <p>{{ $content | markdownify }}</p>
       {{ end }}
     </div>
     <div class="imageRight">
-      <a href="{{ $href }}" class="href"
-        ><img src="{{ $src }}" alt="{{ $alt }}"
-      /></a>
+      <a href="{{ $href }}" class="href">
+        <img src="{{ $src }}" alt="{{ $alt }}" />
+      </a>
     </div>
   </div>
 {{ end }}
