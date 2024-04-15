@@ -22,3 +22,22 @@ If using these scripts, please make sure to adjust the paths and commands to you
 > **Note:** The timer script for **Starship Prompt** only works if Starship is installed globally.
 
 {{< /flex >}}
+
+The advantage of using **SystemD** over **Cron** is that it is more reliable when it comes to running tasks at a specific time and if the time was missed. This means that **SystemD** will run the task as soon as possible after the missed time.
+
+{{< flex src="/projects/Kernel.png" alt="Linux Kernel for WSL" class="rowLeft"
+href="https://github.com/MichaelSchaecher/linux-wsl-kerenel" >}}
+
+I have compiled a **Linux Kernel** for **Windows Subsystem for Linux (WSL)**. This kernel is based on the based on either the mainline or stable kernel from [kernel.org](https://www.kernel.org/). The kernel is compiled inside WSL and can be installed on Windows 10 or Windows 11.
+
+To use this [Kernel Patch](https://github.com/MichaelSchaecher/wsl-kernel-patch) you need to have the following installed development tools on your system.
+
+```bash
+sudo apt install build-essential \
+  flex bison libssl-dev \
+  libelf-dev bc libncurses-dev
+```
+
+{{< /flex >}}
+
+You can download the compiled kernel from [here](https://github.com/MichaelSchaecher/linux-wsl-kerenel/releases/tag/kernel-release) and install it on your system. **Note**: Don't install in the default location for the kernel. Instead, install it in a separate directory and point to it in your WSL configuration.

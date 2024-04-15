@@ -80,18 +80,16 @@
       </div>
 
     <!-- Previous and next post -->
-    {{ if .Site.Params.scrollPost }} {{ partial "posts/next-article.html" . }} {{ end }}
+    {{ if .Site.Params.scrollPost }} {{ partial "next-article.html" . }} {{ end }}
 
 
       <div class="comments">
-        {{ partial "posts/comments/disqus.html" . }}
-        {{ partial "posts/comments/commento.html" . }}
-        {{ partial "posts/comments/utterances.html" . }}
-        {{ partial "posts/comments/giscus.html" . }}
-        {{ partial "posts/comments/telegram.html" . }}
+        {{ partial "comments/disqus.html" . }}
+        {{ partial "comments/commento.html" . }}
+        {{ partial "comments/utterances.html" . }}
+        {{ partial "comments/giscus.html" . }}
+        {{ partial "comments/telegram.html" . }}
       </div>
     </article>
   </section>
-
-  {{ partial "posts/math.html" . }}
 {{ end }}
