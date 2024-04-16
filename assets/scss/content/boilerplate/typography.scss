@@ -36,50 +36,125 @@ a {
 }
 
 // Default font awesome icon styles
-i { width: rem(16); margin: 0; }
+i {
+  width: rem(16);
+  margin: 0;
+}
 
 // Default paragraph styles
-p { margin: 0 0 rem(20) 0; text-align: justify; justify-self: center; hyphens: auto; @include min { margin: rem(12) 0; }}
+p {
+  margin: 0 0 rem(20) 0;
+  text-align: justify;
+  justify-self: center;
+  hyphens: auto;
+  @include min {
+    margin: rem(12) 0;
+  }
+}
 
-u { text-decoration: underline; color: $accent-color; font-weight: 600; }
+u {
+  text-decoration: underline;
+  color: $accent-color;
+  font-weight: 600;
+}
 
 // Default heading styles
-h1, h2, h3, h4, h5, h6 { font-weight: 600;  margin: rem(20) 0 rem(20) 0; @include min { margin: rem(27) 0 rem(21) 0; }}
-
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 600;
+  margin: rem(20) 0 rem(20) 0;
+  @include min {
+    margin: rem(27) 0 rem(21) 0;
+  }
+}
 
 // Heading 1 styles
-h1 { font-size: rem(40); @include min { font-size: rem(30); }}
+h1 {
+  font-size: rem(40);
+  @include min {
+    font-size: rem(30);
+  }
+}
 
 // Heading 2 styles
-h2 { font-size: rem(32); @include min { font-size: rem(26); }}
+h2 {
+  font-size: rem(32);
+  @include min {
+    font-size: rem(26);
+  }
+}
 
 // Heading 3 styles
-h3 { font-size: rem(24); @include min { font-size: rem(22); }}
+h3 {
+  font-size: rem(24);
+  @include min {
+    font-size: rem(22);
+  }
+}
 
 // Heading 4 styles
-h4 { font-size: rem(20); @include min { font-size: rem(18); }}
+h4 {
+  font-size: rem(20);
+  @include min {
+    font-size: rem(18);
+  }
+}
 
 // Heading 5 styles
-h5 { font-size: rem(18); @include min { font-size: rem(16); }}
+h5 {
+  font-size: rem(18);
+  @include min {
+    font-size: rem(16);
+  }
+}
 
-small { font-size: rem(12); line-height: rem(16); vertical-align: top; }
+small {
+  font-size: rem(12);
+  line-height: rem(16);
+  vertical-align: top;
+}
 
-h6, p { font-size: rem(16); }
+h6,
+p {
+  font-size: rem(16);
+}
 
 // Heading 6 styles
-h1, h2, h3, h4, h5, h6, p { line-height: 1.15; }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  line-height: 1.15;
+}
 
 // Bold styles
-b strong { font-weight: 600; }
+b strong {
+  font-weight: 600;
+}
 
 // Italic styles
-.fab { font-weight: 400; }
+.fab {
+  font-weight: 400;
+}
 
 // Bold italic styles
-.fas { font-weight: 700; }
+.fas {
+  font-weight: 700;
+}
 
 // Default list styles float right
-.float-right { float: right; }
+.float-right {
+  float: right;
+}
 
 // Default list styles float left
-.float-left { float: left; }
+.float-left {
+  float: left;
+}

@@ -16,7 +16,7 @@
 .rowRight {
   display: flex;
   justify-content: space-between;
-  margin-top: rem(64);
+  margin-top: rem(96);
   margin-bottom: rem(16);
 
   .marginLeft,
@@ -79,6 +79,27 @@
       width: 100%;
       height: 100%;
       border-radius: rem(8);
+    }
+  }
+}
+
+@include min {
+  .rowLeft,
+  .rowRight {
+    flex-direction: column;
+    margin-top: rem(48);
+
+    .marginLeft,
+    .marginRight,
+    .imageLeft,
+    .imageRight {
+      max-width: 100%;
+    }
+
+    .marginLeft h2,
+    .marginRight h2 {
+      text-align: center;
+      font-size: rem(26);
     }
   }
 }

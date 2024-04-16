@@ -40,6 +40,10 @@ h2 {
   color: $alt-title-color;
   text-decoration: overline;
   margin: rem(52) 0;
+
+  @include min {
+    text-align: center;
+  }
 }
 
 h3,
