@@ -1,6 +1,5 @@
 baseURL: "/"
 title: BlackStewie
-theme: simple-dark
 languageCode: en
 defaultContentLanguage: en
 paginate: 20
@@ -25,9 +24,6 @@ params:
   author: Michael Schaecher
   description: Ideas about technology, software development and life.
   keywords: blog, developer, personal
-
-  dateFormat: January 2, 2006
-  since: 2023
 
   license:
     type: MIT
@@ -58,18 +54,22 @@ params:
     # favicon_32: /images/favicon-32x32.png
     # favicon_16: /images/favicon-16x16.png
     # Use custom image for 404 page. Useful
-    error: images/404.png
+    error: images/404.svg
 
-  # Font Awesome icons kit code
-  fontawesomeKit: 00501d56b9
+  dateFormat: January 2, 2006
+  since: 2023
+
+  scrollPost: true
 
   # Right To Left, shift content direction for languages such as Arabic
   # For now this is not supported.
   # rtl: false
 
+  # Hide the toggle button, along with the associated vertical divider
+  fontAwesomeCDN: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.css
+
   # Series see also post count
   maxSeeAlsoItems: 5
-
   # Custom CSS, file path is relative to Hugo's asset folder (default: {your project root}/assets)
   customSCSS:
 
@@ -79,57 +79,6 @@ params:
   # Custom remote JS files
   customRemoteJS:
 
-  # If you want to use fathom(https://usefathom.com) for analytics, add this section
-  #fathomAnalytics:
-  #  siteID: ABCDE
-  #  serverURL: analytics.example.com # Default value is cdn.usefathom.com, overwrite this if you are self-hosting
-
-  # If you want to use plausible(https://plausible.io) for analytics, add this section
-  #plausibleAnalytics:
-  #  domain: example.com
-  #  serverURL: analytics.example.com # Default value is plausible.io, overwrite this if you are self-hosting or using a custom domain
-  #  outboundLinksTracking: true
-  #  fileDownloadsTracking: true
-
-  # If you want to use goatcounter(https://goatcounter.com) for analytics, add this section
-  #goatCounter:
-  #  code: code
-
-  # If you want to use Cloudflare Web Analytics(https://cloudflare.com) for analytics, add this section
-  # cloudflare:
-  #  token: token
-
-  # If you want to use Matomo(https://matomo.org) for analytics, add this section
-  #matomo:
-  #  siteID: ABCDE # Default value is 1, overwrite this if you are cloud-hosting
-  #  serverURL: analytics.example.com # For cloud-hosting, use provided URL, e.g. example.matomo.cloud
-
-  # If you want to use Google Tag Manager(https://analytics.google.com/) for analytics, add this section
-  # googleTagManager:
-  #  id: GTM-XXXXXXX
-
-  # If you want to use Yandex Metrika(https://metrika.yandex.ru) for analytics, add this section
-  #yandexMetrika:
-  #  id: gid
-
-  # If you want to use Application Insights(https://azure.com/) for analytics, add this section
-  #applicationInsights:
-  #  connectionString: connectionString
-
-  # If you want to use microanalytics.io for analytics, add this section
-  #microAnalytics:
-  #  id: ABCDE
-  #  dnt: false
-
-  # If you want to use Pirsch(https://pirsch.io) for analytics, add this section
-  #pirsch:
-  #  code: ABCDE
-
-  # If you are like me and care about privacy, you can use Umami(https://umami.is) for analytics.
-  #umami:
-  #  id: ABCDE
-
-  # If you want to implement a Content-Security-Policy, add this section
   #csp:
   #  childsrc: [self]
   #  fontsrc: [self, https://fonts.gstatic.com, https://cdn.jsdelivr.net/]
@@ -148,39 +97,24 @@ params:
   social:
     - name: github
       icon: fa-brands fa-github
+      weight: 1
       url: https://github.com/MichaelSchaecher/
-    # - name: Gitlab
-    #   icon: fa-brands fa-gitlab
-    #   url: https://gitlab.com/
-    # - name: Twitter
-    #   icon: fa-brands fa-twitter
-    #   url: https://twitter.com/
-    # - name: LinkedIn
-    #   icon: fa-brands fa-linkedin
-    #   url: https://www.linkedin.com/
-    # - name: Medium
-    #   icon: fa-brands fa-medium
-    #   url: https://medium.com/
     - name: RSS
-      icon: fa-brands fa-rss
-      url: https://blackstewie.com/index.xml
+      icon: fa-solid fa-rss
+      weight: 2
+      url: https://myhugosite.com/
       rel: alternate
       type: application/rss+xml
-    # - name: Facebook
-    #   icon: fa-brands fa-facebook-official
-    #   url: https://www.facebook.com/
-    # - name: StackOverflow
-    #   icon: fa-brands fa-stack-overflow
-    #   url: https://stackoverflow.com/
-    # - name: Instagram
-    #   icon: fa-brands fa-instagram
-    #   url: https://www.instagram.com/
 
 taxonomies:
   category: categories
   series: series
   tag: tags
   author: authors
+
+languages:
+  en:
+    languageName: us
 
 menu:
   main:
