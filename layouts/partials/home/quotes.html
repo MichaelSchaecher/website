@@ -1,7 +1,7 @@
 <h3 class="box-title">Quote of the day</h2>
 <blockquote class="quotes"></blockquote>
 <div class="authorContainer">
-  <i class="fa-solid fa-minus"></i><span class="quote-author"></span>
+  <span class="quote-author"></span>
   {{ if .Site.IsServer }}
     {{ $quotes := resources.Get "js/quotes.js" }}
     {{ $jenQuotes := resources.Get "js/jenQuotes.js" }}

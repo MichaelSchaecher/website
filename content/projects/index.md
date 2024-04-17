@@ -52,5 +52,3 @@ I did make some changes, most noteably to how the **SCSS** files are structured 
 The source code for this theme can be found on [GitHub](https://github.com/MichaelSchaecher/simple-dark).
 
 {{< /flex >}}
-
-
