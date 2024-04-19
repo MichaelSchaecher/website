@@ -35,8 +35,8 @@ table {
 
   // Make the table header sticky.
   th {
-    position: sticky;
-    top: rem(41);
+    // position: sticky;
+    // top: 0;
     background-color: $alt-bg-color;
 
     // Keep the table header from overflowing the container on small screens by resetting
