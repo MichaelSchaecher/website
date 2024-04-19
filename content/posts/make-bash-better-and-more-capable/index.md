@@ -1,8 +1,7 @@
 ---
 title: Make Bash Better and More Capable
 # Set date to Mountain Standard Time. Example: 2023-12-17T20:01:00-07:00
-date: 2024-02-16T12:00:28-07:00
-lastmod: 2024-02-16T12:00:28-07:00
+date: 2024-02-19T08:55:28-07:00
 description: ""
 slug: ""
 authors:
@@ -14,7 +13,7 @@ categories:
   - Shell & Terminal
 externalLink: ""
 series:
-draft: true
+draft: false
 weight: 20
 featuredImage: "/posts/make-bash-better-and-more-capable/bash-terminal.png"
 ---
@@ -140,6 +139,13 @@ function xtract () {
 }
 ```
 
+## Setting Defaults for Interactive Shells
+
+The default `shopt -s` settings are fine for users that do not use the terminal that often but for those that use the terminal a lot you may want to change the defaults. I have added the following to my <u>.bashrc</u>:
+
+
+
+
 The function above requires an argument to be passed to it; if the argument is a supported archive type it will extract the archive to the current directory or one using the filename. If the argument is not a supported archive type it will echo an error message.
 
 Now to complete the functionality so that you can compress files and directories with a simple command and argument. This is done by adding the following alias.
@@ -194,8 +200,6 @@ alias home='~'                                                          # Go to 
 Another thing that you can do is add commonly used directories like the ones I have added.
 
 ```bash
-alias site='~/Projects/website'                                         # Go to website project.
-alias theme='~/Projects/simple-dark'                                    # Go to theme project.
 alias skel='~/Projects/skel'                                            # Go to skel project.
-alias pro='~/Projects/MichaelSchaecher'                                 # Go to Github profile.
+alias kernel='~/Projects/kernel'                                        # Go to kernel project.
 ```

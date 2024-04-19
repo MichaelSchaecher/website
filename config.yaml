@@ -9,6 +9,12 @@ enableEmoji: true
 # Enable Disqus comments
 disqusShortname: blackstewie-com
 
+module:
+  hugoVersion:
+    extended: true
+    min: 0.119.0
+    max: 0.120.4
+
 markup:
   goldmark:
     renderer:
@@ -54,7 +60,7 @@ params:
     # favicon_32: /images/favicon-32x32.png
     # favicon_16: /images/favicon-16x16.png
     # Use custom image for 404 page. Useful
-    error: images/404.svg
+    error: images/404.jpg
 
   dateFormat: January 2, 2006
   since: 2023
