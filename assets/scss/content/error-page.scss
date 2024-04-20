@@ -4,34 +4,47 @@
 @use "utilities/mixins-functions" as *;
 @use "utilities/colors" as *;
 
-.not_found {
-  // Align the text vertically and horizontally
+.notFound {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  flex-direction: row;
+  height: rem(480);
+  // margin: rem(84) auto 0;
 
-  h1 {
-    margin-top: rem(64);
-    margin-bottom: rem(8);
-    font-size: rem(48);
+  @include min {
+    flex-direction: column;
+    height: auto;
+    margin: auto;
+  }
+
+  #errorAvatar,
+  .errorText {
+    flex: 1;
+    margin: auto;
+    max-width: 50%;
+    height: auto;
+    text-align: center;
 
     @include min {
-      font-size: rem(32);
+      max-width: 100%;
+      margin: auto;
     }
   }
 
-  h2 {
-    margin: rem(32) 0;
-    font-size: rem(27);
-    color: red;
-
-    // Don't pass the article text-decoration to the h2 tag from the article.scss file.
-    text-decoration: none;
+  p {
+    font-style: italic;
+    text-align: center;
   }
 
-  // Override the praghraph styles from typography.scss
-  p {
-    text-align: center;
+  .errorMessage {
+    font-size: rem(256);
+    font-weight: bold;
+    margin: rem(16) 0;
+
+    font-style: italic;
+    color: red;
+
+    @include min {
+      font-size: rem(128);
+    }
   }
 }

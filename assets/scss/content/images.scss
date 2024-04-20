@@ -4,14 +4,25 @@
 @use "utilities/mixins-functions" as *;
 @use "utilities/colors" as *;
 
-.error404,
 .construction,
-.avatar {
+.avatar,
+.errorAvatar {
   height: rem(360);
   margin-bottom: rem(32);
 
   @include min {
     height: auto;
+    width: 100%;
+    margin: rem(48) 0 0 0;
+  }
+}
+
+.errorAvatar {
+  width: auto;
+  border-radius: rem(192);
+
+  @include min {
+    height: rem(256);
     width: 100%;
     margin: rem(48) 0 0 0;
   }

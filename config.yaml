@@ -60,7 +60,7 @@ params:
     # favicon_32: /images/favicon-32x32.png
     # favicon_16: /images/favicon-16x16.png
     # Use custom image for 404 page. Useful
-    error: images/404.jpg
+    error: images/404.png
 
   dateFormat: January 2, 2006
   since: 2023
