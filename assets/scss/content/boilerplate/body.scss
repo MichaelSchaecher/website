@@ -4,7 +4,11 @@
 @use "../utilities/mixins-functions" as *;
 @use "../utilities/colors" as *;
 
-*, *::before, *::after { box-sizing: border-box; }
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 
 html {
   box-sizing: border-box;
@@ -28,7 +32,13 @@ html {
   }
 }
 
-body { min-height: 100vh; display: flex; flex-direction: column; margin: 0 auto; max-width: rem(1080); }
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  max-width: rem(1080);
+}
 
 body .wrapper {
   flex: 1;
@@ -36,7 +46,9 @@ body .wrapper {
   border-left: rem(3) solid $alt-darker-color;
   border-right: rem(3) solid $alt-darker-color;
 
-  .container { margin: 0 rem(16); }
+  .container {
+    margin: 0 rem(16);
+  }
 }
 
 body {
@@ -47,4 +59,8 @@ body {
       padding-top: rem(64);
     }
   }
+}
+
+iframe[src*="disqus"] {
+  color-scheme: light;
 }
