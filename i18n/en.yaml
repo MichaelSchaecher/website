@@ -22,7 +22,7 @@ page_does_not_exist:
 head_back:
   other: You can head back to the <a href="{{ . }}">homepage</a>.
 licensed_under:
-  other: under
+  other: under the
 powered_by:
   other: Powered by
 see_also:
