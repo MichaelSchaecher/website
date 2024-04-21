@@ -44,7 +44,7 @@ header {
 
         &:hover,
         &:active {
-          font-weight: 700;
+          color: $link-color;
         }
       }
     }
@@ -56,10 +56,18 @@ header {
         // Add a margin to the right of the date to separate it from reading time.
         margin-right: rem(80);
 
+        span {
+          padding-left: rem(24);
+        }
+
         // Set media query for max-width to 800px or less.
         @include min {
           margin-right: rem(24);
         }
+      }
+
+      .reading-time span {
+        padding-left: rem(24);
       }
     }
   }

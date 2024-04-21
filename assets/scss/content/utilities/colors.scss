@@ -52,26 +52,7 @@ $bg-color-notice-error-content: rgba(240, 85, 80, 0.1) !default;
 
 // Social and networking icons colors, use the same colors as the official
 // icons from the social networks. Only the most popular ones are included.
-$social-color: rgb(95, 95, 95) !default;
-
-// Set color for general fa-icons based on usage.
-$fa-book-open: black !default;
-$fa-calendar: red !default;
-$fa-clock: orange !default;
-$fa-tag: yellow !default;
-$fa-user: green !default;
-$fa-folder: blue !default;
-$fa-folder-open: indigo !default;
-$fa-file: violet !default;
-$fa-file-text: purple !default;
-$fa-file-pdf: pink !default;
-$fa-file-word: brown !default;
-$fa-file-excel: grey !default;
-$fa-file-powerpoint: black !default;
-$fa-file-image: white !default;
-
-// Set Default color for fa-icons.
-$alt-fa-color: $alt-fg-color !default;
+$fa-color: rgb(120, 175, 180) !default;
 
 // Code colors
 $inline-bg-color: rgb(70, 70, 70) !default;
