@@ -108,7 +108,7 @@ params:
     - name: RSS
       icon: fa-solid fa-rss
       weight: 2
-      url: https://myhugosite.com/
+      url: ./index.xml
       rel: alternate
       type: application/rss+xml
 

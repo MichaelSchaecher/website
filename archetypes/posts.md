@@ -4,9 +4,9 @@ title: {{ replace .File.ContentBaseName "-" " " | title }}
 date: {{ .Date }}
 lastmod: {{ .Date }}
 description: ""
-slug: {{ .File.BaseFileName }}
+slug: {{ .File.ContentBaseName }}
 authors:
-  - John Doe
+  - Michael Schaecher
 tags:
   - new
 categories:

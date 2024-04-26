@@ -63,14 +63,20 @@
 }
 
 .home .quote-box .authorContainer {
-  float: right;
+  // float: left;
   margin-right: rem(8);
   margin-bottom: rem(8);
 
-  ::before {
+  &::before {
     content: "- ";
     font-weight: 900;
   }
+
+  &::after {
+    content: " -";
+    font-weight: 900;
+  }
+
   i {
     margin-right: rem(4);
   }
@@ -78,6 +84,11 @@
   @include min {
     font-size: rem(18);
   }
+}
+
+.home .quote-box .fieldContainer {
+  margin: rem(8);
+  color: $accent-color;
 }
 
 .home .home-info .avatar {
