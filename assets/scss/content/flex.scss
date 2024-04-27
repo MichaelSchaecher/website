@@ -83,25 +83,12 @@
   }
 }
 
-@include min {
-  .rowLeft,
-  .rowRight {
-    flex-direction: column;
-    margin-top: rem(48);
+.leftNoHeader {
+  flex-direction: row-reverse;
+}
 
-    .marginLeft,
-    .marginRight,
-    .imageLeft,
-    .imageRight {
-      max-width: 100%;
-    }
-
-    .marginLeft h2,
-    .marginRight h2 {
-      text-align: center;
-      font-size: rem(26);
-    }
-  }
+.rightNoHeader {
+  flex-direction: row;
 }
 
 .leftNoHeader,
@@ -137,11 +124,11 @@
   }
 
   .marginLeft {
-    margin-right: rem(16);
+    margin-left: rem(16);
   }
 
   .marginRight {
-    margin-left: rem(16);
+    margin-right: rem(16);
   }
 
   .imageLeft,
@@ -150,6 +137,27 @@
       width: 100%;
       height: rem(360);
       border-radius: rem(8);
+    }
+  }
+}
+
+@include min {
+  .rowLeft,
+  .rowRight {
+    flex-direction: column;
+    margin-top: rem(48);
+
+    .marginLeft,
+    .marginRight,
+    .imageLeft,
+    .imageRight {
+      max-width: 100%;
+    }
+
+    .marginLeft h2,
+    .marginRight h2 {
+      text-align: center;
+      font-size: rem(26);
     }
   }
 }

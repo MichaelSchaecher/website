@@ -88,9 +88,9 @@
           </ul>
         {{ end }}
         {{ $afterList := index $contentParts 2 }}
-        <p class="textLeft">{{ $afterList | markdownify }}</p>
+        <p>{{ $afterList | markdownify }}</p>
       {{ else }}
-        <p class="textLeft">{{ $content | markdownify }}</p>
+        <p>{{ $content | markdownify }}</p>
       {{ end }}
     </div>
     <div class="imageLeft">
@@ -99,7 +99,7 @@
   </div>
 {{ else if eq $row "rightNoHeader" }}
   <div class="{{ $row }}">
-    <div class="marginLeft">
+    <div class="marginRight">
       {{ $content := .Inner }}
       {{ $contentParts := split $content "<ul>" }}
       {{ if gt (len $contentParts) 1 }}
@@ -116,9 +116,9 @@
           </ul>
         {{ end }}
         {{ $afterList := index $contentParts 2 }}
-        <p class="textRight">{{ $afterList | markdownify }}</p>
+        <p>{{ $afterList | markdownify }}</p>
       {{ else }}
-        <p class="textRight">{{ $content | markdownify }}</p>
+        <p>{{ $content | markdownify }}</p>
       {{ end }}
     </div>
     <div class="imageLeft">
