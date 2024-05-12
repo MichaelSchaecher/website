@@ -245,7 +245,7 @@ Finish mounting the subvolumes:
 sudo mount -o subvol=@snapshots /dev/<sdaX|nvme0n1pX> /mnt/.snapshots
 ```
 
-Lastly mount the EFI boot partition `sudo mount /dev/<sdaY|nvme0n1pY> /mnt/boot/efi` an enter the chroot environment `sudo chroot /mnt /bin/bash`.
+Lastly mount the EFI boot partition `sudo mount /dev/<sdaY|nvme0n1pY> /mnt/boot/efi` and enter the chroot environment `sudo chroot /mnt /bin/bash`.
 
 ## Grub Boot Loader and fstab
 
