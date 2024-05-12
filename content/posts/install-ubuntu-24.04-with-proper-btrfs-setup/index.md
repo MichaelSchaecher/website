@@ -109,7 +109,7 @@ Level the default selected, this is the normal applications that come with Ubunt
 
 {{< /flex >}}
 
-{{< flex src="./07-ThirdPartySoftware.png" alt="Third-Party Software" class="rightNoHeader" >}}
+{{< flex src="./08-ThirdPartySoftware.png" alt="Third-Party Software" class="rightNoHeader" >}}
 
 The default option is to 'Install third-party software for graphics and Wi-Fi hardware, Flash, MP3, and other media.' This is the option we want to choose. This will install the necessary drivers and codecs to play media files.
 
@@ -119,7 +119,7 @@ We want to select both 'Third-party software' and 'Media formats.' This will ins
 
 ### Drive Setup
 
-{{< flex src="./08-DiskSetup.png" alt="Drive Setup" class="leftNoHeader" >}}
+{{< flex src="./09-DiskSetup.png" alt="Drive Setup" class="leftNoHeader" >}}
 
 The default option is to 'Erase disk and install Ubuntu' not what we want to do: instead what we want is 'Manual installation.' This will allow us to set up the drive the way we want it. In this case, we want to set up the drive with **_btrfs_** as the filesystem with the following subvolumes:
 
@@ -136,7 +136,7 @@ With **_btrfs_** we can create subvolumes that will allow us to take snapshots o
 | @tmp      | /var/tmp    | Temp                          |
 | @snapshots| /.snapshots | Snapshots                     |
 
-{{< flex src="./09-BootloaderDevice.png" alt="Partitioning" class="rightNoHeader" >}}
+{{< flex src="./10-BootloaderDevice.png" alt="Partitioning" class="rightNoHeader" >}}
 
 On the bottom left just above the 'Back' button select the device for the EFI System Partition for the boot loader installation. This should be the same device as the root partition. In this case, it is **_sda_**. As I'm using a virtual machine. If you are using a physical machine it maybe **_nvme0n1_** if the system has a NVMe drive.
 
@@ -146,7 +146,7 @@ Either way I assume that you are installing on an **_SSD_** be it a **_SATA_** o
 
 Since we are using **_btrfs_** as the filesystem a swapfile will not work, because **_btrfs_** snapshot do not play will with swapfiles. Instead, we will create a swap partition. The swap partition should be about 8GB or less, anything more just a waste of space. Not having a **_swap_** partition is not an option as the system will not hibernate without it, plus some applications require a **_swap_** partition.
 
-{{< flex src="./10-SwapPartition.png" alt="Partitioning" class="leftNoHeader" >}}
+{{< flex src="./11-SwapPartition.png" alt="Partitioning" class="leftNoHeader" >}}
 
 In this case I'm setting up a 4GB **_swap_** partition. This is more than enough for my needs. If you are not doing any heavy video editing or running a database server you can get away with a 2GB **_swap_** partition mounted as a **ZRAM** device.
 
@@ -156,7 +156,7 @@ In this case I'm setting up a 4GB **_swap_** partition. This is more than enough
 
 The root partition should be about 50GB or more. This will allow for the installation of applications and updates. The root partition should be mounted as **_/_**.
 
-{{< flex src="./11-RootPartition.png" alt="Partitioning" class="rightNoHeader" >}}
+{{< flex src="./12-RootPartition.png" alt="Partitioning" class="rightNoHeader" >}}
 
 Normally you would create a separate **_home_** partition, but with **_btrfs_** this is not necessary so instead we will use the remaining space on the drive for the root partition.
 
@@ -164,13 +164,13 @@ Normally you would create a separate **_home_** partition, but with **_btrfs_** 
 
 ### User Account and Location
 
-{{< flex src="./12-UserAccount.png" alt="User Account" class="leftNoHeader" >}}
+{{< flex src="./13-UserAccount.png" alt="User Account" class="leftNoHeader" >}}
 
 The default option is to 'Require my password to log in.' This is the option we want to choose. This will require a password to log in to the system.
 
 {{< /flex >}}
 
-{{< flex src="./13-Location.png" alt="Location" class="rightNoHeader" >}}
+{{< flex src="./14-Location.png" alt="Location" class="rightNoHeader" >}}
 
 The default option is to 'Set up this computer as a local server.' This is the option we want to choose. This will set up the computer as a local server. Once you set the location and click on the 'Next' you see the time change to the correct time zone.
 
@@ -180,19 +180,19 @@ The default option is to 'Set up this computer as a local server.' This is the o
 
 The last step is to review the installation settings and click on the **_Install_** button to start the installation process. The installation process will take some time to complete. Once the installation is complete, you will be prompted to restart the computer. Click on the **_Restart Now_** button to restart the computer.
 
-{{< flex src="./14-Summary.png" alt="Installation" class="leftNoHeader" >}}
+{{< flex src="./15-Summary.png" alt="Installation" class="leftNoHeader" >}}
 
 The installer summary will show the installation settings. If everything looks good click on the 'Install' button to start the installation process.
 
 {{< /flex >}}
 
-{{< flex src="./15-Installation.png" alt="Installation" class="rightNoHeader" >}}
+{{< flex src="./16-Installation.png" alt="Installation" class="rightNoHeader" >}}
 
 The installation process will take some time to complete. Once the installation is complete.
 
 {{< /flex >}}
 
-{{< flex src="./16-ContinueTesting.png" alt="Restart" class="leftNoHeader" >}}
+{{< flex src="./17-ContinueTesting.png" alt="Restart" class="leftNoHeader" >}}
 
 You will be prompted to restart the computer since this is the default option. However, we need to make some changes to the system before we can restart the computer, so click on the Continue Testing' button.
 
