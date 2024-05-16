@@ -10,16 +10,23 @@
 @use "content/utilities/fonts" as *;
 
 // Default font and font weight use for the site navigation header
-#nav .nav-title, #nav .nav-list .nav-item .nav-link { font-family: "K2D"; font-weight: 600; }
+#nav .nav-title,
+#nav .nav-list .nav-item .nav-link {
+  font-family: "K2D";
+  font-weight: 600;
+}
 
 #nav {
   background-color: $bg-color;
-  line-height: rem(40); width: 100%;
+  line-height: rem(40);
+  width: 100%;
   border-radius: rem(10) rem(10) 0 0;
   border-left: rem(3) solid $alt-darker-color;
   border-right: rem(3) solid $alt-darker-color;
 
-  @include min { height: rem(56); }
+  @include min {
+    height: rem(56);
+  }
 }
 
 #nav .nav-title {
@@ -34,7 +41,7 @@
     margin: rem(2) rem(16);
   }
 
-    // The title doesn't need to be animated or change on hover.
+  // The title doesn't need to be animated or change on hover.
   &:hover,
   &:focus {
     text-decoration: none;
@@ -58,7 +65,9 @@
     margin-right: rem(14);
     width: 100%;
     background-color: $bg-color;
-    transition: opacity 0.25s, min-height 0.15s linear;
+    transition:
+      opacity 0.25s,
+      min-height 0.15s linear;
   }
 
   .nav-item {
@@ -67,17 +76,21 @@
     position: relative;
     margin-right: rem(16);
 
-      // Remove the margin-right from the last item.
-      &:last-child {
-        margin-right: 0;
-      }
+    // Remove the margin-right from the last item.
+    &:last-child {
+      margin-right: 0;
+    }
 
-    @include min { float: none !important; text-align: center; margin: 0; }
+    @include min {
+      float: none !important;
+      text-align: center;
+      margin: 0;
+    }
 
     .nav-link {
       display: inline-block;
       border-radius: rem(4);
-      font-size: rem(16);
+      font-size: rem(20);
       color: $fg-color;
 
       &:hover,
@@ -98,13 +111,15 @@
   display: none;
 
   @include min {
-
-    &:checked + label > i { text-shadow: rem(2) rem(2) rem(6) $link-color; }
+    &:checked + label > i {
+      text-shadow: rem(2) rem(2) rem(6) $link-color;
+    }
 
     &:checked + label + ul {
       visibility: visible;
       opacity: 50;
-      width: rem(128);
+      width: 50%;
+      height: auto;
 
       // Set the background color with transparency.
       background-color: $alt-bg-color;
@@ -132,8 +147,7 @@
   }
 }
 
-
-#nav  .menu-button {
+#nav .menu-button {
   display: none;
 
   @include min {
