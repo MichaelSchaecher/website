@@ -33,44 +33,50 @@
   scrollbar-width: none;
   scroll-behavior: smooth;
 
-
   @include min {
-    // Set the min-height to 128px.
     padding: 0;
     margin: 0;
-    // max-height: rem(256);
   }
 
   li {
     margin-bottom: rem(10);
     font-size: rem(18);
 
-    .date {
-      text-align: left;
-      margin-right: rem(32);
+    .post-list {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row;
 
-      @include min {
-        display: block;
+      .date {
         text-align: left;
-        // font-size: rem(20);
       }
-    }
 
-    .title {
-      float: right;
-      color: $fg-color;
-      font-family: $font-family;
-      font-weight: 600;
-      cursor: pointer;
+      .title {
+        text-align: left;
+        color: $fg-color;
+        font-family: $font-family;
+        font-weight: 600;
+        cursor: pointer;
 
-      &:hover,
-      &:focus {
-        color: $link-color;
+        &:hover,
+        &:focus {
+          color: $link-color;
+        }
       }
 
       @include min {
-        display: block;
-        float: left;
+        display: flex;
+        flex-direction: column;
+
+        .date {
+          text-align: center;
+          margin: 0;
+        }
+
+        .title {
+          text-align: center;
+          font-size: rem(20);
+        }
       }
     }
   }

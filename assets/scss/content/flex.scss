@@ -104,6 +104,10 @@
   .imageRight {
     max-width: 50%;
     height: auto;
+
+    @include min {
+      max-width: 100%;
+    }
   }
 
   .marginLeft ul,
@@ -131,6 +135,13 @@
     margin-right: rem(16);
   }
 
+  .marginLeft,
+  .marginRight {
+    @include min {
+      margin: 0;
+    }
+  }
+
   .imageLeft,
   .imageRight {
     img {
@@ -138,6 +149,10 @@
       height: rem(360);
       border-radius: rem(8);
     }
+  }
+
+  @include min {
+    flex-direction: column;
   }
 }
 
