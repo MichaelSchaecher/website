@@ -19,16 +19,13 @@
 
         <!-- Meta -->
         <div class="post-meta">
+
           <!-- Authors -->
           <div class="post-authors">
             {{ with .GetTerms "authors" }}
               {{ partial "taxonomy/authors.html" . }}
             {{ end }}
           </div>
-
-          <!-- Series -->
-          {{ partial "taxonomy/series.html" . }}
-
 
           <!-- Date and reading time -->
           <div class="date">
@@ -59,6 +56,7 @@
             </span>
 
           </div>
+
         </div>
       </header>
       <div class="toc">
@@ -71,6 +69,10 @@
 
       <!-- Taxonomy links -->
       <div class="taxonomy-links">
+
+          <!-- Series -->
+        {{ partial "taxonomy/series.html" . }}
+
         {{ with .GetTerms "categories" }}
           {{ partial "taxonomy/categories.html" . }}
         {{ end }}
