@@ -14,9 +14,9 @@ tags:
 categories:
   - Linux
 externalLink: ""
-draft: true
+draft: false
 weight: 20
-featuredImage: ""
+featuredImage: "/posts/manage-btrfs-snapshots-on-ubuntu-the-proper-way/snapshots.png"
 ---
 
 One of the best features for Copy-On-Write filesystem like BTRFS is the ability to create snapshots. These snapshots can be used to restore files or directories back to an earlier state. This is especially useful when you accidentally delete or modify files. In this guide, we will show you how to manage BTRFS snapshots on Ubuntu the proper way. If you are running _**Ubuntu 22.04**_ or **_20.04_** or followed the [guide](../install-ubuntu-24.04-with-proper-btrfs-setup/), then this guide is for you.
