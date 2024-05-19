@@ -2,7 +2,7 @@
 title: Install Ubuntu 24.04 With Proper Btrfs Setup
 # Set date to Mountain Standard Time. Example: 2023-12-17T20:01:00-07:00
 date: 2024-04-28T07:10:16-06:00
-lastmod: 2024-04-28T07:10:16-06:00
+lastmod: 2024-05-19T17:30:16-06:00
 description: ""
 slug: install-ubuntu-24.04-with-proper-btrfs-setup
 authors:
@@ -13,7 +13,6 @@ tags:
 categories:
   - Linux
 externalLink: ""
-series:
 draft: false
 weight: 20
 featuredImage: https://res.cloudinary.com/canonical/image/fetch/f_auto,q_auto,fl_sanitize,w_182,h_135/https://assets.ubuntu.com/v1/3b5fa561-mascot-numbat@2x.png
@@ -229,23 +228,23 @@ Unmount the root partition with `sudo umount /mnt`.
 
 Once the subvolumes are created and the contents of the **_var/cache_** and **_var/log_** directories are copied to the **_cache_** and **_log_** subvolumes, you can remount the root partition and chroot into the system. Remember to mount according to the drive type and replace 'X' with the correct partition number.
 
-Mount the main root subvolume:
+Mount the subvolumes as follows:
 ```bash
 sudo mount -o subvol=@ /dev/<sdaX|nvme0n1pX> /mnt
-```
-
-Mount the basic subvolumes using a for loop.
-
-```bash
-for i in home cache log tmp; do sudo mount -o subvol=@$i /dev/<sdaX|nvme0n1pX> /mnt/$i; done
-```
-
-Finish mounting the subvolumes:
-```bash
+sudo mount -o subvol=@home /dev/<sdaX|nvme0n1pX> /mnt/home
+sudo mount -o subvol=@cache /dev/<sdaX|nvme0n1pX> /mnt/var/cache
+sudo mount -o subvol=@log /dev/<sdaX|nvme0n1pX> /mnt/var/log
+sudo mount -o subvol=@tmp /dev/<sdaX|nvme0n1pX> /mnt/var/tmp
 sudo mount -o subvol=@snapshots /dev/<sdaX|nvme0n1pX> /mnt/.snapshots
 ```
 
-Lastly mount the EFI boot partition `sudo mount /dev/<sdaY|nvme0n1pY> /mnt/boot/efi` and enter the chroot environment `sudo chroot /mnt /bin/bash`.
+Lastly mount the EFI boot partition `sudo mount /dev/<sdaY|nvme0n1pY> /mnt/boot/efi` because we are going to need to rebuild the **_grub_** configuration file and update the **_fstab_** file.
+
+```bash
+for d in dev proc sys run; do sudo mount --rbind /$d /mnt/$d; done
+```
+
+Chroot into the environment: `sudo chroot /mnt /bin/bash`.
 
 ## Grub Boot Loader and fstab
 
@@ -281,7 +280,7 @@ getBootFS="$(cat /etc/fstab | grep "vfat" | awk '{print $1}')"
 getBootFS="$(cat /etc/fstab | grep "btrfs" | awk '{print $1}')"
 getSwapFS="$(cat /etc/fstab | grep "swap" | awk '{print $1}')"
 
-cat <<EOF > fstab
+cat <<EOF > /etc/fstab
 # /etc/fstab: static file system information.
 #
 # <file system> <mount point>   <type>  <options>       <dump>  <pass>
@@ -299,14 +298,14 @@ EOF
 exit 0
 ```
 
-
-Make the script executable and run it.
+Make the script executable and make a backup of the **_fstab_** file;
 
 ```bash
+cp -v /etc/fstab /etc/fstab.bak
 chmod +x /usr/local/bin/gen-fstab ; gen-fstab
 ```
 
-exit the chroot environment with `exit` and reboot the system. Press the **_Enter_** and remove the USB stick when prompted.
+Open the **_fstab_** file and make sure that the **_fstab_** file is correct. If everything looks good, you can exit the chroot environment with `exit` and reboot the system. Press the **_Enter_** and remove the USB stick when prompted. Otherwise, make the necessary changes and reboot the system.
 
 ## Post Installation
 
