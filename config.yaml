@@ -7,7 +7,11 @@ paginate: 20
 enableEmoji: true
 
 # Enable Disqus comments
-disqusShortname: blackstewie-com
+# disqusShortname: blackstewie-com
+
+services:
+  disqus:
+    shortname: blackstewie-com
 
 module:
   hugoVersion:
